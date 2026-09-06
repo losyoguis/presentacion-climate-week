@@ -1,3 +1,4 @@
 # Presentación Climate Week Medellín 2026
 
-20 diapositivas, QR retirado de diapositiva 2 y galería reparada con imágenes externas en carpeta `img/`.
+Versión con 20 diapositivas, QR de cierre actualizado, galería funcional y lista para GitHub Pages / Google Sites.
+Sube `index.html`, `.nojekyll`, `README.md` y la carpeta `img/` a la raíz del repositorio.
