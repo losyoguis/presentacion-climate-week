@@ -2969,6 +2969,17 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
       .pill{font-size:12px!important;padding:8px 10px!important;}
     }
 
+
+    /* Ajuste diapositiva 16: simulación a 6 años + año 7 de salto */
+    .projection-grid{gap:clamp(14px,2.4vw,26px)!important;align-items:stretch!important;}
+    .projection-bars{display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;gap:8px!important;align-items:end!important;min-height:260px!important;}
+    .projection-bar{min-width:0!important;text-align:center!important;}
+    .projection-bar b{font-size:clamp(13px,1.35vw,20px)!important;line-height:1.05!important;word-break:normal!important;}
+    .projection-bar span{font-size:clamp(10px,.95vw,14px)!important;white-space:nowrap!important;}
+    .comparison th,.comparison td{padding:clamp(7px,.8vw,11px) clamp(7px,.9vw,12px)!important;}
+    @media(max-width:980px){.projection-grid{grid-template-columns:1fr!important}.projection-bars{min-height:220px!important}.comparison{font-size:.9em!important}}
+    @media(max-width:640px){.projection-bars{gap:5px!important}.projection-bar b{font-size:11px!important}.projection-bar span{font-size:9px!important}.comparison{font-size:.78em!important}}
+
 </style>
 </head>
 <body>
@@ -3178,7 +3189,6 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
         <p>La cuota se encuentra indexada al IPC y <strong>solo inicia cuando el sistema entra en operación</strong>, incluyendo además el <strong>mantenimiento durante todo el periodo de pago</strong>.</p>
         <p>En términos sencillos: baja la factura, el sistema produce energía limpia y el flujo del proyecto se valida con el estudio técnico y contractual definitivo.</p>
       </div>
-      <p class="finance-compact-note">Referencia de trabajo: tasa ilustrativa 1,50% mensual vencido ≈ 19,56% E.A. Los valores exactos dependen del predimensionamiento, la visita técnica y las condiciones contractuales vigentes.</p>
     </div>
   </section>
 
@@ -3222,8 +3232,8 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
     <p class="small">Lectura sencilla: si el ahorro solar mensual supera el pago mensual del modelo, la institución mejora caja desde el primer mes.</p>
   </section>
 
-  <section class="slide" data-title="9 · Proyección 6 años" data-notes="La hipótesis central: durante los primeros cinco años se paga Rocasol y queda un ahorro neto mensual. En el año seis, si el pago del sistema termina y las condiciones se mantienen, el beneficio mensual se acerca al ahorro solar bruto.">
-    <div class="kicker">9 · Simulación · 6 años</div><h2>El salto ocurre cuando termina el pago del sistema</h2>
+  <section class="slide" data-title="9 · Proyección 6 años" data-notes="La hipótesis central: durante los primeros seis años se paga Rocasol y queda un ahorro neto anual. El salto aparece después de finalizar el pago, cuando el sistema sigue produciendo energía y el ahorro neto se acerca al ahorro solar bruto.">
+    <div class="kicker">9 · Simulación · 6 años</div><h2>El salto ocurre después de los 6 años, cuando termina el pago del sistema</h2>
     <div class="projection-grid">
       <article class="card">
         <h3>Proyección conservadora del flujo</h3>
@@ -3233,9 +3243,10 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
           <tr><td>3</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$11.387.124</td></tr>
           <tr><td>4</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$15.182.832</td></tr>
           <tr><td>5</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$18.978.540</td></tr>
-          <tr><td>6</td><td>$29.483.136</td><td>$0*</td><td class="good">$29.483.136</td><td class="good">$48.461.676</td></tr>
+          <tr><td>6</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$22.774.248</td></tr>
+          <tr><td>7</td><td>$29.483.136</td><td>$0*</td><td class="good">$29.483.136</td><td class="good">$52.257.384</td></tr>
         </table>
-        <p class="small">*Año 6 simulado suponiendo que el pago de la solución termina al año 5, como indica el caso real suministrado.</p>
+        <p class="small">*Año 7 simulado suponiendo que el pago de la solución termina al finalizar el año 6, como indica el caso actualizado a 72 meses.</p>
       </article>
       <article class="card">
         <h3>Ahorro neto anual estimado</h3>
@@ -3245,22 +3256,24 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
           <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 3</span></div>
           <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 4</span></div>
           <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 5</span></div>
-          <div class="projection-bar" style="--h:100"><b>$29,5 M</b><span>Año 6</span></div>
+          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 6</span></div>
+          <div class="projection-bar" style="--h:100"><b>$29,5 M</b><span>Año 7</span></div>
         </div>
-        <p class="small">El año 6 muestra el potencial cuando ya no existe pago mensual de la solución y permanece el ahorro energético.</p>
+        <p class="small">El año 7 muestra el potencial cuando ya no existe pago mensual de la solución y permanece el ahorro energético.</p>
       </article>
     </div>
   </section>
 
-  <section class="slide" data-title="9 · Decisión Rocasol" data-notes="Cierre la simulación con el mensaje más importante: la propuesta transforma un gasto operativo mensual en una ruta financiable hacia energía limpia, sin pedir inversión inicial a la sede.">
-    <div class="kicker">9 · Lectura ejecutiva · por qué importa</div><h2>Lo importante no es el panel: es el flujo de caja</h2>
+  <section class="slide" data-title="9 · Decisión Rocasol" data-notes="Cierre la simulación con el mensaje más importante: en el escenario a 6 años, la sede protege caja durante el periodo de pago y el salto fuerte aparece desde el año 7, cuando ya no existe cuota mensual a Rocasol.">
+    <div class="kicker">9 · Lectura ejecutiva · simulación a 6 años</div>
+    <h2>Lo importante no es el panel: es el flujo de caja</h2>
     <div class="rocasol-decision">
-      <article class="card"><h3>1. Caja protegida</h3><p>La institución no desembolsa los <strong>$71.130.000</strong> al inicio. Empieza con una solución que se paga desde el ahorro.</p></article>
-      <article class="card"><h3>2. Ahorro desde el mes 1</h3><p>Mientras se paga Rocasol, queda un ahorro neto estimado de <strong>$316.309</strong> al mes.</p></article>
-      <article class="card"><h3>3. Año 6 más fuerte</h3><p>Si termina el pago en el año 5, el ahorro mensual puede acercarse al ahorro solar bruto: <strong>$2.456.928</strong>.</p></article>
+      <article class="card"><h3>1. Caja protegida</h3><p>La institución no desembolsa los <strong>$71.130.000</strong> al inicio. Empieza con una solución que se paga desde los ahorros solares.</p></article>
+      <article class="card"><h3>2. Ahorro durante el pago</h3><p>Durante los primeros 6 años, mientras se paga Rocasol, queda un ahorro neto estimado de <strong>$316.309</strong> al mes.</p></article>
+      <article class="card"><h3>3. Año 7 más fuerte</h3><p>Al finalizar el pago en el año 6, el ahorro mensual puede acercarse al ahorro solar bruto: <strong>$2.456.928</strong>.</p></article>
     </div>
-    <div class="big-verdict">En seis años, el caso puede liberar alrededor de <span class="accent-money">$48.461.676</span> en caja acumulada bajo esta simulación conservadora.</div>
-    <p class="small">Este resultado es una simulación pedagógica basada en el caso suministrado. Antes de contratar se requiere visita técnica, validación de cubierta, generación real, RETIE, condiciones comerciales, garantías e indexación.</p>
+    <div class="big-verdict">En seis años, el caso puede liberar alrededor de <span class="accent-money">$22.774.248</span> en caja acumulada bajo esta simulación conservadora.</div>
+    <p class="small">Simulación pedagógica basada en el caso suministrado a 72 meses. Antes de contratar se requiere visita técnica, validación de cubierta, generación real, RETIE, condiciones comerciales, garantías e indexación.</p>
   </section>
 
   <section class="slide" data-title="10 · Preguntas" data-notes="Abra el espacio de preguntas. Si el tiempo es corto, agrupe las inquietudes en tres categorías: medición, dimensionamiento y financiación. Cierre invitando a enviar facturas recientes y datos básicos de la sede.">
