@@ -1,5 +1,3 @@
-# Presentación Climate Week
+# Presentación Climate Week Medellín 2026
 
-Versión corregida para GitHub Pages e incrustación en Google Sites.
-
-Para GitHub Pages, publica desde la rama `main` y carpeta `/(root)`. El archivo principal es `index.html`.
+20 diapositivas, QR retirado de diapositiva 2 y galería reparada con imágenes externas en carpeta `img/`.
