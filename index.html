@@ -1,13 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#002f56">
-  <meta name="description" content="Presentación interactiva: huella de carbono educativa, SiMeCO₂ y energía solar.">
-  <meta name="simeco-build" content="2026-09-05-GOOGLE-SITES-FIXED-RESPONSIVE-NO-OVERLAP">
-  <title>1,5 °C: El reto climático y la oportunidad solar con cero inversión</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#002f56" name="theme-color"/>
+<meta content="Presentación interactiva: huella de carbono educativa, SiMeCO₂ y energía solar." name="description"/>
+<meta content="2026-09-06-GITHUB-PAGES-GOOGLE-SITES-RESPONSIVE-FAVICON" name="simeco-build"/>
+<meta content="dark" name="color-scheme"/>
+<title>1,5 °C: El reto climático y la oportunidad solar con cero inversión</title>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link crossorigin="" href="https://www.facebook.com" rel="preconnect"/>
+<style>
     :root{--ink:#eef7ff;--muted:#aec6da;--bg:#002f56;--panel:#0a436f;--line:#2d638d;--lime:#76f7b0;--sun:#ffd166;--aqua:#54d4ff;--coral:#ff9077;--shadow:0 24px 80px #0008;--radius:24px;--fs:clamp(16px,1.25vw,23px)}
     *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button,input{font:inherit}button{color:inherit}.deck{height:100%;position:relative;background:radial-gradient(circle at 85% 5%,rgba(84,212,255,.24) 0,transparent 30%),radial-gradient(circle at 10% 95%,rgba(118,247,176,.20) 0,transparent 28%),linear-gradient(180deg,#002f56 0%,#022744 100%)}
     .progress{position:fixed;z-index:30;inset:0 0 auto;height:5px;background:#ffffff12}.progress>i{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--aqua),var(--lime),var(--sun));transition:width .35s}
@@ -3225,427 +3231,540 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
     .technical-formula{margin-top:18px;padding:15px 18px;border-radius:18px;background:#b9f43b12;border:1px solid #b9f43b55;color:#eaf8f2;font-size:.78em;line-height:1.4}
     @media(max-width:900px){.technical-case-grid{grid-template-columns:1fr}.technical-pending-list{grid-template-columns:1fr}}
 
-</style>
+
+
+    /* =========================================================
+       GITHUB PAGES + GOOGLE SITES · RESPONSIVE AUTORITATIVO 2026-09-06
+       Este bloque está al final para neutralizar reglas antiguas que
+       fijaban alturas mínimas y podían recortar el iframe de Google Sites.
+       ========================================================= */
+    :root{
+      --app-h:100vh;
+      --embed-gutter-x:clamp(16px,4vw,72px);
+      --embed-top:clamp(62px,8vh,86px);
+      --embed-bottom:clamp(76px,9vh,96px);
+    }
+    html,body{
+      width:100%!important;
+      height:100%!important;
+      min-width:0!important;
+      min-height:0!important;
+      margin:0!important;
+      overflow:hidden!important;
+    }
+    .deck,
+    body.embedded .deck{
+      width:100%!important;
+      height:var(--app-h)!important;
+      min-height:0!important;
+      max-height:none!important;
+      overflow:hidden!important;
+      contain:layout paint;
+    }
+    .slide,
+    body.embedded .slide{
+      inset:0!important;
+      width:100%!important;
+      height:100%!important;
+      min-width:0!important;
+      min-height:0!important;
+      max-height:none!important;
+      padding:var(--embed-top) var(--embed-gutter-x) var(--embed-bottom)!important;
+      overflow-x:hidden!important;
+      overflow-y:auto!important;
+      overscroll-behavior:contain!important;
+      -webkit-overflow-scrolling:touch!important;
+      scrollbar-gutter:stable both-edges;
+    }
+    .slide:not(.active){
+      display:none!important;
+      pointer-events:none!important;
+    }
+    .slide.active{
+      display:grid!important;
+      opacity:1!important;
+      visibility:visible!important;
+      pointer-events:auto!important;
+    }
+    .slide > *, .card, .result, figure, img, iframe, video, svg{
+      min-width:0;
+      max-width:100%;
+    }
+    img{height:auto;object-fit:contain}
+    iframe{border:0;max-width:100%}
+    body.embedded .brand{top:14px!important;left:16px!important;max-width:calc(100vw - 150px);font-size:clamp(11px,1.2vw,14px)!important;}
+    body.embedded .timer{top:12px!important;right:14px!important;font-size:12px!important;padding:6px 10px!important;}
+    body.embedded .controls{
+      position:fixed!important;
+      left:50%!important;
+      right:auto!important;
+      bottom:max(10px,env(safe-area-inset-bottom))!important;
+      transform:translateX(-50%)!important;
+      z-index:80!important;
+      padding:4px 7px!important;
+      background:rgba(0,47,86,.9)!important;
+      border:1px solid rgba(255,255,255,.12)!important;
+      border-radius:999px!important;
+      backdrop-filter:blur(10px);
+      -webkit-backdrop-filter:blur(10px);
+    }
+    body.embedded .round{width:40px!important;height:40px!important;flex:0 0 40px!important;}
+    body.embedded .hint, body.embedded #full, body.embedded .embed-badge{display:none!important;}
+    body.embedded .footerline{position:static!important;margin-top:20px!important;}
+    body.embedded .drawer,
+    body.embedded .overview,
+    body.embedded .notes,
+    body.embedded .carbon-gallery,
+    body.embedded .image-lightbox{
+      max-width:100vw!important;
+      max-height:var(--app-h)!important;
+    }
+    body.embedded .carbon-gallery,
+    body.embedded .image-lightbox{position:fixed!important;inset:0!important;}
+    body.embedded .carbon-gallery-shell{width:min(96vw,1320px)!important;height:min(calc(var(--app-h) - 24px),840px)!important;}
+    body.embedded .image-lightbox-shell{width:min(96vw,1180px)!important;max-height:calc(var(--app-h) - 24px)!important;}
+
+    /* Iframes bajos, típicos al incrustar en Google Sites. */
+    @media (max-height:700px) and (min-width:761px){
+      :root{--embed-top:58px;--embed-bottom:70px;--embed-gutter-x:clamp(18px,3.5vw,56px)}
+      body.embedded h1.display{font-size:clamp(36px,5.4vw,72px)!important;}
+      body.embedded h2{font-size:clamp(28px,4vw,50px)!important;}
+      body.embedded .lead{font-size:clamp(17px,1.65vw,24px)!important;}
+      body.embedded .card{padding:clamp(14px,1.7vw,20px)!important;}
+      body.embedded .photo{min-height:220px!important;}
+      body.embedded .climate-opener-hero iframe,
+      body.embedded .opening-video-card iframe{height:min(54vh,390px)!important;}
+      body.embedded .opening-photo-card img{height:min(34vh,230px)!important;}
+      body.embedded .single-image-card img,
+      body.embedded .zero-benefits-card img{max-height:48vh!important;}
+    }
+
+    /* Tablet / móvil dentro de Sites: una columna y contenido desplazable. */
+    @media (max-width:760px){
+      :root{--embed-top:58px;--embed-bottom:76px;--embed-gutter-x:16px}
+      .slide,body.embedded .slide{align-content:start!important;}
+      body.embedded h1.display{font-size:clamp(34px,10vw,54px)!important;line-height:.96!important;}
+      body.embedded h2{font-size:clamp(28px,8.5vw,44px)!important;line-height:1.02!important;}
+      body.embedded .lead{font-size:clamp(17px,4.8vw,24px)!important;}
+      body.embedded .grid,
+      body.embedded .grid.two,
+      body.embedded .visual-split,
+      body.embedded .simeco-dashboard,
+      body.embedded .projection-grid,
+      body.embedded .zero-focus,
+      body.embedded .study-layout,
+      body.embedded .finance-paths,
+      body.embedded .opening-climate-grid,
+      body.embedded .opening-photo-column,
+      body.embedded .case-study-grid,
+      body.embedded .rocasol-kpi-grid,
+      body.embedded .rocasol-equation,
+      body.embedded .rocasol-decision{
+        grid-template-columns:1fr!important;
+      }
+      body.embedded .timeline{grid-template-columns:1fr 1fr!important;}
+      body.embedded .brand{left:12px!important;top:10px!important;max-width:calc(100vw - 110px);}
+      body.embedded .timer{right:10px!important;top:9px!important;}
+      body.embedded .controls{gap:5px!important;}
+      body.embedded .round{width:38px!important;height:38px!important;flex-basis:38px!important;}
+      body.embedded .photo{min-height:210px!important;}
+      body.embedded .climate-opener-grid{grid-template-columns:1fr!important;gap:20px!important;}
+      body.embedded .climate-opener-titleblock{justify-items:center!important;text-align:center!important;}
+      body.embedded .climate-opener-titleblock .centered-title,
+      body.embedded .climate-opener-titleblock .centered-kicker{text-align:center!important;justify-self:center!important;}
+      body.embedded .climate-opener-accent{margin-inline:auto!important;}
+      body.embedded .climate-opener-hero{width:min(330px,94vw)!important;}
+      body.embedded .climate-opener-hero iframe,
+      body.embedded .opening-video-card iframe{height:min(52vh,430px)!important;}
+      body.embedded .single-image-card img,
+      body.embedded .zero-benefits-card img{max-height:52vh!important;}
+      .slide[data-title="Portada"]{grid-template-columns:1fr!important;}
+      .slide[data-title="Portada"]>.leaf-orbit{opacity:.14!important;pointer-events:none!important;}
+    }
+
+    @media (max-width:430px){
+      :root{--embed-gutter-x:12px;--embed-top:54px;--embed-bottom:72px}
+      body.embedded .counter{min-width:48px!important;font-size:12px!important;}
+      body.embedded .round{width:36px!important;height:36px!important;flex-basis:36px!important;}
+      body.embedded .card{padding:15px!important;border-radius:18px!important;}
+      body.embedded .pill{font-size:12px!important;padding:7px 10px!important;}
+      body.embedded .timeline{grid-template-columns:1fr!important;}
+    }
+
+  </style>
 </head>
 <body>
 <main class="deck" id="deck">
-
-  <section class="slide active event-cover-slide" data-title="Portada · Evento" data-notes="Abra mostrando la pieza oficial del evento: huella de carbono educativa, energía solar y registro. Invite a escanear el QR.">
-    <figure class="event-cover-card" aria-label="Imagen oficial del evento Climate Week Medellín 2026">
-      <img src="img/evento-climate-week.webp" alt="Imagen del evento Huella de Carbono Educativa y Energía Solar, Climate Week Medellín Biodiversity 2026">
-    </figure>
-    <figure class="qr-access-card" aria-label="Código QR de acceso">
-      <img src="img/qr-evento.png" alt="Código QR para acceder al recurso digital">
-      <span>Escanea e inscríbete</span>
-    </figure>
-  </section>
-
-  <section class="slide" data-title="Portada · Título" data-notes="Abra con la pregunta central. Aclare desde el inicio que +1,5 °C es el aumento de la temperatura global respecto al período preindustrial 1850–1900; no es la temperatura media absoluta del planeta. La cifra aproximada de 15,1 °C mostrada más adelante corresponde a una estimación absoluta usada en la gráfica y no se compara directamente con +1,5 °C.">
-    <div class="leaf-orbit"><div class="school-marker" aria-label="Colegio en órbita"><span>🏫</span></div><div class="sun-core"><span class="sun-label">SOL</span><span class="sun-dollar" style="--ang:0deg;--dist:88px;--delay:0s">$</span><span class="sun-dollar" style="--ang:45deg;--dist:88px;--delay:.2s">$</span><span class="sun-dollar" style="--ang:90deg;--dist:88px;--delay:.4s">$</span><span class="sun-dollar" style="--ang:135deg;--dist:88px;--delay:.6s">$</span><span class="sun-dollar" style="--ang:180deg;--dist:88px;--delay:.8s">$</span><span class="sun-dollar" style="--ang:225deg;--dist:88px;--delay:1s">$</span><span class="sun-dollar" style="--ang:270deg;--dist:88px;--delay:1.2s">$</span><span class="sun-dollar" style="--ang:315deg;--dist:88px;--delay:1.4s">$</span></div></div>
-    <div class="kicker">Charla híbrida · 9 de octubre de 2026</div>
-    <h1 class="display"><em>1,5 °C</em>: El reto climático y la oportunidad solar con cero inversión</h1>
-    <p class="lead">Cómo reducir emisiones y evaluar una alternativa solar que proteja la estabilidad financiera de colegios, I.E. y universidades.</p>
-    <div class="temperature-key" aria-label="Aclaración sobre la cifra de uno coma cinco grados Celsius"><strong>+1,5 °C</strong><span>= aumento frente al período preindustrial (1850–1900)</span><span class="divider">·</span><span>No es la temperatura media absoluta del planeta.</span></div>
-    <div class="meta"><span class="pill accent">9:00–11:00 a. m.</span><span class="pill">MOVA · EMA 1 y 2</span><span class="pill">Meet + YouTube</span></div>
+<section class="slide active event-cover-slide" data-notes="Abra mostrando la pieza oficial del evento: huella de carbono educativa, energía solar y registro. Invite a escanear el QR." data-title="Portada · Evento">
+<figure aria-label="Imagen oficial del evento Climate Week Medellín 2026" class="event-cover-card">
+<img alt="Imagen del evento Huella de Carbono Educativa y Energía Solar, Climate Week Medellín Biodiversity 2026" src="img/evento-climate-week.webp"/>
+</figure>
+<figure aria-label="Código QR de acceso" class="qr-access-card">
+<img alt="Código QR para acceder al recurso digital" src="img/qr-evento.png"/>
+<span>Escanea e inscríbete</span>
+</figure>
 </section>
-
-  <section class="slide media-only-slide video-only-slide climate-opener-slide" data-title="1 · Reto climático" data-notes="Use esta diapositiva como apertura del bloque climático. Reproduzca el video para introducir visualmente el problema antes de pasar a las evidencias territoriales.">
-    <div class="climate-opener-grid">
-      <div class="climate-opener-titleblock">
-        <div class="kicker">1 · Reto climático · apertura audiovisual</div>
-        <h2 class="centered-title">Cambio climático</h2>
-        <div class="climate-opener-accent" aria-hidden="true"></div>
-      </div>
-      <figure class="card opening-video-only climate-opener-card climate-opener-hero" aria-label="Video de apertura sobre cambio climático">
-        <div class="climate-video-chips" aria-hidden="true">
-          <span class="chip chip-primary">▶ Video de apertura</span>
-        </div>
-        <div class="facebook-reel-frame">
-          <iframe src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1716148373021428%2F&amp;show_text=false&amp;width=267&amp;t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen title="Video de apertura sobre cambio climático" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-        <div class="tap-hint climate-opener-tap">▶ Reproduce el video</div>
-      </figure>
-    </div>
-  </section>
-
-  <section class="slide media-only-slide" data-title="1 · Evidencias territoriales" data-notes="Aquí se muestran dos fotos de campo junto con el video territorial. Use esta diapositiva para relacionar el cambio climático con la observación directa del territorio y la gestión del agua.">
-    <div class="kicker">1 · Reto climático · evidencias territoriales</div>
-    <h2>Fotos y video del territorio</h2>
-    <div class="opening-climate-grid">
-      <div class="opening-photo-column">
-        <figure class="card opening-photo-card" aria-label="Foto territorial 1 sobre cambio climático">
-          <img src="img/territorio-laguna.webp" alt="Persona frente a una laguna con bajo nivel de agua, usada como evidencia visual del cambio climático y la variabilidad hídrica" loading="eager">
-          <figcaption><strong>Foto 1.</strong> Evidencia territorial para abrir la conversación sobre agua, clima y territorio.</figcaption>
-        </figure>
-        <figure class="card opening-photo-card" aria-label="Foto territorial 2 sobre cambio climático">
-          <img src="img/territorio-humedal.webp" alt="Persona en paisaje natural con humedal o zona encharcada, usada como evidencia visual del cambio climático y la observación del territorio" loading="eager">
-          <figcaption><strong>Foto 2.</strong> Recorrido de campo para conectar el fenómeno climático con el entorno local.</figcaption>
-        </figure>
-      </div>
-      <figure class="card opening-video-card" aria-label="Video territorial de apoyo sobre cambio climático">
-        <div class="facebook-reel-frame">
-          <iframe src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2061754325217363%2F&amp;show_text=false&amp;width=267&amp;t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen title="Video de Facebook sobre cambio climático y territorio" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-        <div class="tap-hint">▶ Reproduce el video</div>
-        <figcaption><strong>Video territorial.</strong> Complemento audiovisual para explicar la relación entre agua, territorio y cambio climático.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="slide" data-title="1 · Huella de carbono" data-notes="Conecte el efecto invernadero, la intensificación por actividades humanas y la huella de carbono. Use la galería para ampliar las imágenes de apoyo. Al llegar a las gráficas de temperatura, recuerde: +1,5 °C es calentamiento relativo frente a 1850–1900; ≈15,1 °C es una estimación de temperatura media absoluta usada en la gráfica. No deben sumarse ni compararse directamente.">
-    <div class="climate-story-layout climate-story-gallery">
-      <div class="climate-text">
-        <div class="kicker">1 · Reto climático · de GEI a huella</div>
-        <h2>Del efecto invernadero a la huella de carbono</h2>
-        <div class="grid">
-          <article class="card"><h3>Efecto invernadero</h3><p>Fenómeno natural que retiene parte del calor.</p></article>
-          <article class="card"><h3>Más GEI</h3><p>Las actividades humanas intensifican la retención de calor.</p></article>
-          <article class="card"><h3>Huella</h3><p>Las emisiones se expresan en CO₂ equivalente.</p></article>
-        </div>
-        <div class="callout" style="margin-top:18px">La industrialización aceleró las emisiones; la tecnología también puede ayudar a cambiar su trayectoria.</div>
-      </div>
-      <figure class="photo climate-landscape" id="carbonGalleryInlineTrigger" tabindex="0" role="button" aria-label="Ampliar galería sobre cambio climático y huella de carbono" title="Haz clic para ampliar las 6 imágenes de la galería">
-        <img src="img/galeria-01.webp" alt="Galería de cambio climático y huella de carbono" loading="lazy">
-        <span class="gallery-zoom-hint" aria-hidden="true">⛶ Ampliar · 6 imágenes</span>
-        <div class="gallery-click-banner" aria-hidden="true"><span class="icon">👆</span><span>Haz clic en la imagen para ver la galería completa</span></div>
-        <figcaption><strong>Tecnología y emisiones.</strong> Evolución histórica ilustrada por Schneider Electric.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="slide" data-title="1 · Metas climáticas" data-notes="Conecte las metas nacionales con decisiones institucionales sobre energía, agua, movilidad, compras y residuos. La meta no debe sentirse abstracta.">
-    <div class="kicker">1 · Reto climático · metas de Colombia</div><h2>De 100 a cero: la dirección del cambio</h2>
-    <div class="grid two"><article class="card"><svg class="svg-chart" viewBox="0 0 600 290" role="img" aria-label="Trayectoria ilustrativa desde una referencia de 100 hasta 49 en 2030 y cero neto en 2050"><line class="chart-grid" x1="55" y1="230" x2="560" y2="230"/><line class="chart-grid" x1="55" y1="55" x2="55" y2="230"/><polyline class="chart-line" points="70,65 330,145 545,225"/><circle cx="70" cy="65" r="8" fill="#b9f43b"/><circle cx="330" cy="145" r="8" fill="#b9f43b"/><circle cx="545" cy="225" r="8" fill="#b9f43b"/><text class="chart-value" x="70" y="45" text-anchor="middle">100</text><text class="chart-value" x="330" y="125" text-anchor="middle">49</text><text class="chart-value" x="545" y="205" text-anchor="middle">Cero neto</text><text class="chart-label" x="70" y="257" text-anchor="middle">Referencia</text><text class="chart-label" x="330" y="257" text-anchor="middle">2030 · −51%</text><text class="chart-label" x="545" y="257" text-anchor="middle">2050</text></svg><p class="small">Trayectoria conceptual para explicar las metas; no representa una proyección anual.</p></article><article class="card"><strong class="metric">−51%</strong><p>Meta de reducción de emisiones para 2030 frente al escenario de referencia.</p><hr style="border:0;border-top:1px solid var(--line);margin:22px 0"><strong class="metric">2050</strong><p>Carbono-neutralidad como dirección de largo plazo.</p></article></div>
-  </section>
-
-  <section class="slide simeco-evidence-slide" data-title="2 · Medir con SiMeCO₂" data-notes="Datos actualizados del tablero de SiMeCO₂: 17 períodos con facturas procesadas, 568 sedes educativas identificadas y 18.800.429,36 kWh de energía acumulada. La huella se recalculó con el factor oficial de 0,220 kg CO₂e/kWh para inventarios de GEI del SIN 2024, adoptado por la UPME mediante la Resolución 0085 del 23 de febrero de 2026: 4.136,09 t CO₂e y 188.005 árboles como equivalencia pedagógica de captura anual. Aclare que las 568 sedes corresponden a sedes identificadas en las facturas cargadas, no necesariamente a sedes con información completa en todos los períodos. [Sources] UPME, Resolución 0085 de 2026: https://docs.upme.gov.co/Normatividad/085_2026.pdf">
-    <div class="kicker">2 · Medir · SiMeCO₂</div>
-    <h2>La huella de carbono educativa de Medellín ya cuenta una historia</h2>
-
-    <div class="simeco-dashboard">
-      <article class="card simeco-main-metric">
-        <span class="simeco-label">Huella de Carbono Educativa de Medellín</span>
-        <strong class="simeco-co2">4.136,09 <small>t CO₂e</small></strong>
-        <p>Emisiones indirectas estimadas con el factor UPME 2024 para inventarios de GEI: 0,220 kg CO₂e/kWh.</p>
-
-        <div class="simeco-energy-band">
-          <span>Energía acumulada</span>
-          <b>18.800.429,36 kWh</b>
-          <small>≈ 18,8 GWh de electricidad registrada</small>
-        </div>
-      </article>
-
-      <div class="simeco-side-metrics">
-        <article class="card simeco-mini-card">
-          <span class="simeco-mini-icon">01</span>
-          <div>
-            <span class="simeco-label">Períodos</span>
-            <strong>17</strong>
-            <p>Meses/períodos con facturas procesadas y disponibles para el análisis histórico.</p>
-          </div>
-        </article>
-
-        <article class="card simeco-mini-card">
-          <span class="simeco-mini-icon">02</span>
-          <div>
-            <span class="simeco-label">Sedes</span>
-            <strong>568</strong>
-            <p>Sedes educativas identificadas en las facturas cargadas al sistema.</p>
-          </div>
-        </article>
-
-        <article class="card simeco-mini-card simeco-tree-card">
-          <span class="simeco-mini-icon">🌳</span>
-          <div>
-            <span class="simeco-label">Árboles requeridos</span>
-            <strong>188.005</strong>
-            <p>Equivalencia pedagógica de árboles necesarios para capturar anualmente el CO₂e estimado.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <div class="simeco-flow">
-      <span><b>Facturas</b><small>Fuente del dato</small></span>
-      <i>→</i>
-      <span><b>kWh</b><small>Consumo eléctrico</small></span>
-      <i>→</i>
-      <span><b>CO₂e</b><small>Huella estimada</small></span>
-      <i>→</i>
-      <span><b>Decisiones</b><small>Ahorro · mitigación · solar</small></span>
-    </div>
-  
-    <div class="actions" style="margin-top:18px">
-      <a class="btn primary simeco-slide-button" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-huella-de-carbono-educativa-de-medellin" target="_blank" rel="noopener">SiMeCO₂</a>
-    </div>
-  </section>
-
-  <section class="slide" data-title="2 · Factura a decisión" data-notes="Modifique el consumo y el factor en vivo. El valor precargado de 0,220 kg CO₂e/kWh corresponde al factor oficial para inventarios de GEI del SIN 2024, adoptado por la UPME mediante la Resolución 0085 del 23 de febrero de 2026. Aclare que el factor debe ajustarse si la institución adopta justificadamente otra fuente, período o metodología. [Sources] UPME, Resolución 0085 de 2026: https://docs.upme.gov.co/Normatividad/085_2026.pdf">
-    <div class="kicker">2 · Medir · de factura a decisión</div><h2>De la factura a una decisión climática</h2>
-    <div class="grid two"><div class="card"><div class="form-grid"><div><label for="sKwh">Consumo mensual (kWh)</label><input id="sKwh" type="number" value="45000" min="0"></div><div><label for="sTariff">Tarifa (COP/kWh)</label><input id="sTariff" type="number" value="850" min="0"></div><div><label for="sFactor">Factor (kg CO₂e/kWh)</label><input id="sFactor" type="number" value="0.220" min="0" step="0.001"></div></div><div class="result-grid four"><div class="result"><b id="sCost">—</b><span>Costo mensual</span></div><div class="result"><b id="sCo2">—</b><span>Emisiones mensuales</span></div><div class="result"><b id="sAnnual">—</b><span>Emisiones anuales</span></div><div class="result"><b id="sTrees">—</b><span>Árboles necesarios/año</span></div></div><p class="small">Factor oficial precargado: 0,220 kg CO₂e/kWh para inventarios de GEI del SIN 2024 (UPME, Resolución 0085 de 2026). Equivalencia pedagógica SiMeCO₂: 1 árbol = 22 kg CO₂e/año (≈45,45 árboles por tonelada anual).</p></div><div class="card"><h3>Una sola trazabilidad</h3><p>Facturas → kWh → CO₂e → árboles equivalentes → historial → prioridades → plan de ahorro → reporte.</p><div class="actions"><span class="pill accent">Medible</span><span class="pill">Auditable</span><span class="pill">Accionable</span></div></div></div>
-  </section>
-
-  <section class="slide" data-title="3 · Planes ambientales" data-notes="Explique que medir no es el resultado final: los datos alimentan planes con línea base, metas, acciones, responsables, indicadores y seguimiento.">
-    <div class="kicker">3 · Actuar · planes de GEI y agua</div><h2>Los datos se convierten en planes de acción</h2>
-    <div class="grid two"><article class="card"><div class="icon">CO₂</div><h3>Plan de Gestión Energética y Reducción de GEI</h3><p>Línea base, consumos prioritarios, metas, medidas de eficiencia, responsables, indicadores y seguimiento.</p></article><article class="card"><div class="icon">💧</div><h3>Plan de Ahorro y Uso Eficiente del Agua</h3><p>Diagnóstico, oportunidades de ahorro, hábitos, mantenimiento, metas e indicadores de consumo.</p></article></div>
-    <div class="callout">Cada sede participante podrá recibir recomendaciones y entregables personalizados a partir de sus facturas.</div>
-    <div class="actions" style="margin-top:18px"><a class="btn primary zero-cta" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-1-sube-tu-factura" target="_blank" rel="noopener">Convierte la factura en planes ambientales y una ruta solar</a></div>
-  </section>
-
-  <section class="slide" data-title="4 · Oportunidad solar" data-notes="Presente la eficiencia y la generación solar como complementarias: primero evitar desperdicios y luego sustituir parte de la energía comprada por generación limpia en la sede.">
-    <div class="visual-split"><div><div class="kicker">4 · Solar · convertir gasto en inversión</div><h2>Energía solar: convertir el gasto en una inversión sostenible</h2><div class="grid"><article class="card"><h3>Reducir</h3><p>Eficiencia antes de dimensionar.</p></article><article class="card"><h3>Generar</h3><p>Energía limpia donde se consume.</p></article><article class="card"><h3>Verificar</h3><p>Ahorros y emisiones evitadas.</p></article></div><p class="small">Proyecto técnico + financiero + pedagógico.</p></div><figure class="photo school-solar-photo">
-      <img src="img/colegio-solar.webp" alt="Colegio con sistema solar fotovoltaico instalado sobre la cubierta" loading="lazy">
-      <figcaption><strong>Energía solar como infraestructura y herramienta pedagógica.</strong> Imagen ilustrativa de una sede educativa con sistema solar fotovoltaico.</figcaption>
-    </figure></div>
-  </section>
-
-  <section class="slide" data-title="5 · Alternativas financieras" data-notes="Explique que hay cuatro caminos para financiar el mismo proyecto solar. La decisión depende de caja, costo del capital, propiedad deseada, plazo, mantenimiento y apetito de riesgo. Esta diapositiva busca ordenar la conversación antes de entrar al caso Rocasol.">
-    <div class="kicker">5 · Financiar · alternativas</div><h2>Financiar sin desestabilizar la operación</h2>
-    <p class="lead">El mismo sistema solar puede estructurarse de maneras distintas. La clave es escoger la fórmula que mejor se adapte a la realidad financiera de la institución.</p>
-    <div class="grid two finance-paths">
-      <article class="card finance-path-card"><h3>Compra directa</h3><p><strong>Ideal si:</strong> la institución cuenta con caja disponible.</p><p><strong>Ventaja:</strong> la propiedad y el mayor ahorro quedan desde el inicio en la institución.</p><p><strong>Clave:</strong> exige la mayor inversión inicial y asumir operación y mantenimiento.</p></article>
-      <article class="card finance-path-card"><h3>Crédito verde</h3><p><strong>Ideal si:</strong> se quiere repartir el CAPEX en el tiempo.</p><p><strong>Ventaja:</strong> permite financiar el sistema y conservar la propiedad.</p><p><strong>Clave:</strong> la cuota debe compararse con el ahorro esperado para cuidar el flujo.</p></article>
-      <article class="card finance-path-card"><h3>PPA</h3><p><strong>Ideal si:</strong> se prioriza baja inversión inicial.</p><p><strong>Ventaja:</strong> se paga por la energía generada según el contrato.</p><p><strong>Clave:</strong> deben revisarse precio, plazo, indexación, garantías y responsabilidades.</p></article>
-      <article class="card finance-path-card"><h3>Inversión Cero · Rocasol</h3><p><strong>Ideal si:</strong> se busca empezar sin desembolso inicial.</p><p><strong>Ventaja:</strong> el ahorro del sistema ayuda a pagar la solución.</p><p><strong>Clave:</strong> el pago inicia cuando el sistema entra en operación y el mantenimiento viene incluido durante el periodo de pago.</p></article>
-    </div>
-  </section>
-
-  <section class="slide" data-title="6 · Oferta CERO-Inversión" data-notes="Use esta lámina para explicar la lógica financiera del modelo. Durante el período contractual conviven la nueva factura y el pago a Rocasol. El escenario posterior solo aplica si el contrato establece la terminación efectiva de los pagos y define la transferencia de la propiedad o de los beneficios económicos del sistema. La reducción de la factura y la cobertura energética dependen del estudio técnico, el consumo y la generación real.">
-    <div class="kicker">6 · CERO-Inversión · modelo visual</div>
-    <h2>Así funciona la oferta CERO-Inversión de Rocasol</h2>
-    <div class="single-image-layout">
-      <figure class="single-image-card">
-        <img src="img/modelo-cero-inversion.webp" alt="Esquema de la oferta CERO-Inversión de Rocasol: antes del sistema solar, durante la inversión y después de la inversión.">
-      </figure>
-      <p class="single-image-note">La lámina ilustra un escenario condicionado: durante el contrato conviven la factura de red y el pago a Rocasol. Una vez cumplidas todas las obligaciones, el ahorro posterior y la propiedad del sistema dependerán de lo pactado, de la generación real y de la tarifa eléctrica.</p>
-    </div>
-  </section>
-
-  <section class="slide" data-title="6 · Cómo opera CERO-Inversión" data-notes="Explique las condiciones como elementos sujetos a la oferta y al contrato. Cero inversión significa ausencia de desembolso inicial, no ausencia de pagos. La cuota está indexada al IPC, por lo que no es un precio fijo. El inicio de pagos, el alcance del mantenimiento, el tratamiento contable, las garantías y cualquier transferencia deben quedar definidos por escrito.">
-    <div class="kicker">6 · CERO-Inversión · condiciones clave</div><h2>Rocasol CERO-Inversión: el ahorro paga la solución</h2>
-    <div class="zero-pill-grid" aria-label="Resumen del modelo de inversión cero">
-      <div class="zero-pill"><b>$0 inicial</b><span>Sin desembolso inicial, según oferta y contrato.</span></div>
-      <div class="zero-pill"><b>72 meses</b><span>Plazo referencial del caso presentado.</span></div>
-      <div class="zero-pill"><b>Pago al operar</b><span>Inicio sujeto al acta y condiciones de puesta en servicio.</span></div>
-      <div class="zero-pill"><b>Mantenimiento</b><span>Alcance, exclusiones y plazo definidos contractualmente.</span></div>
-    </div>
-    <div class="zero-explain" style="margin-top:18px">
-      <div class="callout"><strong>“CERO-Inversión” describe $0 de desembolso inicial; no significa cero costo ni cero pagos.</strong> Parte del ahorro solar puede atender la cuota. Su tratamiento como deuda y su efecto sobre el endeudamiento dependen de la estructura jurídica, contable y contractual.</div>
-      <div class="card zero-note-card" style="margin-top:18px">
-        <p>La solución puede financiarse con <strong>una parte de los ahorros solares estimados</strong>, siempre que la generación, la tarifa y las condiciones de pago confirmen un flujo positivo.</p>
-        <p>La cuota está indexada al IPC; por tanto, <strong>no es un precio fijo</strong>. El inicio de pagos y el mantenimiento aplican según el alcance, las exclusiones y los niveles de servicio pactados.</p>
-        <p>La clasificación contable, la propiedad, las garantías y el impacto sobre el endeudamiento requieren validación jurídica, financiera y contractual.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="slide" data-title="6 · Beneficios CERO-Inversión" data-notes="Esta diapositiva reemplaza las afirmaciones absolutas de la pieza comercial por diez condiciones que deben verificarse. Recalque que no se puede prometer cobertura total, cero deuda, precio estable, ventajas fiscales o transferencia automática sin revisar el estudio técnico, el régimen tributario, la estructura contable y el contrato definitivo.">
-    <div class="kicker">6 · CERO-Inversión · beneficios</div>
-    <h2>10 condiciones que deben quedar claras en el contrato</h2>
-    <div class="contract-checklist" aria-label="Condiciones contractuales del modelo CERO-Inversión">
-      <div class="contract-item"><i>1</i><div><b>Desembolso inicial</b><span>Confirmar qué conceptos están incluidos y cuáles asume el cliente.</span></div></div>
-      <div class="contract-item"><i>2</i><div><b>Fuente de pago</b><span>Validar que el ahorro solar estimado cubra la cuota bajo escenarios realistas.</span></div></div>
-      <div class="contract-item"><i>3</i><div><b>Inicio de pagos</b><span>Definir el hito de puesta en servicio y aceptación del sistema.</span></div></div>
-      <div class="contract-item"><i>4</i><div><b>Cobertura energética</b><span>Depende del diseño, radiación, consumo, disponibilidad y generación real.</span></div></div>
-      <div class="contract-item"><i>5</i><div><b>Cuota e IPC</b><span>Especificar fórmula, periodicidad, topes y fecha de indexación.</span></div></div>
-      <div class="contract-item"><i>6</i><div><b>Mantenimiento</b><span>Precisar alcance, exclusiones, repuestos y niveles de servicio.</span></div></div>
-      <div class="contract-item"><i>7</i><div><b>Tratamiento contable</b><span>Determinar si genera pasivo o afecta la capacidad de endeudamiento.</span></div></div>
-      <div class="contract-item"><i>8</i><div><b>Beneficios tributarios</b><span>Aplican según régimen, titularidad, requisitos y normativa vigente.</span></div></div>
-      <div class="contract-item"><i>9</i><div><b>Propiedad y transferencia</b><span>Establecer titular, momento, condiciones y costo de la transferencia.</span></div></div>
-      <div class="contract-item"><i>10</i><div><b>Garantías y terminación</b><span>Definir desempeño, seguros, incumplimientos, salida y solución de controversias.</span></div></div>
-    </div>
-    <p class="contract-disclaimer">Los beneficios dependen del estudio técnico y de la estructura jurídica, contable, tributaria y contractual de cada institución.</p>
-  </section>
-
-  <section class="slide" data-title="7 · Caso real" data-notes="Explique que este bloque nace del caso real suministrado y usa valores constantes únicamente con fines pedagógicos. Haga visible la diferencia entre el valor referencial del sistema, $71.130.000, y los pagos acumulados de 72 mensualidades, $154.124.568 sin IPC. El segundo valor puede incorporar financiación, mantenimiento, garantías, seguros y transferencia de riesgos, por lo que el contrato debe desglosar sus componentes. No presente el ejercicio como una proyección conservadora ni contractual.">
-    <div class="kicker">7 · Caso real · inversión cero</div><h2>El caso Rocasol: convertir la factura en proyecto solar</h2>
-    <p class="lead">La clave no es pedirle a la institución que compre el sistema de contado. La clave es usar el ahorro que genera la energía solar para pagar la solución.</p>
-    <div class="rocasol-kpi-grid">
-      <div class="rocasol-kpi"><small>Inversión referencial</small><b>$71.130.000</b><span>Valor del sistema solar del caso.</span></div>
-      <div class="rocasol-kpi"><small>Desembolso inicial</small><b>$0</b><span>Modelo de inversión cero para proteger caja.</span></div>
-      <div class="rocasol-kpi"><small>Ahorro solar mensual</small><b>$2.456.928</b><span>Energía que deja de comprarse a la red.</span></div>
-      <div class="rocasol-kpi"><small>Pago mensual Rocasol</small><b>$2.140.619</b><span>Pago estimado por energía autogenerada.</span></div>
-      <div class="rocasol-kpi"><small>Pagos en 72 meses</small><b>$154.124.568</b><span>Total a valores constantes, sin IPC.</span></div>
-    </div>
-    <div class="callout" style="margin-top:22px"><strong>Simulación pedagógica a valores constantes:</strong> no incorpora IPC, degradación de los paneles ni variaciones de la tarifa eléctrica. Estos factores producen efectos distintos, por lo que este ejercicio no equivale a una proyección contractual.</div>
-  </section>
-
-  <section class="slide" data-title="7 · Base técnica" data-notes="Esta ficha evita presentar el caso financiero como si ya fuera un diseño solar validado. Los cuatro valores de la izquierda provienen del caso suministrado. La potencia instalada, los módulos, la generación, la tarifa base, la cobertura, la degradación, la vida útil y la propiedad final no aparecen sustentados en la fuente y deben completarse con la propuesta técnica, las facturas, las fichas de equipos y el contrato. Sin tarifa base y generación no puede auditarse el ahorro mensual de $2.456.928.">
-    <div class="kicker">7 · Caso real · base técnica</div>
-    <h2>La propuesta financiera debe apoyarse en una ficha técnica verificable</h2>
-    <p class="lead">El caso aporta cifras económicas, pero todavía no documenta los parámetros que permiten comprobar la generación, la cobertura y el ahorro.</p>
-    <div class="technical-case-grid">
-      <article class="technical-known">
-        <h3>Datos suministrados</h3>
-        <div class="technical-known-list">
-          <div><span>Valor referencial</span><b>$71.130.000</b></div>
-          <div><span>Ahorro solar mensual</span><b>$2.456.928</b></div>
-          <div><span>Pago mensual</span><b>$2.140.619</b></div>
-          <div><span>Plazo referencial</span><b>72 meses</b></div>
-        </div>
-      </article>
-      <article class="technical-pending">
-        <h3>Datos por validar antes de decidir</h3>
-        <div class="technical-pending-list">
-          <div><b>Potencia instalada</b><span>kWp DC y potencia AC del sistema.</span></div>
-          <div><b>Módulos</b><span>Cantidad, potencia unitaria y fabricante.</span></div>
-          <div><b>Generación</b><span>kWh/mes y kWh/año, con fuente de radiación.</span></div>
-          <div><b>Tarifa base</b><span>COP/kWh tomado de facturas y período analizado.</span></div>
-          <div><b>Cobertura</b><span>Porcentaje del consumo atendido y excedentes.</span></div>
-          <div><b>Degradación</b><span>Supuesto anual incorporado en la simulación.</span></div>
-          <div><b>Vida útil y garantías</b><span>Paneles, inversores, estructura y desempeño.</span></div>
-          <div><b>Propiedad final</b><span>Titular, fecha, condiciones y costo de transferencia.</span></div>
-        </div>
-      </article>
-    </div>
-    <div class="technical-formula"><strong>Prueba mínima de consistencia:</strong> generación mensual (kWh) × tarifa evitada (COP/kWh) = ahorro solar mensual. Sin esos dos datos no puede auditarse el valor de <strong>$2.456.928</strong>.</div>
-  </section>
-
-  <section class="slide" data-title="7 · Flujo mensual" data-notes="Use esta diapositiva para explicar la operación básica con los valores iniciales del caso. Del ahorro solar mensual de $2.456.928, aproximadamente 87,1 % se destina al pago de Rocasol y 12,9 % permanece como ahorro del cliente. Aclare que es una fotografía pedagógica del flujo y no una proyección de los 72 meses.">
-    <div class="kicker">7 · Caso real · flujo mensual</div><h2>Cómo se paga: el ahorro financia la solución</h2>
-    <div class="rocasol-equation" aria-label="Fórmula financiera del caso Rocasol">
-      <div class="eq-card"><b>$2.456.928</b><span>Ahorro bruto mensual generado por el sistema</span></div>
-      <div class="eq-symbol">−</div>
-      <div class="eq-card"><b>$2.140.619</b><span>Pago mensual estimado a Rocasol</span></div>
-      <div class="eq-symbol">=</div>
-      <div class="eq-card"><b>$316.309</b><span>Ahorro neto mensual estimado</span></div>
-    </div>
-    <div class="grid two" style="margin-top:24px">
-      <article class="card"><h3>87,1 % paga la solución</h3><p><strong>$2.140.619</strong> del ahorro solar mensual se destinan al pago estimado de Rocasol.</p></article>
-      <article class="card"><h3>12,9 % queda en la institución</h3><p><strong>$316.309</strong> mensuales permanecen como ahorro neto inicial del cliente.</p></article>
-    </div>
-    <p class="small">Lectura del escenario inicial: si el ahorro solar mensual supera el pago mensual del modelo, la institución mejora caja. La evolución posterior depende de tarifa, generación, degradación e indexación contractual.</p>
-  </section>
-
-  <section class="slide" data-title="7 · Proyección 6 años" data-notes="Presente esta tabla como una simulación pedagógica a valores constantes, no como una proyección conservadora ni contractual. Mantiene sin cambios el ahorro bruto y el pago anual durante seis años. En la realidad, el IPC puede elevar el pago; la degradación puede reducir la generación; y el cambio de la tarifa eléctrica puede aumentar o disminuir el ahorro. El salto del año 7 también depende de que el pago termine efectivamente al mes 72 y se mantengan los beneficios económicos del sistema.">
-    <div class="kicker">7 · Caso real · proyección 6 años</div><h2>El salto ocurre después de los 6 años, cuando termina el pago del sistema</h2>
-    <div class="projection-grid">
-      <article class="card">
-        <h3>Simulación pedagógica a valores constantes</h3>
-        <table class="comparison"><tr><th>Año</th><th>Ahorro bruto</th><th>Pago Rocasol</th><th>Ahorro neto</th><th>Acumulado</th></tr>
-          <tr><td>1</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$3.795.708</td></tr>
-          <tr><td>2</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$7.591.416</td></tr>
-          <tr><td>3</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$11.387.124</td></tr>
-          <tr><td>4</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$15.182.832</td></tr>
-          <tr><td>5</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$18.978.540</td></tr>
-          <tr><td>6</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$22.774.248</td></tr>
-          <tr><td>7</td><td>$29.483.136</td><td>$0*</td><td class="good">$29.483.136</td><td class="good">$52.257.384</td></tr>
-        </table>
-        <p class="small">Durante los años 1–6: pagos acumulados a Rocasol de <strong>$154.124.568</strong> y ahorro acumulado del cliente de <strong>$22.774.248</strong>. Valores sin IPC. *El año 7 supone que el pago termina al mes 72.</p>
-      </article>
-      <article class="card">
-        <h3>Ahorro neto anual estimado</h3>
-        <div class="projection-bars" aria-label="Ahorro neto anual proyectado">
-          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 1</span></div>
-          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 2</span></div>
-          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 3</span></div>
-          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 4</span></div>
-          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 5</span></div>
-          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 6</span></div>
-          <div class="projection-bar" style="--h:100"><b>$29,5 M</b><span>Año 7</span></div>
-        </div>
-        <p class="small">El año 7 muestra el potencial cuando ya no existe pago mensual de la solución y permanece el ahorro energético.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="slide" data-title="7 · Lectura ejecutiva" data-notes="Cierre el caso con transparencia: compare el valor referencial del sistema con el total de pagos a 72 meses y el ahorro que conserva el cliente. Explique que los $154.124.568 no equivalen necesariamente al precio técnico de los equipos, porque el modelo puede incorporar financiación, mantenimiento, garantías, seguros y transferencia de riesgos; estos componentes deben quedar discriminados en la propuesta contractual.">
-    <div class="kicker">7 · Caso real · lectura ejecutiva</div>
-    <h2>La decisión exige mirar el costo total y el ahorro retenido</h2>
-    <div class="rocasol-decision">
-      <article class="card"><h3>1. Valor referencial</h3><p>El sistema del caso está valorado inicialmente en <strong>$71.130.000</strong>.</p></article>
-      <article class="card"><h3>2. Pagos durante 72 meses</h3><p><strong>$2.140.619 × 72 = $154.124.568</strong>, calculados a valores constantes y sin IPC.</p></article>
-      <article class="card"><h3>3. Ahorro del cliente</h3><p>La institución conserva <strong>$22.774.248</strong> durante los 72 meses de pago, según esta simulación.</p></article>
-    </div>
-    <div class="big-verdict">Durante el pago, <span class="accent-money">87,1 %</span> del ahorro solar mensual paga a Rocasol y <span class="accent-money">12,9 %</span> queda en la institución.</div>
-    <p class="small"><strong>Simulación pedagógica; no equivale a una proyección contractual.</strong> El total puede incluir financiación, mantenimiento, garantías, seguros y transferencia de riesgos; la propuesta debe discriminar cada componente y el IPC.</p>
-  </section>
-
-  <section class="slide" data-title="8 · Quiénes somos" data-notes="Presente brevemente la alianza antes del cierre: Los Yoguis, GSV Ingeniería, Colegios Verdes e I.E. Manuel J. Betancur articulan educación, energía y acción climática.">
-    <div class="visual-split"><div><div class="kicker">8 · Alianza · quiénes somos</div><h2>Una alianza para convertir la educación en acción climática</h2><div class="grid two"><article class="card"><h3>Los Yoguis · GSV Ingeniería</h3><p>Innovación educativa, gestión energética y estructuración de soluciones solares sostenibles.</p></article><article class="card"><h3>Colegios Verdes · I.E. Manuel J. Betancur</h3><p>Pedagogía ambiental, liderazgo juvenil y experiencia institucional para la acción climática.</p></article></div><div class="callout">Medir, financiar e implementar.</div></div><figure class="photo alliance-photo">
-      <img src="img/alianza-17.webp" alt="Alianza 17 Líderes Ambientales de Medellín con logos de Los Yoguis, GSV Ingeniería, I.E. Manuel J. Betancur y espacio para nuevos aliados" loading="eager">
-      <figcaption><strong>Alianza 17 · Líderes Ambientales de Medellín.</strong> Educación, innovación, energía y acción climática trabajando en red.</figcaption>
-    </figure></div>
+<section class="slide" data-notes="Abra con la pregunta central. Aclare desde el inicio que +1,5 °C es el aumento de la temperatura global respecto al período preindustrial 1850–1900; no es la temperatura media absoluta del planeta. La cifra aproximada de 15,1 °C mostrada más adelante corresponde a una estimación absoluta usada en la gráfica y no se compara directamente con +1,5 °C." data-title="Portada · Título">
+<div class="leaf-orbit"><div aria-label="Colegio en órbita" class="school-marker"><span>🏫</span></div><div class="sun-core"><span class="sun-label">SOL</span><span class="sun-dollar" style="--ang:0deg;--dist:88px;--delay:0s">$</span><span class="sun-dollar" style="--ang:45deg;--dist:88px;--delay:.2s">$</span><span class="sun-dollar" style="--ang:90deg;--dist:88px;--delay:.4s">$</span><span class="sun-dollar" style="--ang:135deg;--dist:88px;--delay:.6s">$</span><span class="sun-dollar" style="--ang:180deg;--dist:88px;--delay:.8s">$</span><span class="sun-dollar" style="--ang:225deg;--dist:88px;--delay:1s">$</span><span class="sun-dollar" style="--ang:270deg;--dist:88px;--delay:1.2s">$</span><span class="sun-dollar" style="--ang:315deg;--dist:88px;--delay:1.4s">$</span></div></div>
+<div class="kicker">Charla híbrida · 9 de octubre de 2026</div>
+<h1 class="display"><em>1,5 °C</em>: El reto climático y la oportunidad solar con cero inversión</h1>
+<p class="lead">Cómo reducir emisiones y evaluar una alternativa solar que proteja la estabilidad financiera de colegios, I.E. y universidades.</p>
+<div aria-label="Aclaración sobre la cifra de uno coma cinco grados Celsius" class="temperature-key"><strong>+1,5 °C</strong><span>= aumento frente al período preindustrial (1850–1900)</span><span class="divider">·</span><span>No es la temperatura media absoluta del planeta.</span></div>
+<div class="meta"><span class="pill accent">9:00–11:00 a. m.</span><span class="pill">MOVA · EMA 1 y 2</span><span class="pill">Meet + YouTube</span></div>
 </section>
-
-  <section class="slide final-cta-slide" data-title="9 · Cierre y QR" data-notes="Cierre con una acción concreta: escanear el QR o abrir el enlace para convertir la factura de la institución en planes ambientales y una ruta solar.">
-    <div class="final-cta-content">
-      <div class="kicker">9 · Cierre · la transición empieza con una factura</div>
-      <h2>Tu factura puede convertirse en una decisión climática</h2>
-      <p class="lead">Conoce tu huella, identifica oportunidades de ahorro, dimensiona una ruta solar y evalúa CERO-Inversión para tu institución.</p>
-      <div class="final-cta-steps" aria-label="Ruta de acción">
-        <article class="card"><strong>1</strong><span>Sube la factura</span></article>
-        <article class="card"><strong>2</strong><span>Recibe diagnóstico</span></article>
-        <article class="card"><strong>3</strong><span>Evalúa ruta solar</span></article>
-      </div>
-      <div class="actions final-actions">
-        <a class="btn primary" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-1-sube-tu-factura" target="_blank" rel="noopener">Solicitar estudio personalizado ↗</a>
-      </div>
-    </div>
-    <figure class="qr-access-card" aria-label="Código QR de cierre">
-      <img src="img/qr_cierre.png" alt="Código QR de inscripción y acceso al estudio personalizado">
-      <span>Escanea y solicita tu estudio</span>
-    </figure>
-    <div class="footerline"><span>Los Yoguis · GSV Ingeniería | Colegios Verdes · I.E. Manuel J. Betancur</span><span>9 OCT 2026</span></div>
-  </section>
-
+<section class="slide media-only-slide video-only-slide climate-opener-slide" data-notes="Use esta diapositiva como apertura del bloque climático. Reproduzca el video para introducir visualmente el problema antes de pasar a las evidencias territoriales." data-title="1 · Reto climático">
+<div class="climate-opener-grid">
+<div class="climate-opener-titleblock">
+<div class="kicker">1 · Reto climático · apertura audiovisual</div>
+<h2 class="centered-title">Cambio climático</h2>
+<div aria-hidden="true" class="climate-opener-accent"></div>
+</div>
+<figure aria-label="Video de apertura sobre cambio climático" class="card opening-video-only climate-opener-card climate-opener-hero">
+<div aria-hidden="true" class="climate-video-chips">
+<span class="chip chip-primary">▶ Video de apertura</span>
+</div>
+<div class="facebook-reel-frame">
+<iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="476" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1716148373021428%2F&amp;show_text=false&amp;width=267&amp;t=0" style="border:none;overflow:hidden" title="Video de apertura sobre cambio climático" width="267"></iframe>
+</div>
+<div class="tap-hint climate-opener-tap">▶ Reproduce el video</div>
+</figure>
+</div>
+</section>
+<section class="slide media-only-slide" data-notes="Aquí se muestran dos fotos de campo junto con el video territorial. Use esta diapositiva para relacionar el cambio climático con la observación directa del territorio y la gestión del agua." data-title="1 · Evidencias territoriales">
+<div class="kicker">1 · Reto climático · evidencias territoriales</div>
+<h2>Fotos y video del territorio</h2>
+<div class="opening-climate-grid">
+<div class="opening-photo-column">
+<figure aria-label="Foto territorial 1 sobre cambio climático" class="card opening-photo-card">
+<img alt="Persona frente a una laguna con bajo nivel de agua, usada como evidencia visual del cambio climático y la variabilidad hídrica" loading="eager" src="img/territorio-laguna.webp"/>
+<figcaption><strong>Foto 1.</strong> Evidencia territorial para abrir la conversación sobre agua, clima y territorio.</figcaption>
+</figure>
+<figure aria-label="Foto territorial 2 sobre cambio climático" class="card opening-photo-card">
+<img alt="Persona en paisaje natural con humedal o zona encharcada, usada como evidencia visual del cambio climático y la observación del territorio" loading="eager" src="img/territorio-humedal.webp"/>
+<figcaption><strong>Foto 2.</strong> Recorrido de campo para conectar el fenómeno climático con el entorno local.</figcaption>
+</figure>
+</div>
+<figure aria-label="Video territorial de apoyo sobre cambio climático" class="card opening-video-card">
+<div class="facebook-reel-frame">
+<iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="476" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2061754325217363%2F&amp;show_text=false&amp;width=267&amp;t=0" style="border:none;overflow:hidden" title="Video de Facebook sobre cambio climático y territorio" width="267"></iframe>
+</div>
+<div class="tap-hint">▶ Reproduce el video</div>
+<figcaption><strong>Video territorial.</strong> Complemento audiovisual para explicar la relación entre agua, territorio y cambio climático.</figcaption>
+</figure>
+</div>
+</section>
+<section class="slide" data-notes="Conecte el efecto invernadero, la intensificación por actividades humanas y la huella de carbono. Use la galería para ampliar las imágenes de apoyo. Al llegar a las gráficas de temperatura, recuerde: +1,5 °C es calentamiento relativo frente a 1850–1900; ≈15,1 °C es una estimación de temperatura media absoluta usada en la gráfica. No deben sumarse ni compararse directamente." data-title="1 · Huella de carbono">
+<div class="climate-story-layout climate-story-gallery">
+<div class="climate-text">
+<div class="kicker">1 · Reto climático · de GEI a huella</div>
+<h2>Del efecto invernadero a la huella de carbono</h2>
+<div class="grid">
+<article class="card"><h3>Efecto invernadero</h3><p>Fenómeno natural que retiene parte del calor.</p></article>
+<article class="card"><h3>Más GEI</h3><p>Las actividades humanas intensifican la retención de calor.</p></article>
+<article class="card"><h3>Huella</h3><p>Las emisiones se expresan en CO₂ equivalente.</p></article>
+</div>
+<div class="callout" style="margin-top:18px">La industrialización aceleró las emisiones; la tecnología también puede ayudar a cambiar su trayectoria.</div>
+</div>
+<figure aria-label="Ampliar galería sobre cambio climático y huella de carbono" class="photo climate-landscape" id="carbonGalleryInlineTrigger" role="button" tabindex="0" title="Haz clic para ampliar las 6 imágenes de la galería">
+<img alt="Galería de cambio climático y huella de carbono" loading="lazy" src="img/galeria-01.webp"/>
+<span aria-hidden="true" class="gallery-zoom-hint">⛶ Ampliar · 6 imágenes</span>
+<div aria-hidden="true" class="gallery-click-banner"><span class="icon">👆</span><span>Haz clic en la imagen para ver la galería completa</span></div>
+<figcaption><strong>Tecnología y emisiones.</strong> Evolución histórica ilustrada por Schneider Electric.</figcaption>
+</figure>
+</div>
+</section>
+<section class="slide" data-notes="Conecte las metas nacionales con decisiones institucionales sobre energía, agua, movilidad, compras y residuos. La meta no debe sentirse abstracta." data-title="1 · Metas climáticas">
+<div class="kicker">1 · Reto climático · metas de Colombia</div><h2>De 100 a cero: la dirección del cambio</h2>
+<div class="grid two"><article class="card"><svg aria-label="Trayectoria ilustrativa desde una referencia de 100 hasta 49 en 2030 y cero neto en 2050" class="svg-chart" role="img" viewbox="0 0 600 290"><line class="chart-grid" x1="55" x2="560" y1="230" y2="230"></line><line class="chart-grid" x1="55" x2="55" y1="55" y2="230"></line><polyline class="chart-line" points="70,65 330,145 545,225"></polyline><circle cx="70" cy="65" fill="#b9f43b" r="8"></circle><circle cx="330" cy="145" fill="#b9f43b" r="8"></circle><circle cx="545" cy="225" fill="#b9f43b" r="8"></circle><text class="chart-value" text-anchor="middle" x="70" y="45">100</text><text class="chart-value" text-anchor="middle" x="330" y="125">49</text><text class="chart-value" text-anchor="middle" x="545" y="205">Cero neto</text><text class="chart-label" text-anchor="middle" x="70" y="257">Referencia</text><text class="chart-label" text-anchor="middle" x="330" y="257">2030 · −51%</text><text class="chart-label" text-anchor="middle" x="545" y="257">2050</text></svg><p class="small">Trayectoria conceptual para explicar las metas; no representa una proyección anual.</p></article><article class="card"><strong class="metric">−51%</strong><p>Meta de reducción de emisiones para 2030 frente al escenario de referencia.</p><hr style="border:0;border-top:1px solid var(--line);margin:22px 0"/><strong class="metric">2050</strong><p>Carbono-neutralidad como dirección de largo plazo.</p></article></div>
+</section>
+<section class="slide simeco-evidence-slide" data-notes="Datos actualizados del tablero de SiMeCO₂: 17 períodos con facturas procesadas, 568 sedes educativas identificadas y 18.800.429,36 kWh de energía acumulada. La huella se recalculó con el factor oficial de 0,220 kg CO₂e/kWh para inventarios de GEI del SIN 2024, adoptado por la UPME mediante la Resolución 0085 del 23 de febrero de 2026: 4.136,09 t CO₂e y 188.005 árboles como equivalencia pedagógica de captura anual. Aclare que las 568 sedes corresponden a sedes identificadas en las facturas cargadas, no necesariamente a sedes con información completa en todos los períodos. [Sources] UPME, Resolución 0085 de 2026: https://docs.upme.gov.co/Normatividad/085_2026.pdf" data-title="2 · Medir con SiMeCO₂">
+<div class="kicker">2 · Medir · SiMeCO₂</div>
+<h2>La huella de carbono educativa de Medellín ya cuenta una historia</h2>
+<div class="simeco-dashboard">
+<article class="card simeco-main-metric">
+<span class="simeco-label">Huella de Carbono Educativa de Medellín</span>
+<strong class="simeco-co2">4.136,09 <small>t CO₂e</small></strong>
+<p>Emisiones indirectas estimadas con el factor UPME 2024 para inventarios de GEI: 0,220 kg CO₂e/kWh.</p>
+<div class="simeco-energy-band">
+<span>Energía acumulada</span>
+<b>18.800.429,36 kWh</b>
+<small>≈ 18,8 GWh de electricidad registrada</small>
+</div>
+</article>
+<div class="simeco-side-metrics">
+<article class="card simeco-mini-card">
+<span class="simeco-mini-icon">01</span>
+<div>
+<span class="simeco-label">Períodos</span>
+<strong>17</strong>
+<p>Meses/períodos con facturas procesadas y disponibles para el análisis histórico.</p>
+</div>
+</article>
+<article class="card simeco-mini-card">
+<span class="simeco-mini-icon">02</span>
+<div>
+<span class="simeco-label">Sedes</span>
+<strong>568</strong>
+<p>Sedes educativas identificadas en las facturas cargadas al sistema.</p>
+</div>
+</article>
+<article class="card simeco-mini-card simeco-tree-card">
+<span class="simeco-mini-icon">🌳</span>
+<div>
+<span class="simeco-label">Árboles requeridos</span>
+<strong>188.005</strong>
+<p>Equivalencia pedagógica de árboles necesarios para capturar anualmente el CO₂e estimado.</p>
+</div>
+</article>
+</div>
+</div>
+<div class="simeco-flow">
+<span><b>Facturas</b><small>Fuente del dato</small></span>
+<i>→</i>
+<span><b>kWh</b><small>Consumo eléctrico</small></span>
+<i>→</i>
+<span><b>CO₂e</b><small>Huella estimada</small></span>
+<i>→</i>
+<span><b>Decisiones</b><small>Ahorro · mitigación · solar</small></span>
+</div>
+<div class="actions" style="margin-top:18px">
+<a class="btn primary simeco-slide-button" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-huella-de-carbono-educativa-de-medellin" rel="noopener noreferrer" target="_blank">SiMeCO₂</a>
+</div>
+</section>
+<section class="slide" data-notes="Modifique el consumo y el factor en vivo. El valor precargado de 0,220 kg CO₂e/kWh corresponde al factor oficial para inventarios de GEI del SIN 2024, adoptado por la UPME mediante la Resolución 0085 del 23 de febrero de 2026. Aclare que el factor debe ajustarse si la institución adopta justificadamente otra fuente, período o metodología. [Sources] UPME, Resolución 0085 de 2026: https://docs.upme.gov.co/Normatividad/085_2026.pdf" data-title="2 · Factura a decisión">
+<div class="kicker">2 · Medir · de factura a decisión</div><h2>De la factura a una decisión climática</h2>
+<div class="grid two"><div class="card"><div class="form-grid"><div><label for="sKwh">Consumo mensual (kWh)</label><input id="sKwh" min="0" type="number" value="45000"/></div><div><label for="sTariff">Tarifa (COP/kWh)</label><input id="sTariff" min="0" type="number" value="850"/></div><div><label for="sFactor">Factor (kg CO₂e/kWh)</label><input id="sFactor" min="0" step="0.001" type="number" value="0.220"/></div></div><div class="result-grid four"><div class="result"><b id="sCost">—</b><span>Costo mensual</span></div><div class="result"><b id="sCo2">—</b><span>Emisiones mensuales</span></div><div class="result"><b id="sAnnual">—</b><span>Emisiones anuales</span></div><div class="result"><b id="sTrees">—</b><span>Árboles necesarios/año</span></div></div><p class="small">Factor oficial precargado: 0,220 kg CO₂e/kWh para inventarios de GEI del SIN 2024 (UPME, Resolución 0085 de 2026). Equivalencia pedagógica SiMeCO₂: 1 árbol = 22 kg CO₂e/año (≈45,45 árboles por tonelada anual).</p></div><div class="card"><h3>Una sola trazabilidad</h3><p>Facturas → kWh → CO₂e → árboles equivalentes → historial → prioridades → plan de ahorro → reporte.</p><div class="actions"><span class="pill accent">Medible</span><span class="pill">Auditable</span><span class="pill">Accionable</span></div></div></div>
+</section>
+<section class="slide" data-notes="Explique que medir no es el resultado final: los datos alimentan planes con línea base, metas, acciones, responsables, indicadores y seguimiento." data-title="3 · Planes ambientales">
+<div class="kicker">3 · Actuar · planes de GEI y agua</div><h2>Los datos se convierten en planes de acción</h2>
+<div class="grid two"><article class="card"><div class="icon">CO₂</div><h3>Plan de Gestión Energética y Reducción de GEI</h3><p>Línea base, consumos prioritarios, metas, medidas de eficiencia, responsables, indicadores y seguimiento.</p></article><article class="card"><div class="icon">💧</div><h3>Plan de Ahorro y Uso Eficiente del Agua</h3><p>Diagnóstico, oportunidades de ahorro, hábitos, mantenimiento, metas e indicadores de consumo.</p></article></div>
+<div class="callout">Cada sede participante podrá recibir recomendaciones y entregables personalizados a partir de sus facturas.</div>
+<div class="actions" style="margin-top:18px"><a class="btn primary zero-cta" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-1-sube-tu-factura" rel="noopener noreferrer" target="_blank">Convierte la factura en planes ambientales y una ruta solar</a></div>
+</section>
+<section class="slide" data-notes="Presente la eficiencia y la generación solar como complementarias: primero evitar desperdicios y luego sustituir parte de la energía comprada por generación limpia en la sede." data-title="4 · Oportunidad solar">
+<div class="visual-split"><div><div class="kicker">4 · Solar · convertir gasto en inversión</div><h2>Energía solar: convertir el gasto en una inversión sostenible</h2><div class="grid"><article class="card"><h3>Reducir</h3><p>Eficiencia antes de dimensionar.</p></article><article class="card"><h3>Generar</h3><p>Energía limpia donde se consume.</p></article><article class="card"><h3>Verificar</h3><p>Ahorros y emisiones evitadas.</p></article></div><p class="small">Proyecto técnico + financiero + pedagógico.</p></div><figure class="photo school-solar-photo">
+<img alt="Colegio con sistema solar fotovoltaico instalado sobre la cubierta" loading="lazy" src="img/colegio-solar.webp"/>
+<figcaption><strong>Energía solar como infraestructura y herramienta pedagógica.</strong> Imagen ilustrativa de una sede educativa con sistema solar fotovoltaico.</figcaption>
+</figure></div>
+</section>
+<section class="slide" data-notes="Explique que hay cuatro caminos para financiar el mismo proyecto solar. La decisión depende de caja, costo del capital, propiedad deseada, plazo, mantenimiento y apetito de riesgo. Esta diapositiva busca ordenar la conversación antes de entrar al caso Rocasol." data-title="5 · Alternativas financieras">
+<div class="kicker">5 · Financiar · alternativas</div><h2>Financiar sin desestabilizar la operación</h2>
+<p class="lead">El mismo sistema solar puede estructurarse de maneras distintas. La clave es escoger la fórmula que mejor se adapte a la realidad financiera de la institución.</p>
+<div class="grid two finance-paths">
+<article class="card finance-path-card"><h3>Compra directa</h3><p><strong>Ideal si:</strong> la institución cuenta con caja disponible.</p><p><strong>Ventaja:</strong> la propiedad y el mayor ahorro quedan desde el inicio en la institución.</p><p><strong>Clave:</strong> exige la mayor inversión inicial y asumir operación y mantenimiento.</p></article>
+<article class="card finance-path-card"><h3>Crédito verde</h3><p><strong>Ideal si:</strong> se quiere repartir el CAPEX en el tiempo.</p><p><strong>Ventaja:</strong> permite financiar el sistema y conservar la propiedad.</p><p><strong>Clave:</strong> la cuota debe compararse con el ahorro esperado para cuidar el flujo.</p></article>
+<article class="card finance-path-card"><h3>PPA</h3><p><strong>Ideal si:</strong> se prioriza baja inversión inicial.</p><p><strong>Ventaja:</strong> se paga por la energía generada según el contrato.</p><p><strong>Clave:</strong> deben revisarse precio, plazo, indexación, garantías y responsabilidades.</p></article>
+<article class="card finance-path-card"><h3>Inversión Cero · Rocasol</h3><p><strong>Ideal si:</strong> se busca empezar sin desembolso inicial.</p><p><strong>Ventaja:</strong> el ahorro del sistema ayuda a pagar la solución.</p><p><strong>Clave:</strong> el pago inicia cuando el sistema entra en operación y el mantenimiento viene incluido durante el periodo de pago.</p></article>
+</div>
+</section>
+<section class="slide" data-notes="Use esta lámina para explicar la lógica financiera del modelo. Durante el período contractual conviven la nueva factura y el pago a Rocasol. El escenario posterior solo aplica si el contrato establece la terminación efectiva de los pagos y define la transferencia de la propiedad o de los beneficios económicos del sistema. La reducción de la factura y la cobertura energética dependen del estudio técnico, el consumo y la generación real." data-title="6 · Oferta CERO-Inversión">
+<div class="kicker">6 · CERO-Inversión · modelo visual</div>
+<h2>Así funciona la oferta CERO-Inversión de Rocasol</h2>
+<div class="single-image-layout">
+<figure class="single-image-card">
+<img alt="Esquema de la oferta CERO-Inversión de Rocasol: antes del sistema solar, durante la inversión y después de la inversión." src="img/modelo-cero-inversion.webp"/>
+</figure>
+<p class="single-image-note">La lámina ilustra un escenario condicionado: durante el contrato conviven la factura de red y el pago a Rocasol. Una vez cumplidas todas las obligaciones, el ahorro posterior y la propiedad del sistema dependerán de lo pactado, de la generación real y de la tarifa eléctrica.</p>
+</div>
+</section>
+<section class="slide" data-notes="Explique las condiciones como elementos sujetos a la oferta y al contrato. Cero inversión significa ausencia de desembolso inicial, no ausencia de pagos. La cuota está indexada al IPC, por lo que no es un precio fijo. El inicio de pagos, el alcance del mantenimiento, el tratamiento contable, las garantías y cualquier transferencia deben quedar definidos por escrito." data-title="6 · Cómo opera CERO-Inversión">
+<div class="kicker">6 · CERO-Inversión · condiciones clave</div><h2>Rocasol CERO-Inversión: el ahorro paga la solución</h2>
+<div aria-label="Resumen del modelo de inversión cero" class="zero-pill-grid">
+<div class="zero-pill"><b>$0 inicial</b><span>Sin desembolso inicial, según oferta y contrato.</span></div>
+<div class="zero-pill"><b>72 meses</b><span>Plazo referencial del caso presentado.</span></div>
+<div class="zero-pill"><b>Pago al operar</b><span>Inicio sujeto al acta y condiciones de puesta en servicio.</span></div>
+<div class="zero-pill"><b>Mantenimiento</b><span>Alcance, exclusiones y plazo definidos contractualmente.</span></div>
+</div>
+<div class="zero-explain" style="margin-top:18px">
+<div class="callout"><strong>“CERO-Inversión” describe $0 de desembolso inicial; no significa cero costo ni cero pagos.</strong> Parte del ahorro solar puede atender la cuota. Su tratamiento como deuda y su efecto sobre el endeudamiento dependen de la estructura jurídica, contable y contractual.</div>
+<div class="card zero-note-card" style="margin-top:18px">
+<p>La solución puede financiarse con <strong>una parte de los ahorros solares estimados</strong>, siempre que la generación, la tarifa y las condiciones de pago confirmen un flujo positivo.</p>
+<p>La cuota está indexada al IPC; por tanto, <strong>no es un precio fijo</strong>. El inicio de pagos y el mantenimiento aplican según el alcance, las exclusiones y los niveles de servicio pactados.</p>
+<p>La clasificación contable, la propiedad, las garantías y el impacto sobre el endeudamiento requieren validación jurídica, financiera y contractual.</p>
+</div>
+</div>
+</section>
+<section class="slide" data-notes="Esta diapositiva reemplaza las afirmaciones absolutas de la pieza comercial por diez condiciones que deben verificarse. Recalque que no se puede prometer cobertura total, cero deuda, precio estable, ventajas fiscales o transferencia automática sin revisar el estudio técnico, el régimen tributario, la estructura contable y el contrato definitivo." data-title="6 · Beneficios CERO-Inversión">
+<div class="kicker">6 · CERO-Inversión · beneficios</div>
+<h2>10 condiciones que deben quedar claras en el contrato</h2>
+<div aria-label="Condiciones contractuales del modelo CERO-Inversión" class="contract-checklist">
+<div class="contract-item"><i>1</i><div><b>Desembolso inicial</b><span>Confirmar qué conceptos están incluidos y cuáles asume el cliente.</span></div></div>
+<div class="contract-item"><i>2</i><div><b>Fuente de pago</b><span>Validar que el ahorro solar estimado cubra la cuota bajo escenarios realistas.</span></div></div>
+<div class="contract-item"><i>3</i><div><b>Inicio de pagos</b><span>Definir el hito de puesta en servicio y aceptación del sistema.</span></div></div>
+<div class="contract-item"><i>4</i><div><b>Cobertura energética</b><span>Depende del diseño, radiación, consumo, disponibilidad y generación real.</span></div></div>
+<div class="contract-item"><i>5</i><div><b>Cuota e IPC</b><span>Especificar fórmula, periodicidad, topes y fecha de indexación.</span></div></div>
+<div class="contract-item"><i>6</i><div><b>Mantenimiento</b><span>Precisar alcance, exclusiones, repuestos y niveles de servicio.</span></div></div>
+<div class="contract-item"><i>7</i><div><b>Tratamiento contable</b><span>Determinar si genera pasivo o afecta la capacidad de endeudamiento.</span></div></div>
+<div class="contract-item"><i>8</i><div><b>Beneficios tributarios</b><span>Aplican según régimen, titularidad, requisitos y normativa vigente.</span></div></div>
+<div class="contract-item"><i>9</i><div><b>Propiedad y transferencia</b><span>Establecer titular, momento, condiciones y costo de la transferencia.</span></div></div>
+<div class="contract-item"><i>10</i><div><b>Garantías y terminación</b><span>Definir desempeño, seguros, incumplimientos, salida y solución de controversias.</span></div></div>
+</div>
+<p class="contract-disclaimer">Los beneficios dependen del estudio técnico y de la estructura jurídica, contable, tributaria y contractual de cada institución.</p>
+</section>
+<section class="slide" data-notes="Explique que este bloque nace del caso real suministrado y usa valores constantes únicamente con fines pedagógicos. Haga visible la diferencia entre el valor referencial del sistema, $71.130.000, y los pagos acumulados de 72 mensualidades, $154.124.568 sin IPC. El segundo valor puede incorporar financiación, mantenimiento, garantías, seguros y transferencia de riesgos, por lo que el contrato debe desglosar sus componentes. No presente el ejercicio como una proyección conservadora ni contractual." data-title="7 · Caso real">
+<div class="kicker">7 · Caso real · inversión cero</div><h2>El caso Rocasol: convertir la factura en proyecto solar</h2>
+<p class="lead">La clave no es pedirle a la institución que compre el sistema de contado. La clave es usar el ahorro que genera la energía solar para pagar la solución.</p>
+<div class="rocasol-kpi-grid">
+<div class="rocasol-kpi"><small>Inversión referencial</small><b>$71.130.000</b><span>Valor del sistema solar del caso.</span></div>
+<div class="rocasol-kpi"><small>Desembolso inicial</small><b>$0</b><span>Modelo de inversión cero para proteger caja.</span></div>
+<div class="rocasol-kpi"><small>Ahorro solar mensual</small><b>$2.456.928</b><span>Energía que deja de comprarse a la red.</span></div>
+<div class="rocasol-kpi"><small>Pago mensual Rocasol</small><b>$2.140.619</b><span>Pago estimado por energía autogenerada.</span></div>
+<div class="rocasol-kpi"><small>Pagos en 72 meses</small><b>$154.124.568</b><span>Total a valores constantes, sin IPC.</span></div>
+</div>
+<div class="callout" style="margin-top:22px"><strong>Simulación pedagógica a valores constantes:</strong> no incorpora IPC, degradación de los paneles ni variaciones de la tarifa eléctrica. Estos factores producen efectos distintos, por lo que este ejercicio no equivale a una proyección contractual.</div>
+</section>
+<section class="slide" data-notes="Esta ficha evita presentar el caso financiero como si ya fuera un diseño solar validado. Los cuatro valores de la izquierda provienen del caso suministrado. La potencia instalada, los módulos, la generación, la tarifa base, la cobertura, la degradación, la vida útil y la propiedad final no aparecen sustentados en la fuente y deben completarse con la propuesta técnica, las facturas, las fichas de equipos y el contrato. Sin tarifa base y generación no puede auditarse el ahorro mensual de $2.456.928." data-title="7 · Base técnica">
+<div class="kicker">7 · Caso real · base técnica</div>
+<h2>La propuesta financiera debe apoyarse en una ficha técnica verificable</h2>
+<p class="lead">El caso aporta cifras económicas, pero todavía no documenta los parámetros que permiten comprobar la generación, la cobertura y el ahorro.</p>
+<div class="technical-case-grid">
+<article class="technical-known">
+<h3>Datos suministrados</h3>
+<div class="technical-known-list">
+<div><span>Valor referencial</span><b>$71.130.000</b></div>
+<div><span>Ahorro solar mensual</span><b>$2.456.928</b></div>
+<div><span>Pago mensual</span><b>$2.140.619</b></div>
+<div><span>Plazo referencial</span><b>72 meses</b></div>
+</div>
+</article>
+<article class="technical-pending">
+<h3>Datos por validar antes de decidir</h3>
+<div class="technical-pending-list">
+<div><b>Potencia instalada</b><span>kWp DC y potencia AC del sistema.</span></div>
+<div><b>Módulos</b><span>Cantidad, potencia unitaria y fabricante.</span></div>
+<div><b>Generación</b><span>kWh/mes y kWh/año, con fuente de radiación.</span></div>
+<div><b>Tarifa base</b><span>COP/kWh tomado de facturas y período analizado.</span></div>
+<div><b>Cobertura</b><span>Porcentaje del consumo atendido y excedentes.</span></div>
+<div><b>Degradación</b><span>Supuesto anual incorporado en la simulación.</span></div>
+<div><b>Vida útil y garantías</b><span>Paneles, inversores, estructura y desempeño.</span></div>
+<div><b>Propiedad final</b><span>Titular, fecha, condiciones y costo de transferencia.</span></div>
+</div>
+</article>
+</div>
+<div class="technical-formula"><strong>Prueba mínima de consistencia:</strong> generación mensual (kWh) × tarifa evitada (COP/kWh) = ahorro solar mensual. Sin esos dos datos no puede auditarse el valor de <strong>$2.456.928</strong>.</div>
+</section>
+<section class="slide" data-notes="Use esta diapositiva para explicar la operación básica con los valores iniciales del caso. Del ahorro solar mensual de $2.456.928, aproximadamente 87,1 % se destina al pago de Rocasol y 12,9 % permanece como ahorro del cliente. Aclare que es una fotografía pedagógica del flujo y no una proyección de los 72 meses." data-title="7 · Flujo mensual">
+<div class="kicker">7 · Caso real · flujo mensual</div><h2>Cómo se paga: el ahorro financia la solución</h2>
+<div aria-label="Fórmula financiera del caso Rocasol" class="rocasol-equation">
+<div class="eq-card"><b>$2.456.928</b><span>Ahorro bruto mensual generado por el sistema</span></div>
+<div class="eq-symbol">−</div>
+<div class="eq-card"><b>$2.140.619</b><span>Pago mensual estimado a Rocasol</span></div>
+<div class="eq-symbol">=</div>
+<div class="eq-card"><b>$316.309</b><span>Ahorro neto mensual estimado</span></div>
+</div>
+<div class="grid two" style="margin-top:24px">
+<article class="card"><h3>87,1 % paga la solución</h3><p><strong>$2.140.619</strong> del ahorro solar mensual se destinan al pago estimado de Rocasol.</p></article>
+<article class="card"><h3>12,9 % queda en la institución</h3><p><strong>$316.309</strong> mensuales permanecen como ahorro neto inicial del cliente.</p></article>
+</div>
+<p class="small">Lectura del escenario inicial: si el ahorro solar mensual supera el pago mensual del modelo, la institución mejora caja. La evolución posterior depende de tarifa, generación, degradación e indexación contractual.</p>
+</section>
+<section class="slide" data-notes="Presente esta tabla como una simulación pedagógica a valores constantes, no como una proyección conservadora ni contractual. Mantiene sin cambios el ahorro bruto y el pago anual durante seis años. En la realidad, el IPC puede elevar el pago; la degradación puede reducir la generación; y el cambio de la tarifa eléctrica puede aumentar o disminuir el ahorro. El salto del año 7 también depende de que el pago termine efectivamente al mes 72 y se mantengan los beneficios económicos del sistema." data-title="7 · Proyección 6 años">
+<div class="kicker">7 · Caso real · proyección 6 años</div><h2>El salto ocurre después de los 6 años, cuando termina el pago del sistema</h2>
+<div class="projection-grid">
+<article class="card">
+<h3>Simulación pedagógica a valores constantes</h3>
+<table class="comparison"><tr><th>Año</th><th>Ahorro bruto</th><th>Pago Rocasol</th><th>Ahorro neto</th><th>Acumulado</th></tr>
+<tr><td>1</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$3.795.708</td></tr>
+<tr><td>2</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$7.591.416</td></tr>
+<tr><td>3</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$11.387.124</td></tr>
+<tr><td>4</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$15.182.832</td></tr>
+<tr><td>5</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$18.978.540</td></tr>
+<tr><td>6</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$22.774.248</td></tr>
+<tr><td>7</td><td>$29.483.136</td><td>$0*</td><td class="good">$29.483.136</td><td class="good">$52.257.384</td></tr>
+</table>
+<p class="small">Durante los años 1–6: pagos acumulados a Rocasol de <strong>$154.124.568</strong> y ahorro acumulado del cliente de <strong>$22.774.248</strong>. Valores sin IPC. *El año 7 supone que el pago termina al mes 72.</p>
+</article>
+<article class="card">
+<h3>Ahorro neto anual estimado</h3>
+<div aria-label="Ahorro neto anual proyectado" class="projection-bars">
+<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 1</span></div>
+<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 2</span></div>
+<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 3</span></div>
+<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 4</span></div>
+<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 5</span></div>
+<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 6</span></div>
+<div class="projection-bar" style="--h:100"><b>$29,5 M</b><span>Año 7</span></div>
+</div>
+<p class="small">El año 7 muestra el potencial cuando ya no existe pago mensual de la solución y permanece el ahorro energético.</p>
+</article>
+</div>
+</section>
+<section class="slide" data-notes="Cierre el caso con transparencia: compare el valor referencial del sistema con el total de pagos a 72 meses y el ahorro que conserva el cliente. Explique que los $154.124.568 no equivalen necesariamente al precio técnico de los equipos, porque el modelo puede incorporar financiación, mantenimiento, garantías, seguros y transferencia de riesgos; estos componentes deben quedar discriminados en la propuesta contractual." data-title="7 · Lectura ejecutiva">
+<div class="kicker">7 · Caso real · lectura ejecutiva</div>
+<h2>La decisión exige mirar el costo total y el ahorro retenido</h2>
+<div class="rocasol-decision">
+<article class="card"><h3>1. Valor referencial</h3><p>El sistema del caso está valorado inicialmente en <strong>$71.130.000</strong>.</p></article>
+<article class="card"><h3>2. Pagos durante 72 meses</h3><p><strong>$2.140.619 × 72 = $154.124.568</strong>, calculados a valores constantes y sin IPC.</p></article>
+<article class="card"><h3>3. Ahorro del cliente</h3><p>La institución conserva <strong>$22.774.248</strong> durante los 72 meses de pago, según esta simulación.</p></article>
+</div>
+<div class="big-verdict">Durante el pago, <span class="accent-money">87,1 %</span> del ahorro solar mensual paga a Rocasol y <span class="accent-money">12,9 %</span> queda en la institución.</div>
+<p class="small"><strong>Simulación pedagógica; no equivale a una proyección contractual.</strong> El total puede incluir financiación, mantenimiento, garantías, seguros y transferencia de riesgos; la propuesta debe discriminar cada componente y el IPC.</p>
+</section>
+<section class="slide" data-notes="Presente brevemente la alianza antes del cierre: Los Yoguis, GSV Ingeniería, Colegios Verdes e I.E. Manuel J. Betancur articulan educación, energía y acción climática." data-title="8 · Quiénes somos">
+<div class="visual-split"><div><div class="kicker">8 · Alianza · quiénes somos</div><h2>Una alianza para convertir la educación en acción climática</h2><div class="grid two"><article class="card"><h3>Los Yoguis · GSV Ingeniería</h3><p>Innovación educativa, gestión energética y estructuración de soluciones solares sostenibles.</p></article><article class="card"><h3>Colegios Verdes · I.E. Manuel J. Betancur</h3><p>Pedagogía ambiental, liderazgo juvenil y experiencia institucional para la acción climática.</p></article></div><div class="callout">Medir, financiar e implementar.</div></div><figure class="photo alliance-photo">
+<img alt="Alianza 17 Líderes Ambientales de Medellín con logos de Los Yoguis, GSV Ingeniería, I.E. Manuel J. Betancur y espacio para nuevos aliados" loading="eager" src="img/alianza-17.webp"/>
+<figcaption><strong>Alianza 17 · Líderes Ambientales de Medellín.</strong> Educación, innovación, energía y acción climática trabajando en red.</figcaption>
+</figure></div>
+</section>
+<section class="slide final-cta-slide" data-notes="Cierre con una acción concreta: escanear el QR o abrir el enlace para convertir la factura de la institución en planes ambientales y una ruta solar." data-title="9 · Cierre y QR">
+<div class="final-cta-content">
+<div class="kicker">9 · Cierre · la transición empieza con una factura</div>
+<h2>Tu factura puede convertirse en una decisión climática</h2>
+<p class="lead">Conoce tu huella, identifica oportunidades de ahorro, dimensiona una ruta solar y evalúa CERO-Inversión para tu institución.</p>
+<div aria-label="Ruta de acción" class="final-cta-steps">
+<article class="card"><strong>1</strong><span>Sube la factura</span></article>
+<article class="card"><strong>2</strong><span>Recibe diagnóstico</span></article>
+<article class="card"><strong>3</strong><span>Evalúa ruta solar</span></article>
+</div>
+<div class="actions final-actions">
+<a class="btn primary" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-1-sube-tu-factura" rel="noopener noreferrer" target="_blank">Solicitar estudio personalizado ↗</a>
+</div>
+</div>
+<figure aria-label="Código QR de cierre" class="qr-access-card">
+<img alt="Código QR de inscripción y acceso al estudio personalizado" src="img/qr_cierre.png"/>
+<span>Escanea y solicita tu estudio</span>
+</figure>
+<div class="footerline"><span>Los Yoguis · GSV Ingeniería | Colegios Verdes · I.E. Manuel J. Betancur</span><span>9 OCT 2026</span></div>
+</section>
 <div class="progress"><i id="progress"></i></div>
-  <div class="brand"><span class="brand-mark">↗</span><span>EDUCACIÓN · ENERGÍA · CLIMA</span></div>
-  <button class="timer" id="timer" title="Iniciar/pausar cronómetro">00:00</button>
-  <div class="embed-badge">Optimizada para Google Sites</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="carbon-gallery" id="carbonGallery" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="carbonGalleryTitle">
-    <div class="carbon-gallery-shell">
-      <div class="carbon-gallery-head">
-        <div>
-          <span class="eyebrow">Galería · Cambio climático y huella de carbono</span>
-          <strong id="carbonGalleryTitle">Tecnología, temperatura, emisiones y acción climática</strong>
-        </div>
-        <button class="gallery-close" id="galleryClose" type="button" aria-label="Cerrar galería">×</button>
-      </div>
-      <div class="gallery-stage">
-        <button class="gallery-arrow" id="galleryPrev" type="button" aria-label="Imagen anterior">←</button>
-        <figure class="gallery-main">
-          <div class="gallery-image-wrap">
-            <img id="galleryImage" alt="">
-          </div>
-          <figcaption class="gallery-caption">
-            <span class="gallery-count" id="galleryCounter">1 / 6</span>
-            <div>
-              <strong id="galleryItemTitle"></strong>
-              <p id="galleryItemCaption"></p>
-            </div>
-          </figcaption>
-        </figure>
-        <button class="gallery-arrow" id="galleryNext" type="button" aria-label="Imagen siguiente">→</button>
-      </div>
-      <div class="gallery-thumbs" id="galleryThumbs" aria-label="Miniaturas de la galería"></div>
-    </div>
-  </div>
-
-  <aside class="drawer" id="drawer" aria-label="Índice"><h3>Contenido</h3><div id="menu"></div></aside><div class="scrim" id="scrim"></div>
-  <div class="overview" id="overview" aria-label="Vista general"></div>
-  <aside class="notes" id="notes"><h4>Notas del presentador</h4><p></p></aside>
-  <div class="hint">← → navegar · M menú · O vista general · N notas · F pantalla completa</div>
-  <nav class="controls"><button class="round" id="menuBtn" aria-label="Abrir menú">☰</button><button class="round" id="prev" aria-label="Anterior">←</button><span class="counter" id="counter">1 / 20</span><button class="round" id="next" aria-label="Siguiente">→</button><button class="round" id="full" aria-label="Pantalla completa">⛶</button></nav>
+<div class="brand"><span class="brand-mark">↗</span><span>EDUCACIÓN · ENERGÍA · CLIMA</span></div>
+<button class="timer" id="timer" title="Iniciar/pausar cronómetro">00:00</button>
+<div class="embed-badge">Optimizada para Google Sites</div>
+<div aria-hidden="true" aria-labelledby="carbonGalleryTitle" aria-modal="true" class="carbon-gallery" id="carbonGallery" role="dialog">
+<div class="carbon-gallery-shell">
+<div class="carbon-gallery-head">
+<div>
+<span class="eyebrow">Galería · Cambio climático y huella de carbono</span>
+<strong id="carbonGalleryTitle">Tecnología, temperatura, emisiones y acción climática</strong>
+</div>
+<button aria-label="Cerrar galería" class="gallery-close" id="galleryClose" type="button">×</button>
+</div>
+<div class="gallery-stage">
+<button aria-label="Imagen anterior" class="gallery-arrow" id="galleryPrev" type="button">←</button>
+<figure class="gallery-main">
+<div class="gallery-image-wrap">
+<img alt="" id="galleryImage"/>
+</div>
+<figcaption class="gallery-caption">
+<span class="gallery-count" id="galleryCounter">1 / 6</span>
+<div>
+<strong id="galleryItemTitle"></strong>
+<p id="galleryItemCaption"></p>
+</div>
+</figcaption>
+</figure>
+<button aria-label="Imagen siguiente" class="gallery-arrow" id="galleryNext" type="button">→</button>
+</div>
+<div aria-label="Miniaturas de la galería" class="gallery-thumbs" id="galleryThumbs"></div>
+</div>
+</div>
+<aside aria-label="Índice" class="drawer" id="drawer"><h3>Contenido</h3><div id="menu"></div></aside><div class="scrim" id="scrim"></div>
+<div aria-label="Vista general" class="overview" id="overview"></div>
+<aside class="notes" id="notes"><h4>Notas del presentador</h4><p></p></aside>
+<div class="hint">← → navegar · M menú · O vista general · N notas · F pantalla completa</div>
+<nav class="controls"><button aria-label="Abrir menú" class="round" id="menuBtn">☰</button><button aria-label="Anterior" class="round" id="prev">←</button><span class="counter" id="counter">1 / 21</span><button aria-label="Siguiente" class="round" id="next">→</button><button aria-label="Pantalla completa" class="round" id="full">⛶</button></nav>
 </main>
-  <script>
+<script>
 (()=>{
   'use strict';
   const $=(selector,context=document)=>context.querySelector(selector);
@@ -3661,6 +3780,17 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
 
   try{if(window.self!==window.top)document.body.classList.add('embedded');}
   catch(_){document.body.classList.add('embedded');}
+
+  // Sincroniza la altura real del viewport del iframe de Google Sites.
+  // Evita depender de min-height/100dvh cuando Sites cambia el bloque embebido.
+  const syncAppHeight=()=>{
+    const viewportHeight=Math.round(window.visualViewport?.height || window.innerHeight || document.documentElement.clientHeight || 0);
+    if(viewportHeight>0)document.documentElement.style.setProperty('--app-h',viewportHeight+'px');
+  };
+  syncAppHeight();
+  window.addEventListener('resize',syncAppHeight,{passive:true});
+  window.addEventListener('orientationchange',syncAppHeight,{passive:true});
+  window.visualViewport?.addEventListener('resize',syncAppHeight,{passive:true});
 
   $$('.photo img').forEach(img=>img.addEventListener('error',()=>{
     img.style.display='none';

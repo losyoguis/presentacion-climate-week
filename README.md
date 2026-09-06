@@ -1,8 +1,30 @@
 # Presentación Climate Week Medellín 2026
 
-Versión optimizada con 21 diapositivas, QR de cierre actualizado, galería funcional, factor oficial UPME 2024 para inventarios de GEI (0,220 kg CO₂e/kWh), aclaración conceptual entre +1,5 °C de calentamiento relativo y ≈15,1 °C de temperatura media absoluta aproximada, simulación financiera identificada como ejercicio pedagógico a valores constantes —no como proyección contractual—, transparencia sobre valor referencial y pagos a 72 meses, afirmaciones comerciales reformuladas como condiciones verificables y una ficha que separa los datos económicos conocidos de los parámetros técnicos aún pendientes de validación.
+Versión preparada para **GitHub Pages** y para incrustarse por URL en **Google Sites**.
 
-El código utiliza un solo módulo JavaScript para navegación, cronómetro, cálculo SiMeCO₂ y galería. Las imágenes están externalizadas y optimizadas en WebP; no quedan recursos Base64, calculadores obsoletos ni controladores duplicados.
+## Publicación en GitHub Pages
+Sube a la raíz del repositorio:
 
-Lista para GitHub Pages / Google Sites.
-Sube `index.html`, `.nojekyll`, `README.md` y la carpeta `img/` a la raíz del repositorio.
+- `index.html`
+- `.nojekyll`
+- `favicon.svg`
+- `favicon-32.png`
+- `apple-touch-icon.png`
+- carpeta `img/` completa
+
+En GitHub: **Settings → Pages → Deploy from a branch → main / root**.
+
+## Incrustación en Google Sites
+En Google Sites: **Insertar → Incorporar → URL** y pega la URL pública de GitHub Pages.
+
+La versión incluye una capa responsive específica para iframe:
+
+- toma la altura real del bloque de Google Sites;
+- evita alturas mínimas que provoquen recortes;
+- permite scroll interno solo cuando una diapositiva lo necesita;
+- adapta tarjetas, videos, imágenes y controles a escritorio, tablet y móvil;
+- oculta el botón de pantalla completa dentro del iframe;
+- abre los enlaces externos en una pestaña nueva;
+- incluye favicon de hoja en SVG y PNG.
+
+Recomendación visual: en Google Sites asigna al bloque embebido una altura amplia (aprox. 650–800 px en escritorio) para que la mayoría de diapositivas se vean sin scroll. El código sigue funcionando si el bloque es más bajo.
