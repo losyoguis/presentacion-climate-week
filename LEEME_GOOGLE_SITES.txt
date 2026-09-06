@@ -1,9 +1,0 @@
-CONFIGURACIÓN PARA GOOGLE SITES / INCÓGNITO
-
-1. Sube Code.gs, Index.html y appsscript.json al proyecto de Apps Script.
-2. Implementar > Nueva implementación > Aplicación web.
-3. Ejecutar como: Yo (USER_DEPLOYING).
-4. Quién tiene acceso: Cualquier usuario, incluso anónimo (ANYONE_ANONYMOUS).
-5. Usa la URL pública de la implementación terminada en /exec para incrustar en Google Sites.
-
-Importante: si se usa ejecutar como usuario que accede, los visitantes anónimos o de incógnito pueden ver error 401.
