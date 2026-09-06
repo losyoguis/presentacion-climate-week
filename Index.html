@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#002f56">
   <meta name="description" content="Presentación interactiva: huella de carbono educativa, SiMeCO₂ y energía solar.">
-  <meta name="simeco-build" content="2026-09-05-GOOGLE-SITES-RESPONSIVE-EMBEDDED-IMAGES">
+  <meta name="simeco-build" content="2026-09-05-GOOGLE-SITES-FIXED-RESPONSIVE-NO-OVERLAP">
   <title>1,5 °C: El reto climático y la oportunidad solar con cero inversión</title>
   <style>
     :root{--ink:#eef7ff;--muted:#aec6da;--bg:#002f56;--panel:#0a436f;--line:#2d638d;--lime:#76f7b0;--sun:#ffd166;--aqua:#54d4ff;--coral:#ff9077;--shadow:0 24px 80px #0008;--radius:24px;--fs:clamp(16px,1.25vw,23px)}
@@ -2525,6 +2525,279 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
       .climate-opener-tap{font-size:12px!important;padding:8px 14px!important;}
     }
 
+
+
+    /* ==========================================================
+       FIX GOOGLE SITES / IFRAME: una sola diapositiva visible
+       ========================================================== */
+    html,body{
+      width:100%!important;
+      height:100%!important;
+      min-height:100%!important;
+      overflow:hidden!important;
+      overscroll-behavior:none!important;
+    }
+    .deck{
+      width:100vw!important;
+      height:100vh!important;
+      min-height:560px!important;
+      overflow:hidden!important;
+      isolation:isolate!important;
+    }
+    .slide{
+      position:absolute!important;
+      inset:0!important;
+      display:none!important;
+      opacity:0!important;
+      visibility:hidden!important;
+      pointer-events:none!important;
+      transform:none!important;
+      z-index:0!important;
+      overflow:hidden!important;
+    }
+    .slide.active{
+      display:grid!important;
+      opacity:1!important;
+      visibility:visible!important;
+      pointer-events:auto!important;
+      z-index:10!important;
+      overflow:auto!important;
+      overscroll-behavior:contain!important;
+      -webkit-overflow-scrolling:touch!important;
+    }
+    #studySlide,
+    .study-slide-removed{
+      display:none!important;
+      visibility:hidden!important;
+      opacity:0!important;
+      pointer-events:none!important;
+      position:fixed!important;
+      width:1px!important;
+      height:1px!important;
+      min-width:0!important;
+      min-height:0!important;
+      max-width:1px!important;
+      max-height:1px!important;
+      left:-100000px!important;
+      top:-100000px!important;
+      overflow:hidden!important;
+      clip:rect(0 0 0 0)!important;
+      clip-path:inset(50%)!important;
+    }
+    body.embedded .brand,
+    body.embedded .timer,
+    body.embedded .controls,
+    body.embedded .hint,
+    body.embedded .progress{
+      position:fixed!important;
+    }
+
+    /* Portada organizada para Google Sites */
+    .slide[data-title="Portada"]{
+      grid-template-columns:minmax(0,1fr) minmax(240px,380px)!important;
+      grid-template-rows:auto auto auto auto!important;
+      gap:clamp(10px,2vh,20px) clamp(22px,4vw,62px)!important;
+      align-content:center!important;
+      align-items:center!important;
+      padding-top:clamp(74px,9vh,96px)!important;
+      padding-bottom:clamp(76px,8vh,94px)!important;
+      padding-left:clamp(26px,5vw,86px)!important;
+      padding-right:clamp(26px,5vw,86px)!important;
+    }
+    .slide[data-title="Portada"]>.kicker,
+    .slide[data-title="Portada"]>.display,
+    .slide[data-title="Portada"]>.lead,
+    .slide[data-title="Portada"]>.meta{
+      grid-column:1!important;
+      min-width:0!important;
+      max-width:100%!important;
+      position:relative!important;
+      z-index:2!important;
+    }
+    .slide[data-title="Portada"]>.leaf-orbit{
+      grid-column:2!important;
+      grid-row:1 / span 4!important;
+      position:relative!important;
+      right:auto!important;
+      top:auto!important;
+      justify-self:center!important;
+      align-self:center!important;
+      width:min(31vw,360px)!important;
+      max-width:360px!important;
+      min-width:230px!important;
+      opacity:.98!important;
+      z-index:1!important;
+    }
+    .slide[data-title="Portada"] .display{
+      font-size:clamp(44px,5.7vw,86px)!important;
+      line-height:.94!important;
+      letter-spacing:-.055em!important;
+      margin:0!important;
+    }
+    .slide[data-title="Portada"] .lead{
+      font-size:clamp(19px,2vw,30px)!important;
+      line-height:1.28!important;
+      margin:0!important;
+    }
+    .slide[data-title="Portada"] .meta{
+      margin-top:4px!important;
+    }
+
+    /* Diapositiva 2 limpia: título + video, sin texto encima */
+    .climate-opener-slide{
+      align-content:center!important;
+      justify-items:center!important;
+      overflow:auto!important;
+      padding-top:clamp(66px,8vh,90px)!important;
+      padding-bottom:clamp(74px,8vh,96px)!important;
+    }
+    .climate-opener-grid{
+      width:min(1050px,100%)!important;
+      display:grid!important;
+      grid-template-columns:minmax(0,.95fr) minmax(280px,410px)!important;
+      gap:clamp(24px,5vw,68px)!important;
+      align-items:center!important;
+      justify-content:center!important;
+      margin:0 auto!important;
+    }
+    .climate-opener-titleblock{
+      display:grid!important;
+      gap:16px!important;
+      align-content:center!important;
+      justify-items:start!important;
+      text-align:left!important;
+      min-width:0!important;
+    }
+    .climate-opener-titleblock .centered-title{
+      margin:0!important;
+      max-width:620px!important;
+      text-align:left!important;
+      justify-self:start!important;
+      font-size:clamp(52px,7vw,96px)!important;
+      line-height:.92!important;
+      letter-spacing:-.055em!important;
+    }
+    .climate-opener-titleblock .centered-kicker{
+      text-align:left!important;
+      justify-self:start!important;
+      margin:0!important;
+    }
+    .centered-subtitle{display:none!important;}
+    .climate-opener-accent{
+      width:min(320px,75%)!important;
+      height:10px!important;
+      border-radius:999px!important;
+      background:linear-gradient(90deg,var(--lime),var(--aqua),transparent)!important;
+      box-shadow:0 0 36px rgba(118,247,176,.22)!important;
+    }
+    .climate-opener-hero{
+      width:min(410px,100%)!important;
+      padding:18px!important;
+      border-radius:32px!important;
+      border:1px solid rgba(255,255,255,.16)!important;
+      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035))!important;
+      box-shadow:0 24px 58px rgba(0,0,0,.28)!important;
+      overflow:hidden!important;
+    }
+    .climate-opener-hero .facebook-reel-frame{
+      width:min(100%,312px)!important;
+      margin:0 auto!important;
+      border-radius:26px!important;
+      overflow:hidden!important;
+      background:#031827!important;
+      box-shadow:0 16px 40px rgba(0,0,0,.34)!important;
+    }
+    .climate-opener-hero iframe{
+      display:block!important;
+      width:100%!important;
+      height:min(54vh,520px)!important;
+      border-radius:24px!important;
+    }
+
+    /* Ajustes generales para evitar recortes dentro del iframe de Google Sites */
+    body.embedded .slide{
+      padding-left:clamp(22px,4.5vw,76px)!important;
+      padding-right:clamp(22px,4.5vw,76px)!important;
+    }
+    body.embedded h2{
+      font-size:clamp(30px,4.5vw,62px)!important;
+      line-height:1.02!important;
+    }
+    body.embedded .lead{
+      font-size:clamp(18px,2vw,28px)!important;
+    }
+    body.embedded .card{
+      min-width:0!important;
+    }
+    body.embedded img{
+      max-width:100%!important;
+    }
+    body.embedded .controls{
+      bottom:14px!important;
+      z-index:35!important;
+    }
+    body.embedded .hint{
+      bottom:18px!important;
+      max-width:calc(100vw - 300px)!important;
+      overflow:hidden!important;
+      text-overflow:ellipsis!important;
+      white-space:nowrap!important;
+    }
+
+    @media(max-width:980px){
+      .slide[data-title="Portada"]{
+        grid-template-columns:1fr!important;
+        padding-top:70px!important;
+        text-align:left!important;
+      }
+      .slide[data-title="Portada"]>.leaf-orbit{
+        position:absolute!important;
+        grid-column:auto!important;
+        grid-row:auto!important;
+        right:-12vw!important;
+        top:16vh!important;
+        width:min(64vw,360px)!important;
+        min-width:260px!important;
+        opacity:.22!important;
+      }
+      .slide[data-title="Portada"] .display{
+        font-size:clamp(38px,9vw,68px)!important;
+      }
+      .climate-opener-grid{
+        grid-template-columns:1fr!important;
+        max-width:640px!important;
+        gap:20px!important;
+      }
+      .climate-opener-titleblock{
+        justify-items:center!important;
+        text-align:center!important;
+      }
+      .climate-opener-titleblock .centered-kicker,
+      .climate-opener-titleblock .centered-title{
+        text-align:center!important;
+        justify-self:center!important;
+      }
+      .climate-opener-titleblock .centered-title{
+        font-size:clamp(40px,10vw,68px)!important;
+      }
+      .climate-opener-accent{
+        width:min(260px,70%)!important;
+      }
+      .climate-opener-hero{
+        width:min(430px,94vw)!important;
+      }
+    }
+    @media(max-width:640px){
+      .deck{min-height:520px!important;}
+      .slide.active{padding-top:66px!important;padding-bottom:72px!important;}
+      .slide[data-title="Portada"] .display{font-size:clamp(34px,10vw,54px)!important;}
+      .slide[data-title="Portada"] .lead{font-size:17px!important;}
+      .climate-opener-hero{padding:14px!important;border-radius:26px!important;}
+      .climate-opener-hero .facebook-reel-frame{width:min(100%,280px)!important;}
+      .climate-opener-hero iframe{height:min(50vh,440px)!important;}
+      .hint{display:none!important;}
+    }
+
 </style>
 </head>
 <body>
@@ -2867,7 +3140,7 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
   <nav class="controls"><button class="round" id="menuBtn" aria-label="Abrir menú">☰</button><button class="round" id="prev" aria-label="Anterior">←</button><span class="counter" id="counter">1 / 14</span><button class="round" id="next" aria-label="Siguiente">→</button><button class="round" id="full" aria-label="Pantalla completa">⛶</button></nav>
 
 
-  <section class="study-slide study-slide-removed" id="studySlide" aria-hidden="true" style="display:none" data-title="11 · Solicita tu estudio" data-notes="Solicitud real: factura → OCR → confirmación → predimensionamiento técnico → datos de contacto → 4 PDF + factura. El predimensionamiento solar se emite con marca de Líderes Ambientales.">
+  <section class="study-slide study-slide-removed" id="studySlide" hidden aria-hidden="true" data-title="11 · Solicita tu estudio" data-notes="Solicitud real: factura → OCR → confirmación → predimensionamiento técnico → datos de contacto → 4 PDF + factura. El predimensionamiento solar se emite con marca de Líderes Ambientales.">
     <div class="kicker">11 · Cierre · factura → predimensionamiento → estudio profesional</div>
     <h2>Carga la factura y recibe el estudio de tu sede</h2>
 
