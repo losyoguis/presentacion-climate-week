@@ -1,0 +1,3912 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#002f56">
+  <meta name="description" content="Presentación interactiva: huella de carbono educativa, SiMeCO₂ y energía solar.">
+  <meta name="simeco-build" content="2026-09-05-GOOGLE-SITES-FIXED-RESPONSIVE-NO-OVERLAP">
+  <title>1,5 °C: El reto climático y la oportunidad solar con cero inversión</title>
+  <style>
+    :root{--ink:#eef7ff;--muted:#aec6da;--bg:#002f56;--panel:#0a436f;--line:#2d638d;--lime:#76f7b0;--sun:#ffd166;--aqua:#54d4ff;--coral:#ff9077;--shadow:0 24px 80px #0008;--radius:24px;--fs:clamp(16px,1.25vw,23px)}
+    *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button,input{font:inherit}button{color:inherit}.deck{height:100%;position:relative;background:radial-gradient(circle at 85% 5%,rgba(84,212,255,.24) 0,transparent 30%),radial-gradient(circle at 10% 95%,rgba(118,247,176,.20) 0,transparent 28%),linear-gradient(180deg,#002f56 0%,#022744 100%)}
+    .progress{position:fixed;z-index:30;inset:0 0 auto;height:5px;background:#ffffff12}.progress>i{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--aqua),var(--lime),var(--sun));transition:width .35s}
+    .brand{position:fixed;z-index:20;top:22px;left:28px;display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.03em}.brand-mark{width:28px;height:28px;border:2px solid var(--lime);border-radius:50% 50% 48% 52%;display:grid;place-items:center;color:var(--lime)}
+    .slide{position:absolute;inset:0;padding:clamp(76px,9vh,110px) clamp(28px,7vw,112px) clamp(74px,8vh,96px);display:grid;align-content:center;opacity:0;visibility:hidden;transform:translateX(4%);transition:.45s cubic-bezier(.2,.8,.2,1)}.slide.active{opacity:1;visibility:visible;transform:none;z-index:2}.slide.before{transform:translateX(-4%)}
+    .kicker{color:var(--lime);text-transform:uppercase;letter-spacing:.18em;font-size:.72em;font-weight:800;margin-bottom:14px}.display{font-size:clamp(42px,6.1vw,98px);line-height:.94;letter-spacing:-.055em;max-width:1100px;margin:0}.display em{font-style:normal;color:var(--lime)}h2{font-size:clamp(34px,4.4vw,70px);line-height:1;letter-spacing:-.045em;margin:0 0 24px;max-width:1050px}h3{margin:0 0 8px;font-size:1.1em}.lead{font-size:clamp(20px,2vw,32px);line-height:1.35;color:#cfe7df;max-width:950px}.small{font-size:.72em;color:var(--muted)}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.pill{padding:9px 14px;border:1px solid var(--line);border-radius:99px;background:#ffffff08;color:#e3f2ff;font-size:.78em}.pill.accent{border-color:#b9f43b77;color:var(--lime)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid.two{grid-template-columns:repeat(2,1fr)}.card{background:linear-gradient(145deg,#ffffff0d,#ffffff05);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,2vw,30px);box-shadow:0 14px 40px #0003}.card strong.metric{display:block;font-size:clamp(28px,3.5vw,58px);letter-spacing:-.04em;color:var(--lime);line-height:1}.card p{color:#d0e1ef;margin:.7em 0 0;line-height:1.45}.icon{font-size:1.7em;margin-bottom:18px}.callout{border-left:4px solid var(--lime);padding:10px 0 10px 22px;font-size:clamp(23px,2.6vw,42px);line-height:1.25;max-width:1000px}
+    .timeline{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.time-item{border-top:3px solid var(--line);padding-top:13px;color:var(--muted);font-size:.72em}.time-item b{display:block;color:var(--ink);margin-bottom:6px}.time-item.hot{border-color:var(--lime)}
+    .chart{height:280px;display:flex;align-items:end;gap:16px;padding:28px 8px 0}.bar{flex:1;min-width:30px;border-radius:12px 12px 4px 4px;background:linear-gradient(180deg,var(--lime),#4a9d67);position:relative;transform-origin:bottom;animation:grow .8s both}.bar span{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);font-weight:800;font-size:.75em;white-space:nowrap}@keyframes grow{from{transform:scaleY(0)}}
+    label{display:block;color:var(--muted);font-size:.72em;margin-bottom:6px}input[type=number]{width:100%;border:1px solid var(--line);border-radius:12px;background:#08395e;color:var(--ink);padding:11px 12px;outline:none}input:focus{border-color:var(--aqua);box-shadow:0 0 0 3px #3ce3c222}.form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.result-grid.four{grid-template-columns:repeat(4,1fr)}.result{background:#08395e;border-radius:14px;padding:13px}.result b{display:block;color:var(--lime);font-size:1.15em}.result span{font-size:.65em;color:var(--muted)}
+    .btn{border:1px solid var(--line);background:#ffffff09;border-radius:12px;padding:10px 15px;cursor:pointer;transition:.2s}.btn:hover,.btn:focus-visible{border-color:var(--lime);transform:translateY(-1px)}.btn.primary{background:var(--lime);color:#07314f;border-color:var(--lime);font-weight:850}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .tabs{display:flex;gap:8px;margin-bottom:14px}.tab[aria-selected=true]{background:var(--lime);color:#08314f;border-color:var(--lime);font-weight:800}.finance-panel{display:none}.finance-panel.active{display:block}.comparison{width:100%;border-collapse:separate;border-spacing:0 8px}.comparison th{text-align:left;color:var(--muted);font-size:.68em}.comparison td{padding:10px;background:#ffffff08}.comparison td:first-child{border-radius:12px 0 0 12px}.comparison td:last-child{border-radius:0 12px 12px 0}.good{color:var(--lime)}.warn{color:var(--sun)}
+    .poll{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.poll button{text-align:left;min-height:150px}.vote-bar{height:6px;background:#ffffff12;border-radius:9px;margin-top:18px;overflow:hidden}.vote-bar i{display:block;height:100%;background:var(--aqua);width:0;transition:.3s}.vote-count{font-size:.7em;color:var(--muted);margin-top:6px}
+    .road{display:grid;grid-template-columns:repeat(5,1fr);align-items:start}.step{position:relative;padding:0 16px}.step:after{content:"";position:absolute;left:55%;right:-45%;top:18px;height:2px;background:var(--line)}.step:last-child:after{display:none}.num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--lime);color:#08314f;font-weight:900;margin-bottom:14px}.step p{font-size:.72em;color:var(--muted)}
+    .controls{position:fixed;z-index:20;bottom:20px;left:50%;right:auto;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:8px}.round{width:44px;height:44px;border:1px solid var(--line);background:#08395ecc;border-radius:50%;cursor:pointer;display:grid;place-items:center}.round:hover{border-color:var(--lime)}.counter{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px;min-width:55px;text-align:center}.hint{position:fixed;bottom:26px;left:28px;color:#9bbdd7;font-size:12px}
+    .drawer{position:fixed;z-index:50;inset:0 auto 0 0;width:min(390px,88vw);padding:82px 22px 25px;background:#08395ef7;border-right:1px solid var(--line);transform:translateX(-101%);transition:.3s;overflow:auto}.drawer.open{transform:none}.drawer button{display:block;width:100%;text-align:left;border:0;border-bottom:1px solid #ffffff0b;background:none;padding:12px;color:var(--muted);cursor:pointer}.drawer button.current{color:var(--lime)}.scrim{position:fixed;z-index:40;inset:0;background:#0008;display:none}.scrim.show{display:block}
+    .overview{position:fixed;z-index:60;inset:0;background:#022744f5;padding:70px 30px 30px;overflow:auto;display:none}.overview.open{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;align-content:start}.thumb{min-height:150px;border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:18px;cursor:pointer}.thumb:hover{border-color:var(--lime)}.thumb b{display:block;color:var(--lime);font-size:.7em;margin-bottom:8px}.thumb span{font-size:1em;font-weight:700}
+    .notes{position:fixed;z-index:55;left:20px;right:20px;bottom:78px;max-height:34vh;overflow:auto;background:#0b2420f5;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow);display:none}.notes.open{display:block}.notes h4{margin:0 0 8px;color:var(--lime)}.notes p{margin:0;color:#ddefff;line-height:1.5}.timer{position:fixed;z-index:25;top:20px;right:24px;border:1px solid var(--line);border-radius:99px;background:#08395ecc;padding:8px 13px;font-variant-numeric:tabular-nums;font-weight:800;cursor:pointer}.timer.running{color:var(--lime)}
+    .leaf-orbit{position:absolute;right:5vw;top:16vh;width:min(36vw,480px);aspect-ratio:1;border:1px solid #b9f43b35;border-radius:50%;display:grid;place-items:center;animation:spin 24s linear infinite}.leaf-orbit:before,.leaf-orbit:after{content:"";position:absolute;border-radius:50%;border:1px solid #3ce3c233}.leaf-orbit:before{inset:14%}.leaf-orbit:after{inset:30%}.sun-core{position:relative;width:28%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ffe189 0 26%,#ffd166 27% 100%);box-shadow:0 0 80px #ffcc4966;display:grid;place-items:center;color:#4c3a00;font-weight:900;overflow:visible}.sun-label{position:relative;z-index:2;font-weight:900;letter-spacing:.06em}.sun-dollar{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(var(--ang)) translateY(calc(-1 * var(--dist))) rotate(calc(-1 * var(--ang)));font-size:clamp(18px,1.8vw,28px);font-weight:900;color:#4c3a00;text-shadow:0 0 14px #ffef9a88;animation:solarPulse 2.8s ease-in-out infinite;animation-delay:var(--delay)}.school-marker{position:absolute;top:8%;left:50%;transform:translate(-50%,-50%);width:56px;aspect-ratio:1;border-radius:18px;background:linear-gradient(145deg,#76f7b0,#54d4ff);border:1px solid #ffffff66;display:grid;place-items:center;box-shadow:0 12px 28px #0005}.school-marker span{font-size:28px;line-height:1}.school-marker:after{content:"Colegio";position:absolute;top:calc(100% + 7px);left:50%;transform:translateX(-50%);font-size:12px;font-weight:800;letter-spacing:.06em;color:#dffaf0;text-transform:uppercase;white-space:nowrap}.orbit-hint{position:absolute;right:2%;bottom:10%;padding:8px 14px;border-radius:999px;border:1px solid #2d638d;background:#08395ecc;color:#dff4ff;font-size:12px;font-weight:700;letter-spacing:.04em;box-shadow:0 8px 22px #0004}.orbit-hint b{color:var(--lime)}@keyframes spin{to{transform:rotate(360deg)}}@keyframes solarPulse{0%,100%{opacity:.85}50%{opacity:1;filter:drop-shadow(0 0 10px #ffd16688)}}
+    .qrish{display:grid;grid-template-columns:repeat(9,10px);gap:3px;padding:14px;background:white;width:max-content;border-radius:12px}.qrish i{width:10px;height:10px;background:#08395e}.qrish i:nth-child(3n+1),.qrish i:nth-child(7n){background:transparent}
+    .visual-split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);gap:28px;align-items:center}.photo{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;min-height:330px;border:1px solid var(--line);box-shadow:var(--shadow);background:#0d4772}.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.photo:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#022744e8)}.photo figcaption{position:absolute;z-index:2;left:18px;right:18px;bottom:16px;color:#eafff8;font-size:.66em;line-height:1.35}.photo figcaption a{color:var(--lime)}
+    .photo.carbon-chart{min-height:390px;background:#000}.photo.carbon-chart img{object-fit:contain;background:#000}.photo.carbon-chart:after{display:none}.photo.carbon-chart figcaption{left:14px;right:14px;bottom:10px;width:max-content;max-width:calc(100% - 28px);padding:7px 10px;border-radius:9px;background:#000b;color:#dfeee9;font-size:.58em}.photo.carbon-chart figcaption strong{color:var(--lime)}
+    .svg-chart{width:100%;height:auto;display:block;overflow:visible}.chart-label{font-size:13px;fill:#aec6da}.chart-value{font-size:16px;font-weight:850;fill:#eefbf6}.chart-line{fill:none;stroke:var(--lime);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.chart-grid{stroke:#ffffff18;stroke-width:1}.ring-layout{display:grid;grid-template-columns:230px 1fr;gap:28px;align-items:center}.metric-ring{width:220px;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--lime) 0 62%,var(--aqua) 62% 84%,var(--sun) 84% 100%);position:relative;box-shadow:0 0 60px #b9f43b1e}.metric-ring:before{content:"";position:absolute;inset:32px;border-radius:50%;background:var(--panel)}.metric-ring span{position:relative;text-align:center;font-weight:900;font-size:1.55em;line-height:1}.metric-ring small{display:block;color:var(--muted);font-size:.42em;margin-top:7px}.legend{display:grid;gap:12px}.legend div{display:grid;grid-template-columns:14px 1fr;gap:10px;align-items:start}.legend i{width:12px;height:12px;border-radius:3px;margin-top:5px}.legend b{display:block}.legend span{color:var(--muted);font-size:.72em}.finance-viz{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+      align-items:end;
+      height:210px;
+      margin-top:14px;
+      padding:32px 18px 48px;
+      overflow:visible
+    }
+    .finance-bar{
+      height:var(--h);
+      min-height:20px;
+      border-radius:14px 14px 5px 5px;
+      background:linear-gradient(var(--aqua),#1f8172);
+      position:relative;
+      transition:height .35s;
+      margin-bottom:0
+    }
+    .finance-bar:nth-child(2){
+      background:linear-gradient(var(--lime),#5b9d28)
+    }
+    .finance-bar:nth-child(3){
+      background:linear-gradient(var(--sun),#b77c18)
+    }
+    .finance-bar b{
+      position:absolute;
+      bottom:calc(100% + 10px);
+      left:50%;
+      transform:translateX(-50%);
+      font-size:.72em;
+      line-height:1;
+      white-space:nowrap;
+      color:var(--ink)
+    }
+    .finance-bar span{
+      position:absolute;
+      top:calc(100% + 12px);
+      left:50%;
+      transform:translateX(-50%);
+      font-size:.68em;
+      line-height:1.15;
+      color:var(--muted);
+      white-space:nowrap;
+      text-align:center
+    }.embed-badge{display:none;position:fixed;z-index:18;top:70px;right:20px;padding:6px 10px;border-radius:99px;background:#08395ecc;border:1px solid var(--line);font-size:11px;color:var(--muted)}body.embedded .embed-badge{display:block}body.embedded #full{display:none}
+    .footerline{position:absolute;left:clamp(28px,7vw,112px);right:clamp(28px,7vw,112px);bottom:50px;border-top:1px solid var(--line);padding-top:12px;color:var(--muted);font-size:.65em;display:flex;justify-content:space-between;gap:20px}
+    .print-note{display:none}
+
+    .single-image-layout{display:grid;gap:18px;align-content:center;justify-items:center}
+    .single-image-card{width:min(100%,1180px);background:linear-gradient(145deg,#ffffff10,#ffffff06);border:1px solid var(--line);border-radius:28px;padding:18px;box-shadow:var(--shadow)}
+    .single-image-card img{display:block;width:100%;height:auto;max-height:68vh;object-fit:contain;border-radius:18px;background:#ffffff}
+    .single-image-note{max-width:1080px;text-align:center;color:var(--muted);font-size:.9em;line-height:1.45}
+    @media(max-width:850px){.slide{align-content:start;overflow:auto}.grid,.grid.two,.form-grid,.result-grid,.poll,.visual-split{grid-template-columns:1fr}.ring-layout{grid-template-columns:1fr}.metric-ring{width:180px}.photo{min-height:250px}.photo.carbon-chart{min-height:300px}.timeline{grid-template-columns:1fr 1fr}.road{grid-template-columns:1fr}.step{display:grid;grid-template-columns:45px 1fr;gap:8px}.step:after{display:none}.leaf-orbit{opacity:.22;width:70vw;right:-20vw;top:18vh}.school-marker{width:46px}.school-marker span{font-size:22px}.school-marker:after,.orbit-hint{display:none}.hint{display:none}.poll button{min-height:auto}.chart{height:200px}.footerline{position:static;margin-top:26px}.controls{bottom:12px}.brand{left:18px}.timer{right:18px}.comparison{font-size:.72em}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+    @media print{html,body{overflow:visible;background:white}.deck{background:white}.slide{position:relative;opacity:1!important;visibility:visible!important;transform:none!important;page-break-after:always;min-height:100vh;color:#10221d;background:#fff}.controls,.brand,.timer,.progress,.hint,.drawer,.overview,.notes,.leaf-orbit{display:none!important}.card,.result{border-color:#ccc;background:#f7faf8;box-shadow:none}.card p,.lead,.small,.time-item,.step p,.result span{color:#2d638d}.print-note{display:block}}
+
+    /* Galería ampliada de la sección Huella de Carbono */
+    .carbon-chart{cursor:zoom-in;outline:none}
+    .carbon-chart:focus-visible{box-shadow:0 0 0 4px #3ce3c244,var(--shadow);border-color:var(--aqua)}
+    .gallery-zoom-hint{
+      position:absolute;z-index:4;top:16px;right:16px;
+      padding:8px 12px;border-radius:99px;
+      background:#022744d9;border:1px solid #ffffff2b;
+      color:#eefbf6;font-size:.62em;font-weight:800;letter-spacing:.02em;
+      backdrop-filter:blur(8px);pointer-events:none
+    }
+
+    .carbon-gallery{
+      position:fixed;z-index:120;inset:0;
+      background:#020b09f5;display:none;
+      padding:16px;backdrop-filter:blur(10px)
+    }
+    .carbon-gallery.open{display:grid;place-items:center}
+
+    /* En escritorio: cabecera arriba, imagen grande a la izquierda,
+       miniaturas en una columna independiente a la derecha. */
+    .carbon-gallery-shell{
+      width:min(1540px,100%);
+      height:min(96vh,1000px);
+      min-height:0;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 176px;
+      grid-template-rows:auto minmax(0,1fr);
+      grid-template-areas:
+        "head head"
+        "stage thumbs";
+      gap:12px;
+      border:1px solid var(--line);
+      border-radius:24px;
+      background:#002f56;
+      box-shadow:0 30px 100px #000c;
+      overflow:hidden
+    }
+
+    .carbon-gallery-head{
+      grid-area:head;
+      display:flex;align-items:center;justify-content:space-between;gap:18px;
+      padding:14px 16px 0 20px
+    }
+    .carbon-gallery-head .eyebrow{
+      display:block;color:var(--lime);
+      font-size:11px;font-weight:900;letter-spacing:.16em;
+      text-transform:uppercase;margin-bottom:3px
+    }
+    .carbon-gallery-head strong{font-size:clamp(16px,1.4vw,22px)}
+
+    .gallery-close,.gallery-arrow{
+      border:1px solid var(--line);
+      background:#08395ee8;color:var(--ink);
+      cursor:pointer;display:grid;place-items:center;transition:.2s
+    }
+    .gallery-close{
+      width:44px;height:44px;border-radius:50%;
+      font-size:24px;flex:0 0 auto
+    }
+    .gallery-close:hover,.gallery-close:focus-visible,
+    .gallery-arrow:hover,.gallery-arrow:focus-visible{
+      border-color:var(--lime);color:var(--lime);outline:none
+    }
+
+    .gallery-stage{
+      grid-area:stage;
+      min-width:0;min-height:0;
+      display:grid;
+      grid-template-columns:56px minmax(0,1fr) 56px;
+      gap:10px;
+      align-items:center;
+      padding:0 0 16px 14px
+    }
+    .gallery-arrow{
+      width:50px;height:50px;border-radius:50%;
+      font-size:27px;align-self:center
+    }
+
+    .gallery-main{
+      min-width:0;min-height:0;height:100%;
+      margin:0;
+      display:grid;
+      grid-template-rows:minmax(0,1fr) auto;
+      gap:9px
+    }
+
+    /* La imagen jamás se recorta: ocupa el espacio disponible
+       manteniendo siempre su proporción original completa. */
+    .gallery-image-wrap{
+      position:relative;
+      min-width:0;min-height:0;
+      width:100%;height:100%;
+      display:flex;
+      align-items:center;justify-content:center;
+      border-radius:18px;
+      overflow:hidden;
+      background:#00182b;
+      border:1px solid #ffffff14;
+      padding:6px
+    }
+    .gallery-main img{
+      display:block !important;
+      position:static !important;
+      inset:auto !important;
+      width:100% !important;
+      height:100% !important;
+      max-width:100% !important;
+      max-height:100% !important;
+      object-fit:contain !important;
+      object-position:center center !important;
+      flex:1 1 auto
+    }
+
+    .gallery-caption{
+      display:grid;
+      grid-template-columns:auto minmax(0,1fr);
+      gap:12px;align-items:start;
+      padding:0 4px 1px
+    }
+    .gallery-count{
+      display:inline-flex;align-items:center;justify-content:center;
+      min-width:64px;padding:7px 10px;
+      border:1px solid var(--line);border-radius:99px;
+      color:var(--lime);font-size:12px;font-weight:900;
+      font-variant-numeric:tabular-nums
+    }
+    .gallery-caption strong{
+      display:block;margin-bottom:2px;
+      font-size:.78em;line-height:1.25
+    }
+    .gallery-caption p{
+      margin:0;color:var(--muted);
+      font-size:.62em;line-height:1.35
+    }
+
+    /* Miniaturas fuera de la zona de la imagen principal */
+    .gallery-thumbs{
+      grid-area:thumbs;
+      min-width:0;min-height:0;
+      display:grid;
+      grid-template-columns:1fr;
+      grid-template-rows:repeat(4,minmax(0,1fr));
+      gap:9px;
+      padding:0 14px 16px 0
+    }
+    .gallery-thumb{
+      position:relative;
+      min-width:0;min-height:0;
+      width:100%;height:100%;
+      padding:0;
+      border:2px solid transparent;
+      border-radius:12px;
+      overflow:hidden;
+      background:#08395e;
+      cursor:pointer;
+      opacity:.62;
+      transition:.2s
+    }
+    .gallery-thumb img{
+      position:static !important;
+      width:100% !important;height:100% !important;
+      max-width:none !important;max-height:none !important;
+      object-fit:cover !important;
+      display:block !important
+    }
+    .gallery-thumb span{
+      position:absolute;left:7px;bottom:6px;
+      width:24px;height:24px;border-radius:50%;
+      display:grid;place-items:center;
+      background:#022744d9;color:white;
+      font-size:11px;font-weight:900
+    }
+    .gallery-thumb[aria-current="true"]{
+      border-color:var(--lime);
+      opacity:1;
+      box-shadow:0 0 0 2px #b9f43b22
+    }
+    .gallery-thumb:hover{opacity:1}
+
+    /* Pantallas intermedias: conserva miniaturas laterales,
+       pero reduce su ancho para favorecer la imagen. */
+    @media(max-width:1100px){
+      .carbon-gallery{padding:8px}
+      .carbon-gallery-shell{
+        height:97vh;
+        grid-template-columns:minmax(0,1fr) 132px;
+        border-radius:16px
+      }
+      .carbon-gallery-head{padding:10px 10px 0 14px}
+      .gallery-stage{
+        grid-template-columns:44px minmax(0,1fr) 44px;
+        gap:5px;padding:0 0 10px 5px
+      }
+      .gallery-arrow{width:42px;height:42px;font-size:23px}
+      .gallery-thumbs{gap:6px;padding:0 8px 10px 0}
+      .gallery-caption p{font-size:11px}
+    }
+
+    /* En móvil/tablet estrecha: las miniaturas pasan abajo,
+       pero con una altura fija pequeña que no invade la imagen. */
+    @media(max-width:760px){
+      .gallery-zoom-hint{top:10px;right:10px;font-size:11px}
+      .carbon-gallery{padding:4px}
+      .carbon-gallery-shell{
+        height:98vh;
+        grid-template-columns:1fr;
+        grid-template-rows:auto minmax(0,1fr) 62px;
+        grid-template-areas:
+          "head"
+          "stage"
+          "thumbs";
+        gap:7px;
+        border-radius:12px
+      }
+      .gallery-stage{
+        grid-template-columns:40px minmax(0,1fr) 40px;
+        gap:4px;padding:0 4px
+      }
+      .gallery-arrow{width:38px;height:38px;font-size:21px}
+      .gallery-caption{
+        grid-template-columns:auto minmax(0,1fr);
+        gap:7px
+      }
+      .gallery-count{min-width:54px;padding:5px 7px;font-size:11px}
+      .gallery-caption strong{font-size:12px}
+      .gallery-caption p{
+        font-size:10px;
+        line-height:1.25;
+        display:-webkit-box;
+        -webkit-line-clamp:2;
+        -webkit-box-orient:vertical;
+        overflow:hidden
+      }
+      .gallery-thumbs{
+        grid-template-columns:repeat(4,minmax(0,1fr));
+        grid-template-rows:1fr;
+        gap:5px;
+        padding:0 6px 7px
+      }
+      .gallery-thumb{height:55px}
+    }
+
+    @media(max-width:520px){
+      .carbon-gallery{padding:0}
+      .carbon-gallery-shell{
+        height:100vh;
+        border:0;border-radius:0;
+        grid-template-rows:auto minmax(0,1fr) 54px
+      }
+      .carbon-gallery-head{padding:8px 8px 0 11px}
+      .carbon-gallery-head .eyebrow{font-size:9px}
+      .carbon-gallery-head strong{font-size:14px}
+      .gallery-close{width:38px;height:38px;font-size:21px}
+      .gallery-stage{
+        grid-template-columns:34px minmax(0,1fr) 34px;
+        padding:0 2px
+      }
+      .gallery-arrow{width:32px;height:32px;font-size:18px}
+      .gallery-image-wrap{padding:2px;border-radius:10px}
+      .gallery-caption p{display:none}
+      .gallery-thumb{height:47px}
+      .gallery-thumb span{
+        width:20px;height:20px;font-size:9px;
+        left:4px;bottom:4px
+      }
+    }
+
+
+  
+    /* Predimensionamiento técnico desde consumo y cobertura */
+    select{
+      width:100%;border:1px solid var(--line);border-radius:12px;
+      background:#08395e;color:var(--ink);padding:11px 12px;outline:none
+    }
+    select:focus{border-color:var(--aqua);box-shadow:0 0 0 3px #3ce3c222}
+    .solar-dimension-layout{align-items:stretch}
+    .dimension-inputs{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .dimension-status{
+      margin-top:15px;padding:11px 13px;border-radius:13px;
+      border:1px solid var(--line);background:#08395e;
+      color:#cfe7df;font-size:.68em;line-height:1.4
+    }
+    .dimension-status.good{border-color:#b9f43b55}
+    .dimension-status.warn{border-color:#ffcc4977;color:#ffe4a3;background:#211b09}
+    .target-line{
+      margin-top:10px;padding:10px 13px;border-radius:13px;
+      display:flex;justify-content:space-between;gap:12px;align-items:center;
+      background:#ffffff08;border:1px solid #ffffff0d
+    }
+    .target-line span{color:var(--muted);font-size:.67em}
+    .target-line strong{color:var(--lime);font-size:.9em}
+    .dimension-output-card{display:flex;flex-direction:column}
+    .dimension-output-head{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:14px;margin-bottom:12px
+    }
+    .dimension-output-head h3{margin:2px 0 0;font-size:1.25em;color:var(--lime)}
+    .dimension-results{
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      margin-top:0
+    }
+    .dimension-results .result{min-width:0}
+    .dimension-results .result b{
+      font-size:clamp(15px,1.15vw,22px);
+      overflow-wrap:anywhere
+    }
+    .saving-comparison{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:8px;margin-top:10px
+    }
+    .saving-comparison>div{
+      min-width:0;padding:9px 11px;border:1px solid var(--line);
+      background:#08395e;border-radius:12px
+    }
+    .saving-comparison span{
+      display:block;color:var(--muted);font-size:.58em;line-height:1.25
+    }
+    .saving-comparison b{
+      display:block;color:#eefbf6;font-size:.78em;margin-top:3px
+    }
+    .dimension-source{margin-top:10px!important}
+    @media(max-width:1100px){
+      .dimension-results{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:850px){
+      .dimension-inputs,.dimension-results,.saving-comparison{grid-template-columns:1fr}
+      .dimension-output-head{align-items:flex-start}
+    }
+
+  
+    .tree-result{
+      border-color:#b9f43b55!important;
+      background:linear-gradient(145deg,#b9f43b0f,#08395e)!important
+    }
+    .tree-result b{color:var(--lime)!important}
+
+  
+    /* Caso real simplificado para explicar el dimensionamiento */
+    .case-study-slide{padding-top:clamp(72px,8vh,96px);padding-bottom:clamp(65px,7vh,84px)}
+    .case-study-slide h2{margin-bottom:18px}
+    .case-story{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr);
+      gap:8px;align-items:stretch;margin-bottom:15px
+    }
+    .case-step{
+      min-width:0;display:grid;grid-template-columns:32px minmax(0,1fr);
+      gap:8px;padding:12px;border:1px solid var(--line);border-radius:16px;
+      background:linear-gradient(145deg,#ffffff0a,#ffffff04)
+    }
+    .case-num{
+      width:30px;height:30px;border-radius:50%;display:grid;place-items:center;
+      background:var(--lime);color:#07314f;font-weight:900;font-size:13px
+    }
+    .case-step small{display:block;color:var(--muted);font-size:.52em;line-height:1.2;margin-bottom:3px}
+    .case-step strong{display:block;color:#eefbf6;font-size:.9em;line-height:1.05}
+    .case-step p{margin:5px 0 0;color:#a9c9bf;font-size:.52em;line-height:1.3}
+    .case-step p b{color:#dff7ef}
+    .case-arrow{display:grid;place-items:center;color:var(--lime);font-weight:900;font-size:20px}
+
+    .case-study-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}
+    .case-comparison-card,.case-impact-card{padding:18px}
+    .case-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:9px}
+    .case-card-head h3,.case-impact-card h3{font-size:.88em;margin:2px 0 0}
+    .case-compare-table{display:grid;gap:4px}
+    .case-row{
+      display:grid;grid-template-columns:1.05fr .85fr .85fr;gap:5px;align-items:center
+    }
+    .case-row>span,.case-row>b{
+      min-width:0;padding:7px 9px;border-radius:8px;background:#08395e;
+      font-size:.58em;line-height:1.2
+    }
+    .case-row>b{font-weight:850;color:#eefbf6}
+    .case-header>span{
+      background:transparent;color:var(--muted);font-weight:800;
+      text-transform:uppercase;letter-spacing:.05em;font-size:.48em
+    }
+    .case-validation{
+      margin-top:8px;padding:8px 10px;border-radius:10px;
+      border-left:3px solid var(--lime);background:#b9f43b0b
+    }
+    .case-validation span{display:block;color:var(--muted);font-size:.52em}
+    .case-validation strong{display:block;color:var(--lime);font-size:.66em;margin-top:2px}
+
+    .case-impact-grid{
+      display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:9px
+    }
+    .case-impact-grid>div{
+      min-width:0;padding:9px;border-radius:11px;background:#08395e;border:1px solid var(--line)
+    }
+    .case-icon{display:block;color:var(--lime);font-weight:900;font-size:.62em;margin-bottom:3px}
+    .case-impact-grid b{display:block;font-size:.78em;color:#eefbf6}
+    .case-impact-grid small{display:block;color:var(--muted);font-size:.48em;margin-top:2px}
+    .case-finance-summary{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px}
+    .case-finance-summary>div{
+      padding:8px 9px;border-radius:10px;background:#ffffff08;border:1px solid #ffffff0d
+    }
+    .case-finance-summary span{display:block;color:var(--muted);font-size:.49em}
+    .case-finance-summary strong{display:block;color:var(--lime);font-size:.77em;margin-top:2px}
+    .case-note{margin:8px 0 0!important;font-size:.48em!important}
+
+    .case-takeaway{
+      margin-top:12px;padding:10px 14px;border-radius:13px;
+      border:1px solid #b9f43b44;background:linear-gradient(90deg,#b9f43b0c,#3ce3c20a);
+      color:#cfe7df;font-size:.61em;line-height:1.4
+    }
+    .case-takeaway b{color:var(--lime)}
+
+    @media(max-width:1100px){
+      .case-story{
+        grid-template-columns:repeat(5,minmax(0,1fr));
+        gap:6px
+      }
+      .case-arrow{display:none}
+      .case-step{grid-template-columns:1fr;padding:9px}
+      .case-num{width:26px;height:26px}
+      .case-study-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:850px){
+      .case-story{grid-template-columns:1fr}
+      .case-step{grid-template-columns:32px minmax(0,1fr)}
+      .case-study-grid{grid-template-columns:1fr}
+      .case-study-slide{overflow:auto}
+    }
+
+  
+    /* =========================================================
+       COMPATIBILIDAD GOOGLE SITES
+       La presentación vive dentro de un iframe.
+       ========================================================= */
+    html,body{
+      width:100%;
+      height:100%;
+      min-height:0;
+      overscroll-behavior:none;
+    }
+    body.embedded{
+      overflow:hidden;
+    }
+    body.embedded .deck{
+      width:100%;
+      height:100vh;
+      min-height:0;
+      max-height:100vh;
+      overflow:hidden;
+    }
+
+    /* En Google Sites una diapositiva puede tener menos altura que
+       una pantalla completa. Permitimos scroll interno sin romper
+       la navegación ni el diseño. */
+    body.embedded .slide{
+      align-content:start;
+      overflow-y:auto;
+      overflow-x:hidden;
+      overscroll-behavior:contain;
+      scrollbar-width:thin;
+      padding-top:78px;
+      padding-bottom:92px;
+    }
+    body.embedded .slide::-webkit-scrollbar{width:8px}
+    body.embedded .slide::-webkit-scrollbar-thumb{
+      background:#ffffff22;
+      border-radius:99px;
+    }
+    body.embedded .slide::-webkit-scrollbar-track{background:transparent}
+
+    body.embedded .footerline{
+      position:static;
+      margin-top:24px;
+    }
+    body.embedded .hint{display:none}
+    body.embedded .brand{
+      top:16px;
+      left:18px;
+      font-size:13px;
+    }
+    body.embedded .timer{
+      top:14px;
+      right:16px;
+      padding:7px 11px;
+      font-size:12px;
+    }
+    body.embedded .controls{
+      bottom:12px;
+      padding:4px 8px;
+      border-radius:99px;
+      background:#002f56cc;
+      backdrop-filter:blur(8px);
+      border:1px solid #ffffff0d;
+    }
+    body.embedded .round{
+      width:40px;
+      height:40px;
+    }
+    body.embedded .embed-badge{
+      top:58px;
+      right:14px;
+      font-size:10px;
+      pointer-events:none;
+    }
+
+    /* El overlay de galería se mantiene dentro del iframe de Sites. */
+    body.embedded .carbon-gallery{
+      position:absolute;
+      inset:0;
+    }
+
+    /* Mejor adaptación a iframes horizontales medianos. */
+    @media (max-height:720px) and (min-width:851px){
+      body.embedded .slide{
+        padding-top:68px;
+        padding-bottom:78px;
+      }
+      body.embedded .display{font-size:clamp(38px,5.2vw,78px)}
+      body.embedded h2{font-size:clamp(30px,3.7vw,56px)}
+      body.embedded .lead{font-size:clamp(18px,1.6vw,26px)}
+      body.embedded .card{padding:18px}
+      body.embedded .photo{min-height:260px}
+    }
+
+    /* Google Sites en móvil/tablet */
+    @media(max-width:850px){
+      body.embedded .deck{height:100vh}
+      body.embedded .slide{
+        padding-top:72px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:82px;
+      }
+      body.embedded .embed-badge{display:none}
+    }
+
+  
+    /* Imagen Alianza 17 en la sección Quiénes somos */
+    .alliance-photo{
+      min-height:330px;
+      background:#ffffff;
+    }
+    .alliance-photo img{
+      object-fit:contain !important;
+      object-position:center center !important;
+      background:#ffffff;
+    }
+    .alliance-photo:after{
+      content:"";
+      position:absolute;
+      inset:68% 0 0;
+      background:linear-gradient(transparent,#022744d9);
+      pointer-events:none;
+    }
+    .alliance-photo figcaption{
+      color:#f6fff9;
+      text-shadow:0 1px 3px #000;
+    }
+    @media(max-width:850px){
+      .alliance-photo{min-height:240px}
+    }
+
+  
+    /* =========================================================
+       SiMeCO₂ · datos actualizados del tablero
+       ========================================================= */
+    .simeco-evidence-slide h2{
+      max-width:1200px;
+      margin-bottom:20px
+    }
+    .simeco-dashboard{
+      display:grid;
+      grid-template-columns:minmax(0,1.08fr) minmax(420px,.92fr);
+      gap:18px;
+      align-items:stretch
+    }
+    .simeco-main-metric{
+      position:relative;
+      overflow:hidden;
+      min-height:360px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      background:
+        radial-gradient(circle at 90% 20%,#3ce3c22b 0,transparent 32%),
+        linear-gradient(135deg,#0b3b31,#08785e 58%,#34b99b)
+    }
+    .simeco-main-metric:after{
+      content:"";
+      position:absolute;
+      width:260px;height:260px;
+      border-radius:50%;
+      right:-70px;bottom:-90px;
+      background:#ffffff16;
+      pointer-events:none
+    }
+    .simeco-label{
+      display:block;
+      color:#d0e1ef;
+      font-size:.72em;
+      font-weight:800;
+      letter-spacing:.02em
+    }
+    .simeco-main-metric>.simeco-label{
+      color:#eefbf6;
+      font-size:.82em;
+      letter-spacing:.06em
+    }
+    .simeco-co2{
+      display:block;
+      color:#ffffff;
+      font-size:clamp(48px,5.3vw,86px);
+      line-height:.95;
+      letter-spacing:-.045em;
+      margin:22px 0 14px;
+      position:relative;
+      z-index:1
+    }
+    .simeco-co2 small{
+      font-size:.48em;
+      letter-spacing:-.02em
+    }
+    .simeco-main-metric>p{
+      position:relative;z-index:1;
+      max-width:760px;
+      margin:0;
+      color:#ddf7ef;
+      font-size:.8em;
+      line-height:1.45;
+      font-weight:650
+    }
+    .simeco-energy-band{
+      position:relative;z-index:1;
+      display:grid;
+      grid-template-columns:auto minmax(0,1fr);
+      column-gap:18px;
+      row-gap:2px;
+      align-items:end;
+      margin-top:26px;
+      padding:15px 17px;
+      border-radius:15px;
+      background:#031a15a6;
+      border:1px solid #ffffff1d
+    }
+    .simeco-energy-band span{
+      color:#aec6da;
+      font-size:.63em;
+      font-weight:800
+    }
+    .simeco-energy-band b{
+      color:var(--lime);
+      font-size:clamp(20px,2vw,31px);
+      justify-self:end
+    }
+    .simeco-energy-band small{
+      grid-column:1/-1;
+      color:#b9d8cf;
+      font-size:.56em
+    }
+
+    .simeco-side-metrics{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px
+    }
+    .simeco-mini-card{
+      min-width:0;
+      min-height:170px;
+      display:grid;
+      grid-template-columns:44px minmax(0,1fr);
+      gap:12px;
+      align-items:start;
+      padding:20px
+    }
+    .simeco-tree-card{
+      grid-column:1/-1
+    }
+    .simeco-mini-icon{
+      width:42px;height:42px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:#b9f43b12;
+      border:1px solid #b9f43b40;
+      color:var(--lime);
+      font-size:.64em;
+      font-weight:900
+    }
+    .simeco-mini-card strong{
+      display:block;
+      margin:4px 0 7px;
+      color:#eefbf6;
+      font-size:clamp(29px,3vw,48px);
+      line-height:1
+    }
+    .simeco-mini-card p{
+      margin:0;
+      color:#aec6da;
+      font-size:.62em;
+      line-height:1.42
+    }
+    .simeco-tree-card strong{
+      color:var(--lime)
+    }
+
+    .simeco-flow{
+      display:grid;
+      grid-template-columns:1fr auto 1fr auto 1fr auto 1.25fr;
+      gap:10px;
+      align-items:center;
+      margin-top:15px
+    }
+    .simeco-flow>span{
+      min-width:0;
+      padding:10px 13px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:#08395e;
+      text-align:center
+    }
+    .simeco-flow b{
+      display:block;
+      color:#eefbf6;
+      font-size:.67em
+    }
+    .simeco-flow small{
+      display:block;
+      margin-top:2px;
+      color:var(--muted);
+      font-size:.49em
+    }
+    .simeco-flow>i{
+      color:var(--lime);
+      font-style:normal;
+      font-size:1.05em;
+      font-weight:900
+    }
+
+    @media(max-width:1100px){
+      .simeco-dashboard{
+        grid-template-columns:1fr 1fr
+      }
+      .simeco-side-metrics{
+        grid-template-columns:1fr
+      }
+      .simeco-tree-card{grid-column:auto}
+      .simeco-main-metric{min-height:430px}
+    }
+
+    @media(max-width:850px){
+      .simeco-dashboard{
+        grid-template-columns:1fr
+      }
+      .simeco-main-metric{
+        min-height:330px
+      }
+      .simeco-side-metrics{
+        grid-template-columns:1fr
+      }
+      .simeco-energy-band{
+        grid-template-columns:1fr
+      }
+      .simeco-energy-band b{
+        justify-self:start
+      }
+      .simeco-flow{
+        grid-template-columns:1fr;
+        gap:6px
+      }
+      .simeco-flow>i{
+        transform:rotate(90deg);
+        justify-self:center
+      }
+    }
+
+    @media(max-height:720px) and (min-width:851px){
+      body.embedded .simeco-main-metric{min-height:310px}
+      body.embedded .simeco-mini-card{min-height:140px;padding:15px}
+      body.embedded .simeco-co2{font-size:clamp(43px,4.5vw,70px);margin:14px 0 10px}
+      body.embedded .simeco-energy-band{margin-top:17px}
+    }
+
+  
+
+
+    .rocasol-kpi-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:20px}
+    .rocasol-kpi{background:rgba(255,255,255,.06);border:1px solid rgba(186,255,48,.24);border-radius:22px;padding:18px;min-height:132px}
+    .rocasol-kpi small{display:block;color:var(--muted);font-size:.8em;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
+    .rocasol-kpi b{display:block;color:var(--lime);font-size:1.25em;line-height:1.05}
+    .rocasol-kpi span{display:block;margin-top:8px;color:var(--soft);font-size:.88em}
+    .rocasol-equation{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:14px;align-items:center;margin-top:20px}
+    .rocasol-equation .eq-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:24px;padding:22px;text-align:center;min-height:160px;display:flex;flex-direction:column;justify-content:center}
+    .rocasol-equation .eq-card b{font-size:1.65em;color:var(--lime)}
+    .rocasol-equation .eq-card span{color:var(--muted);font-weight:800;margin-top:8px}
+    .eq-symbol{font-size:2.2em;color:var(--lime);font-weight:1000;text-align:center}
+    .projection-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch;margin-top:18px}
+    .projection-bars{height:350px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px;align-items:end;padding:24px 18px 16px;border-radius:24px;background:rgba(0,0,0,.2);border:1px solid rgba(255,255,255,.12)}
+    .projection-bar{height:calc(var(--h) * 1%);min-height:38px;border-radius:18px 18px 8px 8px;background:linear-gradient(var(--lime),rgba(186,255,48,.42));position:relative;display:flex;align-items:flex-start;justify-content:center;color:#07170f;font-weight:1000;padding-top:10px}
+    .projection-bar:nth-child(6){background:linear-gradient(#42e0c3,#1f806f);color:#eafff8}
+    .projection-bar span{position:absolute;bottom:-30px;color:var(--muted);font-size:.85em}
+    .rocasol-decision{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+    .rocasol-decision .card{min-height:260px}
+    .big-verdict{font-size:1.75em;line-height:1.18;margin-top:22px;max-width:1050px}
+    .accent-money{color:var(--lime);font-weight:1000}
+    @media(max-width:900px){.rocasol-kpi-grid{grid-template-columns:1fr 1fr}.rocasol-equation,.projection-grid,.rocasol-decision{grid-template-columns:1fr}}
+
+
+    .zero-investment-panel{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:18px;
+      align-items:stretch;
+      padding:20px;
+      max-height:56vh;
+      overflow:hidden;
+    }
+    .zero-investment-panel h3{
+      margin:0 0 10px;
+      font-size:1.32em;
+      line-height:1.15;
+    }
+    .zero-investment-panel .comparison{
+      margin:0 0 12px;
+      font-size:.86em;
+    }
+    .zero-investment-panel .comparison th,
+    .zero-investment-panel .comparison td{
+      padding:8px 10px;
+    }
+    .zero-copy{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      min-width:0;
+    }
+    .zero-copy .callout{
+      margin:0 !important;
+      font-size:1.02em;
+      line-height:1.32;
+      padding:14px 16px;
+    }
+    .zero-note-card{
+      margin:0 !important;
+      padding:14px 16px !important;
+    }
+    .zero-note-card p{
+      margin:0 0 9px 0 !important;
+      font-size:.9em !important;
+      line-height:1.35 !important;
+    }
+    .zero-note-card p:last-child{
+      margin-bottom:0 !important;
+    }
+    .zero-benefits-card{
+      margin:0 !important;
+      padding:12px !important;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      min-width:0;
+      background:rgba(255,255,255,.98);
+    }
+    .zero-benefits-card img{
+      display:block;
+      width:100%;
+      height:auto;
+      max-height:39vh;
+      object-fit:contain;
+      border-radius:14px;
+      background:#fff;
+    }
+    .zero-benefits-card .small{
+      color:#0b1b17;
+      opacity:.78;
+      font-size:.72em;
+      line-height:1.2;
+      margin:7px 4px 0 !important;
+    }
+
+    .zero-benefits-trigger{position:relative;display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;border-radius:16px;overflow:hidden}
+    .zero-benefits-trigger img{transition:transform .25s ease, box-shadow .25s ease}
+    .zero-benefits-trigger:hover img,.zero-benefits-trigger:focus-visible img{transform:scale(1.015);box-shadow:0 14px 34px rgba(0,0,0,.16)}
+    .zero-benefits-trigger:focus-visible{outline:3px solid rgba(86,214,255,.55);outline-offset:4px}
+    .zero-benefits-hint{position:absolute;right:12px;top:12px;display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border-radius:999px;background:rgba(4,28,35,.86);color:#fff;font-size:.74em;font-weight:700;letter-spacing:.01em;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+    .zero-benefits-hint .icon{font-size:1.05em;line-height:1}
+    .image-lightbox{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(2,13,20,.82);backdrop-filter:blur(4px)}
+    .image-lightbox.open{display:flex}
+    .image-lightbox-shell{position:relative;width:min(1180px,94vw);max-height:92vh;background:#f8fbff;border:1px solid rgba(255,255,255,.2);border-radius:24px;box-shadow:0 30px 80px rgba(0,0,0,.35);overflow:hidden}
+    .image-lightbox-content{padding:18px 18px 14px;display:grid;gap:12px}
+    .image-lightbox-head{display:flex;flex-direction:column;gap:4px;padding-right:60px}
+    .image-lightbox-head .eyebrow{font-size:.74em;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#3f74ff;opacity:.9}
+    .image-lightbox-head strong{font-size:clamp(18px,2vw,28px);line-height:1.05;color:#0b2740}
+    .image-lightbox-figure{margin:0;border-radius:18px;background:#fff;overflow:auto;max-height:72vh;border:1px solid rgba(11,39,64,.08)}
+    .image-lightbox-figure img{display:block;width:100%;height:auto;background:#fff}
+    .image-lightbox-caption{margin:0;color:#3e5366;font-size:.92em;line-height:1.45}
+    .image-lightbox-close{position:absolute;top:12px;right:12px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(11,39,64,.12);background:#ffffff;display:grid;place-items:center;font-size:28px;line-height:1;cursor:pointer;color:#15324a;box-shadow:0 8px 18px rgba(0,0,0,.12)}
+    .image-lightbox-close:hover,.image-lightbox-close:focus-visible{background:#eef5ff;outline:none}
+    @media (max-width: 900px){
+      .zero-benefits-hint{left:12px;right:12px;top:auto;bottom:12px;justify-content:center;font-size:.72em;padding:9px 10px}
+      .image-lightbox{padding:10px}
+      .image-lightbox-shell{width:100%;max-height:96vh;border-radius:18px}
+      .image-lightbox-content{padding:14px 14px 12px}
+      .image-lightbox-head{padding-right:52px}
+      .image-lightbox-figure{max-height:76vh}
+    }
+
+    .zero-cta{
+      align-self:flex-start;
+      margin-top:0 !important;
+      padding:12px 16px;
+      font-size:.9em;
+      white-space:normal;
+      max-width:100%;
+      line-height:1.2;
+    }
+
+    .finance-viz.four{
+      grid-template-columns:repeat(4,1fr);
+      gap:18px
+    }
+    .finance-viz.four .finance-bar:nth-child(4){
+      background:linear-gradient(var(--lime),#244c20)
+    }
+
+    
+
+    .finance-paths{grid-template-columns:repeat(2,1fr);gap:18px}
+    .finance-path-card{min-height:230px}
+    .finance-path-card h3{margin:0 0 10px;font-size:1.28em;line-height:1.12}
+    .finance-path-card p{margin:.45em 0;line-height:1.4}
+    .finance-criteria{display:grid;gap:10px;margin-top:16px}
+    .finance-criteria div{background:#ffffff08;border:1px solid var(--line);border-radius:14px;padding:12px 14px;color:#d5e6e0}
+    .zero-focus{display:grid;grid-template-columns:1fr .95fr;gap:18px;align-items:stretch}
+    .zero-explain{display:grid;gap:14px}
+    .zero-pill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 18px}
+    .zero-pill{background:linear-gradient(145deg,#ffffff0d,#ffffff05);border:1px solid var(--line);border-radius:16px;padding:14px 12px;box-shadow:0 14px 40px #0003}
+    .zero-pill b{display:block;color:var(--lime);font-size:1.14em;line-height:1.1}
+    .zero-pill span{display:block;color:var(--muted);font-size:.76em;line-height:1.3;margin-top:6px}
+    .zero-focus .zero-note-card p{font-size:.95em !important}
+    .finance-compact-note{margin-top:14px;font-size:.82em;color:var(--muted);line-height:1.35}
+    @media(max-width:1100px){.zero-pill-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:850px){.zero-focus{grid-template-columns:1fr}.zero-pill-grid{grid-template-columns:1fr}.finance-path-card{min-height:auto}}
+.finance-viz + .small{
+      display:block;
+      margin-top:14px !important;
+      padding-top:8px;
+      border-top:1px solid #ffffff10;
+      line-height:1.35
+    }
+    @media(max-width:850px){
+      .finance-viz{
+        height:190px;
+        gap:14px;
+        padding:28px 8px 46px
+      }
+      .finance-bar b{font-size:12px}
+      .finance-bar span{
+        font-size:11px;
+        top:calc(100% + 10px)
+      }
+    }
+
+  
+    /* =========================================================
+       ESTUDIO DESDE FACTURA · Google Apps Script
+       ========================================================= */
+    .study-slide{align-content:start}
+    .study-layout{
+      display:grid;
+      grid-template-columns:minmax(390px,.88fr) minmax(0,1.12fr);
+      gap:18px;
+      align-items:start
+    }
+    .study-workflow{display:grid;gap:12px}
+    .study-step-card{padding:18px}
+    .hidden-step{display:none}
+    .study-step-card.active-step{
+      border-color:#b9f43b55;
+      box-shadow:0 0 0 1px #b9f43b14 inset
+    }
+    .study-step-head{
+      display:grid;
+      grid-template-columns:38px minmax(0,1fr);
+      gap:11px;
+      align-items:start;
+      margin-bottom:14px
+    }
+    .study-step-number{
+      width:36px;height:36px;border-radius:50%;
+      display:grid;place-items:center;
+      background:var(--lime);color:#07314f;
+      font-weight:900
+    }
+    .study-step-head h3{font-size:.92em;margin:1px 0 3px}
+    .study-step-head p{font-size:.6em;color:var(--muted);margin:0;line-height:1.38}
+
+    .invoice-drop{
+      min-height:118px;
+      border:1.5px dashed #3ce3c266;
+      border-radius:16px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      padding:16px;
+      cursor:pointer;
+      background:#3ce3c207;
+      text-align:center;
+      transition:.2s
+    }
+    .invoice-drop:hover,.invoice-drop:focus-within{
+      border-color:var(--lime);
+      background:#b9f43b0b
+    }
+    .invoice-drop-icon{font-size:1.5em;color:var(--aqua)}
+    .invoice-drop strong{font-size:.78em}
+    .invoice-drop small{font-size:.55em;color:var(--muted)}
+
+    .invoice-review-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .contact-grid{grid-template-columns:1.1fr 1fr .8fr}
+    .invoice-detected-summary{
+      margin-top:10px;padding:10px 12px;border-radius:12px;
+      background:#08395e;border:1px solid var(--line);
+      color:#a9c9bf;font-size:.58em;line-height:1.4
+    }
+    .study-status{min-height:20px;margin-top:9px;font-size:.58em;line-height:1.4;color:var(--muted)}
+    .study-status.good{color:var(--lime)}
+    .study-status.warn{color:var(--sun)}
+    .study-status.error{color:#ff9d8d}
+
+    .consent-row{
+      display:grid;grid-template-columns:20px minmax(0,1fr);
+      gap:9px;align-items:start;margin-top:12px;
+      color:#aec6da;font-size:.56em;line-height:1.38;
+      cursor:pointer
+    }
+    .consent-row input{width:17px;height:17px;margin:1px 0 0}
+
+    .study-submit[disabled]{opacity:.55;cursor:wait}
+    .study-spinner{
+      display:none;width:15px;height:15px;border-radius:50%;
+      border:2px solid #152400;border-top-color:transparent;
+      margin-right:6px;vertical-align:-2px;
+      animation:studySpin .8s linear infinite
+    }
+    .study-submit.loading .study-spinner{display:inline-block}
+    @keyframes studySpin{to{transform:rotate(360deg)}}
+
+    .study-results-card{
+      position:relative;
+      min-height:610px;
+      padding:20px;
+      overflow:hidden
+    }
+    .study-result-body{
+      visibility:hidden;
+      opacity:0;
+      transition:.25s
+    }
+    .study-results-card.unlocked .study-result-body{
+      visibility:visible;
+      opacity:1
+    }
+    .study-lock{
+      position:absolute;z-index:5;inset:0;
+      display:grid;place-content:center;
+      text-align:center;padding:28px;
+      background:
+        radial-gradient(circle at 50% 30%,#1b514133 0,transparent 40%),
+        linear-gradient(145deg,#0b211d,#002f56)
+    }
+    .study-results-card.unlocked .study-lock{display:none}
+    .study-lock-icon{font-size:2.2em;margin-bottom:8px}
+    .study-lock h3{font-size:1.15em;margin:0 0 7px}
+    .study-lock p{max-width:540px;margin:0 auto;color:var(--muted);font-size:.7em;line-height:1.45}
+    .lock-progress{
+      display:flex;justify-content:center;flex-wrap:wrap;gap:7px;margin-top:18px
+    }
+    .lock-progress span{
+      padding:7px 10px;border-radius:99px;
+      border:1px solid var(--line);color:#7f9f96;font-size:.54em
+    }
+    .lock-progress span.done{
+      border-color:#b9f43b55;color:var(--lime);background:#b9f43b0a
+    }
+
+    .study-main-results{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .study-finance-title{margin-top:14px}
+    .study-finance-title h3{font-size:.88em;margin:2px 0 8px}
+    .epc-payments{
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px
+    }
+    .epc-payments>div,.credit-options>div{
+      min-width:0;padding:9px 10px;border-radius:11px;
+      background:#08395e;border:1px solid var(--line)
+    }
+    .epc-payments span,.credit-options span{
+      display:block;color:var(--muted);font-size:.51em;line-height:1.25
+    }
+    .epc-payments b,.credit-options b{
+      display:block;color:#eefbf6;font-size:.72em;margin-top:3px;overflow-wrap:anywhere
+    }
+    .credit-options{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:7px
+    }
+    .credit-options>div{border-color:#b9f43b2d}
+    .credit-options b{color:var(--lime)}
+    .credit-options small{display:block;color:#78998f;font-size:.46em;margin-top:2px}
+    .study-disclaimer{margin-top:10px!important;font-size:.49em!important}
+    .study-sent-banner{
+      margin-top:10px;padding:9px 11px;border-radius:11px;
+      background:#b9f43b10;border:1px solid #b9f43b44;
+      color:var(--lime);font-size:.59em;font-weight:800
+    }
+
+    @media(max-width:1150px){
+      .study-layout{grid-template-columns:1fr 1fr}
+      .study-main-results{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .epc-payments{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:850px){
+      .study-layout{grid-template-columns:1fr}
+      .invoice-review-grid,.contact-grid{grid-template-columns:1fr}
+      .study-results-card{min-height:480px}
+      .credit-options{grid-template-columns:1fr}
+    }
+
+  
+/* === AJUSTE FINAL GOOGLE SITES: ESTUDIO EN FLUJO VERTICAL === */
+body.embedded .study-slide{
+  display:block!important;
+  padding:74px clamp(18px,3vw,42px) 110px!important;
+  overflow-y:auto!important;
+  overflow-x:hidden!important
+}
+body.embedded .study-slide>.kicker,
+body.embedded .study-slide>h2,
+body.embedded .study-layout{
+  width:min(1180px,100%)!important;
+  margin-left:auto!important;
+  margin-right:auto!important
+}
+body.embedded .study-slide>h2{
+  font-size:clamp(34px,4vw,58px)!important;
+  line-height:1.02!important;
+  margin:10px auto 22px!important
+}
+body.embedded .study-layout{
+  display:flex!important;
+  flex-direction:column!important;
+  gap:18px!important;
+  align-items:stretch!important
+}
+body.embedded .study-workflow{
+  width:100%!important;
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:14px!important
+}
+body.embedded .study-step-card{
+  width:100%!important;
+  padding:20px 22px!important;
+  border-radius:20px!important
+}
+body.embedded .study-step-head{
+  grid-template-columns:42px minmax(0,1fr)!important;
+  gap:12px!important;
+  margin-bottom:16px!important
+}
+body.embedded .study-step-number{
+  width:40px!important;height:40px!important;font-size:15px!important
+}
+body.embedded .study-step-head h3{
+  font-size:clamp(18px,1.55vw,24px)!important;
+  line-height:1.15!important
+}
+body.embedded .study-step-head p{
+  font-size:clamp(12px,1vw,15px)!important;
+  line-height:1.4!important;
+  max-width:900px!important
+}
+body.embedded .invoice-drop{
+  min-height:150px!important;
+  border-radius:18px!important;
+  padding:22px!important
+}
+body.embedded .invoice-drop strong{font-size:15px!important}
+body.embedded .invoice-drop small{font-size:12px!important}
+body.embedded .invoice-review-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:14px!important
+}
+body.embedded .contact-grid{
+  grid-template-columns:1.15fr 1fr .85fr!important;
+  gap:14px!important
+}
+body.embedded .invoice-review-grid label,
+body.embedded .contact-grid label{
+  font-size:12px!important;line-height:1.3!important
+}
+body.embedded .invoice-review-grid input,
+body.embedded .contact-grid input{
+  min-height:48px!important;font-size:15px!important
+}
+body.embedded .invoice-detected-summary,
+body.embedded .study-status,
+body.embedded .consent-row{
+  font-size:12px!important;line-height:1.45!important
+}
+
+/* Informe a ancho completo */
+body.embedded .study-results-card{
+  width:100%!important;
+  min-height:330px!important;
+  margin-top:2px!important;
+  padding:24px!important;
+  border-radius:22px!important;
+  overflow:visible!important
+}
+body.embedded .study-results-card.locked{min-height:340px!important}
+body.embedded .study-results-card.unlocked{min-height:0!important}
+body.embedded .study-lock{
+  position:relative!important;
+  inset:auto!important;
+  min-height:290px!important;
+  border-radius:18px!important;
+  display:grid!important;
+  place-content:center!important
+}
+body.embedded .study-results-card.unlocked .study-lock{display:none!important}
+body.embedded .study-lock h3{font-size:clamp(22px,2vw,30px)!important}
+body.embedded .study-lock p{font-size:14px!important}
+body.embedded .lock-progress span{font-size:11px!important;padding:8px 12px!important}
+body.embedded .study-result-body{width:100%!important}
+
+body.embedded .dimension-output-head{
+  display:flex!important;
+  justify-content:space-between!important;
+  align-items:flex-start!important;
+  gap:16px!important;
+  margin-bottom:14px!important
+}
+body.embedded .dimension-output-head h3{
+  font-size:clamp(26px,2.6vw,38px)!important;
+  line-height:1.05!important
+}
+body.embedded .dimension-status{
+  font-size:13px!important;
+  line-height:1.45!important;
+  padding:13px 15px!important
+}
+body.embedded .target-line{padding:12px 14px!important}
+body.embedded .target-line span{font-size:12px!important}
+body.embedded .target-line strong{font-size:18px!important}
+
+/* métricas */
+body.embedded .study-main-results{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:10px!important;
+  margin-top:14px!important
+}
+body.embedded .study-main-results .result{
+  min-height:96px!important;
+  padding:14px 13px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  align-items:flex-start!important;
+  text-align:left!important
+}
+body.embedded .study-main-results .result b{
+  width:100%!important;
+  font-size:clamp(18px,1.8vw,27px)!important;
+  line-height:1.05!important;
+  overflow-wrap:anywhere!important
+}
+body.embedded .study-main-results .result span{
+  margin-top:6px!important;
+  font-size:11px!important;
+  line-height:1.25!important
+}
+
+/* impacto */
+body.embedded .environmental-comparison{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:10px!important;
+  margin-top:10px!important
+}
+body.embedded .environmental-comparison>div{
+  min-height:84px!important;padding:13px 14px!important
+}
+body.embedded .environmental-comparison span{font-size:11px!important}
+body.embedded .environmental-comparison b{
+  font-size:clamp(18px,1.6vw,25px)!important;
+  overflow-wrap:anywhere!important
+}
+
+/* financiación */
+body.embedded .study-finance-title{
+  margin-top:22px!important;
+  padding-top:18px!important;
+  border-top:1px solid #ffffff12!important
+}
+body.embedded .study-finance-title .small{font-size:12px!important}
+body.embedded .study-finance-title h3{
+  font-size:clamp(22px,2vw,30px)!important;
+  margin:4px 0 12px!important
+}
+body.embedded .epc-payments{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:10px!important
+}
+body.embedded .epc-payments>div{
+  min-height:82px!important;padding:13px 14px!important
+}
+body.embedded .epc-payments span{font-size:11px!important}
+body.embedded .epc-payments b{
+  font-size:clamp(17px,1.5vw,23px)!important;
+  overflow-wrap:anywhere!important
+}
+body.embedded .credit-options{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:10px!important;
+  margin-top:10px!important
+}
+body.embedded .credit-options>div{
+  min-height:102px!important;padding:14px 15px!important
+}
+body.embedded .credit-options span{
+  font-size:11px!important;line-height:1.25!important
+}
+body.embedded .credit-options b{
+  font-size:clamp(18px,1.6vw,25px)!important;
+  line-height:1.1!important;
+  overflow-wrap:anywhere!important
+}
+body.embedded .credit-options small{font-size:10px!important}
+body.embedded .study-disclaimer{
+  margin-top:16px!important;
+  padding:12px 14px!important;
+  border-radius:12px!important;
+  background:#ffffff06!important;
+  border:1px solid #ffffff0d!important;
+  font-size:11px!important;
+  line-height:1.5!important
+}
+body.embedded .study-sent-banner{
+  margin-top:12px!important;
+  padding:12px 14px!important;
+  font-size:12px!important
+}
+
+@media(max-width:1180px){
+  body.embedded .study-main-results{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important
+  }
+  body.embedded .epc-payments{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important
+  }
+}
+@media(max-width:900px){
+  body.embedded .invoice-review-grid,
+  body.embedded .contact-grid,
+  body.embedded .environmental-comparison,
+  body.embedded .credit-options{
+    grid-template-columns:1fr!important
+  }
+  body.embedded .study-slide{
+    padding-left:18px!important;
+    padding-right:18px!important
+  }
+}
+@media(max-width:620px){
+  body.embedded .study-main-results,
+  body.embedded .epc-payments{
+    grid-template-columns:1fr!important
+  }
+  body.embedded .dimension-output-head{
+    flex-direction:column!important
+  }
+  body.embedded .study-results-card{padding:16px!important}
+}
+
+
+    .school-solar-photo{
+      min-height:330px;
+      background:#002f56;
+    }
+    .school-solar-photo img{
+      object-fit:cover !important;
+      object-position:center center !important;
+    }
+    .school-solar-photo figcaption{
+      color:#f5fff9;
+      text-shadow:0 1px 3px #000;
+    }
+    @media(max-width:850px){
+      .school-solar-photo{min-height:250px}
+    }
+
+
+    .tariff-auto-note{margin-top:7px;padding:7px 9px;border-radius:10px;background:#3ce3c20a;border:1px solid #3ce3c22c;color:#aec6da;font-size:11px;line-height:1.35}
+    .tariff-auto-note.good{color:var(--lime);border-color:#b9f43b55;background:#b9f43b0b}
+    .tariff-auto-note.warn{color:var(--sun);border-color:#ffcc4960;background:#ffcc4909}
+
+
+
+    /* =========================================================
+       ACTUALIZACIÓN FINAL · PREDIMENSIONAMIENTO + CONSENTIMIENTO
+       ========================================================= */
+    .initial-estimate-note{
+      margin:0 0 14px;
+      padding:13px 15px;
+      border-radius:14px;
+      border:1px solid #b9f43b55;
+      background:linear-gradient(135deg,#b9f43b10,#3ce3c20a);
+      color:#d9eee7;
+      font-size:13px;
+      line-height:1.5;
+    }
+    .initial-estimate-note strong{color:var(--lime)}
+    .consent-row{
+      padding:13px 14px;
+      border:1px solid #b9f43b44;
+      border-radius:14px;
+      background:#ffffff06;
+      transition:.2s;
+    }
+    .consent-row.required-pending{
+      border-color:#ff755f88;
+      background:#ff755f0b;
+      box-shadow:0 0 0 2px #ff755f0a inset;
+    }
+    .consent-row b{color:#dff5ed}
+    .required-badge{
+      display:inline-flex;
+      margin-left:7px;
+      padding:3px 7px;
+      border-radius:99px;
+      background:#ff755f18;
+      color:#ff9d8d;
+      border:1px solid #ff755f40;
+      font-size:9px;
+      font-weight:900;
+      letter-spacing:.05em;
+      vertical-align:1px;
+    }
+    .study-submit:disabled{opacity:.48;cursor:not-allowed;transform:none!important}
+    .security-honeypot{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important}
+    .security-note{margin-top:8px;color:var(--muted);font-size:.52em;line-height:1.35}
+    .security-note strong{color:var(--lime)}
+
+
+
+    /* Video Facebook Reel en la segunda diapositiva */
+    .facebook-reel-card{
+      min-height:520px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:12px;
+      padding:18px;
+      background:linear-gradient(145deg,#08395e,#0a436f);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+    }
+    .facebook-reel-frame{
+      width:min(100%,360px);
+      aspect-ratio:267/476;
+      border-radius:18px;
+      overflow:hidden;
+      background:#000;
+      border:1px solid #ffffff1c;
+      box-shadow:0 18px 48px #0008;
+    }
+    .facebook-reel-frame iframe{
+      display:block;
+      width:100%;
+      height:100%;
+      border:0;
+      background:#000;
+    }
+    .facebook-reel-card figcaption{
+      max-width:520px;
+      color:#cfe7df;
+      font-size:.62em;
+      line-height:1.35;
+      text-align:center;
+    }
+    .facebook-reel-card figcaption strong{color:var(--lime)}
+    @media(max-width:850px){
+      .facebook-reel-card{min-height:auto;padding:16px}
+      .facebook-reel-frame{width:min(100%,300px)}
+    }
+
+
+/* === Tercera diapositiva · foto territorial + reel Facebook visibles === */
+
+/* === Diapositiva cambio climático · galería ampliable === */
+.climate-story-gallery{
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);
+  gap:22px;
+  align-items:center;
+}
+.climate-story-gallery .climate-text .grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+.climate-story-gallery .climate-landscape{
+  min-height:520px;
+  border-radius:28px;
+  overflow:hidden;
+}
+.climate-story-gallery .climate-landscape img{
+  object-fit:cover!important;
+  object-position:center center!important;
+}
+.climate-story-gallery .gallery-zoom-hint{
+  top:18px;
+  right:18px;
+  font-size:.72em;
+  padding:10px 14px;
+  box-shadow:0 8px 30px #00000040;
+}
+.climate-story-gallery .gallery-click-banner{
+  position:absolute;
+  z-index:4;
+  left:18px;
+  right:18px;
+  bottom:62px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:12px 16px;
+  border-radius:14px;
+  background:rgba(5,17,15,.88);
+  border:1px solid rgba(255,255,255,.18);
+  color:#f4fffb;
+  font-size:.95em;
+  font-weight:700;
+  line-height:1.2;
+  text-align:center;
+  backdrop-filter:blur(8px);
+  pointer-events:none;
+  box-shadow:0 10px 28px rgba(0,0,0,.28);
+}
+.climate-story-gallery .gallery-click-banner .icon{
+  display:inline-grid;
+  place-items:center;
+  width:28px;height:28px;
+  border-radius:999px;
+  background:rgba(185,255,50,.16);
+  border:1px solid rgba(185,255,50,.35);
+  color:var(--lime);
+  font-size:1.05em;
+  flex:0 0 auto;
+}
+@media(max-width:1240px){
+  .climate-story-gallery{
+    grid-template-columns:minmax(0,1fr) minmax(320px,.84fr);
+    gap:18px;
+  }
+  .climate-story-gallery .climate-landscape{min-height:460px}
+}
+@media(max-width:980px){
+  .climate-story-gallery{
+    grid-template-columns:1fr;
+    align-items:start;
+  }
+  .climate-story-gallery .climate-text .grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .climate-story-gallery .climate-landscape{min-height:360px}
+}
+@media(max-width:850px){
+  .climate-story-gallery .climate-text .grid{grid-template-columns:1fr}
+  .climate-story-gallery .climate-landscape{min-height:280px}
+  .climate-story-gallery .gallery-click-banner{left:12px;right:12px;bottom:56px;font-size:.82em;padding:10px 12px}
+}
+.climate-story-layout{
+  display:grid;
+  grid-template-columns:minmax(0,.92fr) minmax(230px,.58fr) minmax(190px,.34fr);
+  gap:14px;
+  align-items:center;
+}
+.climate-story-layout .climate-text{min-width:0}
+.climate-story-layout .climate-text h2{
+  font-size:clamp(30px,3.6vw,58px);
+  line-height:1.02;
+  margin-bottom:18px;
+}
+.climate-story-layout .climate-text .grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+}
+.climate-story-layout .climate-text .card{
+  padding:clamp(13px,1.35vw,20px);
+  border-radius:18px;
+}
+.climate-story-layout .climate-text .card h3{
+  font-size:clamp(17px,1.6vw,27px);
+  line-height:1.05;
+}
+.climate-story-layout .climate-text .card p{
+  font-size:clamp(13px,1.15vw,19px);
+  line-height:1.35;
+}
+.climate-story-layout .climate-text .callout{
+  font-size:clamp(22px,2.55vw,39px);
+  line-height:1.22;
+}
+.climate-landscape{
+  min-height:430px;
+  background:#08395e;
+}
+.climate-landscape img{
+  object-fit:cover!important;
+  object-position:center center!important;
+}
+.climate-landscape:after{
+  content:"";
+  position:absolute;
+  inset:52% 0 0;
+  background:linear-gradient(transparent,#022744e8);
+  pointer-events:none;
+}
+.facebook-reel-box{
+  position:relative;
+  min-height:476px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  overflow:hidden;
+  background:#011d33;
+  box-shadow:var(--shadow);
+}
+.facebook-reel-box iframe{
+  display:block;
+  width:100%;
+  height:476px;
+  border:0;
+  background:#000;
+}
+.facebook-reel-box .fallback-reel-2{
+  position:absolute;
+  left:10px;
+  right:10px;
+  bottom:48px;
+  z-index:3;
+  padding:7px 9px;
+  border-radius:10px;
+  background:#022744d9;
+}
+.facebook-reel-label{
+  position:absolute;
+  z-index:2;
+  left:10px;
+  right:10px;
+  bottom:10px;
+  padding:7px 9px;
+  border-radius:10px;
+  background:#022744d9;
+  color:#eefbf6;
+  font-size:11px;
+  line-height:1.25;
+  pointer-events:none;
+}
+/* En Google Sites normalmente el iframe queda entre 900 y 1180 px: mantenemos foto + video en la misma fila. */
+@media(max-width:1180px){
+  .climate-story-layout{
+    grid-template-columns:minmax(0,.92fr) minmax(225px,.56fr) minmax(185px,.33fr);
+    gap:12px;
+  }
+  .climate-story-layout .climate-text .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .climate-story-layout .climate-text .card{padding:13px}
+  .climate-landscape{min-height:390px}
+  .facebook-reel-box{min-height:430px}
+  .facebook-reel-box iframe{height:430px}
+}
+@media(max-width:980px){
+  .climate-story-layout{
+    grid-template-columns:minmax(0,1fr) minmax(230px,.72fr);
+    align-items:start;
+  }
+  .climate-story-layout .facebook-reel-box{
+    grid-column:2;
+    min-height:390px;
+  }
+  .climate-story-layout .facebook-reel-box iframe{height:390px}
+  .climate-landscape{min-height:280px}
+  .climate-story-layout .climate-text{grid-row:1 / span 2}
+  .climate-story-layout .climate-text .grid{grid-template-columns:1fr}
+}
+@media(max-width:850px){
+  .climate-story-layout{grid-template-columns:1fr}
+  .climate-story-layout .climate-text{grid-row:auto}
+  .climate-story-layout .climate-text .grid{grid-template-columns:1fr}
+  .climate-landscape{min-height:250px}
+  .facebook-reel-box,.climate-story-layout .facebook-reel-box{grid-column:auto;min-height:476px}
+  .facebook-reel-box iframe,.climate-story-layout .facebook-reel-box iframe{height:476px}
+}
+
+
+
+    /* =========================================================
+       DIAPOSITIVA 4 · CAMBIO CLIMÁTICO (versión solicitada)
+       ========================================================= */
+    .climate-basics-slide{
+      align-content:center;
+    }
+    .climate-basics-slide h2{
+      max-width:920px;
+      margin-bottom:32px;
+    }
+    .climate-basics-grid{
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      max-width:1000px;
+      gap:34px;
+    }
+    .climate-basics-grid .card{
+      min-height:260px;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-start;
+      padding:34px 38px;
+      border-radius:46px;
+      background:linear-gradient(145deg,#ffffff0b,#ffffff04);
+    }
+    .climate-basics-grid .card h3{
+      font-size:clamp(26px,2.3vw,40px);
+      line-height:1.08;
+      margin-bottom:26px;
+    }
+    .climate-basics-grid .card p{
+      font-size:clamp(22px,2vw,34px);
+      line-height:1.35;
+      margin:0;
+      color:#bdd6cd;
+    }
+    .climate-basics-callout{
+      margin-top:36px;
+      max-width:1050px;
+      font-size:clamp(30px,3.3vw,52px);
+      line-height:1.3;
+      padding-left:42px;
+      border-left-width:8px;
+    }
+    body.embedded .climate-basics-slide{
+      align-content:start;
+    }
+    body.embedded .climate-basics-slide h2{
+      font-size:clamp(44px,5.8vw,78px)!important;
+      max-width:980px;
+      margin-bottom:30px;
+    }
+    body.embedded .climate-basics-grid .card{
+      min-height:240px;
+    }
+    @media(max-width:1000px){
+      .climate-basics-grid{grid-template-columns:1fr 1fr;gap:18px}
+      .climate-basics-grid .card{min-height:210px;border-radius:28px}
+      .climate-basics-grid .card:last-child{grid-column:1/-1}
+    }
+    @media(max-width:720px){
+      .climate-basics-grid{grid-template-columns:1fr}
+      .climate-basics-grid .card:last-child{grid-column:auto}
+      .climate-basics-callout{font-size:clamp(25px,7vw,40px);padding-left:24px}
+    }
+
+
+
+    /* =========================================================
+       AJUSTE SOLICITADO: DIAPOSITIVAS 2 Y 3 SIN TEXTO VISIBLE
+       Se conservan únicamente los recursos audiovisuales.
+       ========================================================= */
+    .media-only-slide{
+      align-content:center!important;
+      justify-items:center!important;
+      overflow:auto!important;
+    }
+    .video-only-slide{
+      padding-top:clamp(72px,8vh,100px)!important;
+      padding-bottom:clamp(72px,8vh,100px)!important;
+    }
+    .opening-video-only{
+      width:min(440px,92vw)!important;
+      min-height:0!important;
+      padding:18px!important;
+      margin:0 auto!important;
+      display:grid!important;
+      place-items:center!important;
+      border-radius:28px!important;
+    }
+    .opening-video-only .facebook-reel-frame,
+    .climate-reel-only .facebook-reel-frame{
+      width:100%!important;
+      display:grid!important;
+      place-items:center!important;
+    }
+    .opening-video-only iframe{
+      width:min(100%,340px)!important;
+      height:min(68vh,604px)!important;
+      aspect-ratio:267/476!important;
+      border-radius:18px!important;
+      background:#08395e!important;
+    }
+    .climate-media-only-slide{
+      padding-left:clamp(24px,4vw,70px)!important;
+      padding-right:clamp(24px,4vw,70px)!important;
+    }
+
+    .climate-data-slide{align-content:start!important}
+    .climate-data-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start;margin-top:12px}
+    .climate-data-card{padding:14px;display:grid;gap:10px;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.12)}
+    .climate-data-card img{display:block;width:100%;height:min(52vh,470px);object-fit:contain;background:#f5f9ff;border-radius:18px}
+    .climate-data-card figcaption{font-size:.88em;line-height:1.35;color:var(--muted)}
+
+    .climate-media-pair{
+      width:min(1220px,100%);
+      display:grid;
+      grid-template-columns:minmax(360px,1.45fr) minmax(250px,.75fr);
+      gap:22px;
+      align-items:center;
+      justify-content:center;
+    }
+    .climate-media-pair .climate-landscape{
+      width:100%;
+      min-height:min(56vh,520px)!important;
+      margin:0!important;
+      border-radius:28px!important;
+    }
+    .climate-media-pair .climate-landscape:after{
+      display:none!important;
+    }
+    .climate-media-pair .climate-reel-only{
+      width:min(330px,100%)!important;
+      padding:14px!important;
+      margin:0 auto!important;
+      min-height:0!important;
+      border-radius:22px!important;
+      display:grid!important;
+      place-items:center!important;
+    }
+    .climate-reel-only iframe{
+      width:100%!important;
+      max-width:267px!important;
+      height:min(60vh,476px)!important;
+      aspect-ratio:267/476!important;
+      border-radius:16px!important;
+      background:#08395e!important;
+    }
+    body.embedded .media-only-slide{
+      align-content:center!important;
+      overflow-y:auto!important;
+    }
+    body.embedded .opening-video-only iframe{
+      height:min(65vh,560px)!important;
+    }
+    body.embedded .climate-media-pair .climate-landscape{
+      min-height:min(52vh,470px)!important;
+    }
+    body.embedded .climate-reel-only iframe{
+      height:min(55vh,450px)!important;
+    }
+    @media(max-width:900px){
+      .climate-media-pair{
+        grid-template-columns:1fr;
+        gap:16px;
+      }
+      .climate-media-pair .climate-landscape{
+        min-height:300px!important;
+      }
+      .climate-media-pair .climate-reel-only{
+        width:min(320px,92vw)!important;
+      }
+      .opening-video-only iframe,
+      .climate-reel-only iframe{
+        height:min(58vh,476px)!important;
+      }
+    }
+    @media(max-width:520px){
+      .opening-video-only{padding:10px!important;border-radius:18px!important}
+      .climate-media-only-slide{padding-left:14px!important;padding-right:14px!important}
+      .climate-media-pair .climate-landscape{min-height:240px!important;border-radius:18px!important}
+      .climate-media-pair .climate-reel-only{padding:10px!important}
+    }
+
+
+
+/* =========================================================
+   MAQUETACIÓN RESPONSIVE FINAL · Climate Week 2026
+   Ajusta espaciados, grillas e imágenes para Google Sites,
+   pantallas de escritorio, tablet y móvil.
+   ========================================================= */
+:root{
+  --slide-x:clamp(22px,5.6vw,96px);
+  --slide-top:clamp(72px,8vh,98px);
+  --slide-bottom:clamp(88px,9vh,116px);
+}
+.slide{
+  padding:var(--slide-top) var(--slide-x) var(--slide-bottom)!important;
+  overflow-y:auto!important;
+  overflow-x:hidden!important;
+  align-content:center;
+  scrollbar-width:thin;
+}
+.slide::-webkit-scrollbar{width:8px}.slide::-webkit-scrollbar-thumb{background:#ffffff24;border-radius:99px}
+.slide>*{max-width:100%}
+.kicker{margin-bottom:10px!important}
+h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-bottom:20px!important;max-width:min(1180px,100%)!important}
+.display{font-size:clamp(42px,6.3vw,92px)!important;max-width:min(1180px,100%)!important}
+.lead{font-size:clamp(18px,1.75vw,29px)!important;max-width:min(980px,100%)!important;margin-top:0}
+.card{padding:clamp(16px,1.7vw,26px)!important}.card p{line-height:1.38!important}.callout{font-size:clamp(22px,2.35vw,38px)!important;line-height:1.22!important;max-width:min(1050px,100%)}
+.grid{gap:clamp(12px,1.4vw,20px)!important}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.visual-split{grid-template-columns:minmax(0,1fr) minmax(320px,.9fr)!important;gap:clamp(18px,2vw,30px)!important}.photo{min-height:clamp(260px,34vh,440px)!important}
+.media-only-slide{padding-top:60px!important;padding-bottom:82px!important}.opening-video-only{max-width:min(960px,100%);margin-inline:auto}.opening-video-only iframe{height:min(62vh,560px)!important}.climate-media-pair{grid-template-columns:minmax(0,1fr) minmax(260px,.62fr)!important;gap:18px!important}.climate-media-pair .climate-landscape{min-height:min(52vh,470px)!important}.climate-reel-only iframe{height:min(58vh,500px)!important}
+.climate-story-gallery{grid-template-columns:minmax(0,1.12fr) minmax(300px,.78fr)!important;gap:clamp(18px,2.2vw,34px)!important;align-items:center!important}.climate-story-gallery .climate-text .grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important}.climate-story-gallery .climate-landscape{min-height:min(56vh,520px)!important;background:#001f39!important}.climate-story-gallery .climate-landscape img{object-fit:contain!important;object-position:center!important;background:#001f39!important}.climate-story-gallery .climate-landscape:after{inset:auto 0 0;height:35%;background:linear-gradient(transparent,#001a2fe6)!important}.climate-story-gallery .gallery-click-banner{bottom:58px!important}.climate-story-gallery .gallery-zoom-hint{font-size:.68em!important;padding:9px 13px!important}
+.simeco-dashboard{grid-template-columns:minmax(0,1fr) minmax(340px,.82fr)!important;gap:18px!important}.simeco-main-metric{min-height:min(46vh,390px)!important}.simeco-side-metrics{gap:12px!important}.simeco-mini-card{min-height:136px!important;padding:16px!important}.simeco-co2{font-size:clamp(44px,5vw,76px)!important}.simeco-flow{gap:8px!important}.result-grid.four{grid-template-columns:repeat(4,minmax(0,1fr))!important}.form-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.finance-paths{grid-template-columns:repeat(2,minmax(0,1fr))!important}.finance-path-card{min-height:auto!important}.finance-criteria{margin-top:14px!important}.zero-pill-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;margin:14px 0!important}.zero-focus{grid-template-columns:minmax(0,1fr) minmax(320px,.82fr)!important;gap:18px!important}.zero-benefits-card img{max-height:min(40vh,360px)!important;object-fit:contain!important}.zero-note-card p{font-size:.9em!important;line-height:1.35!important}.rocasol-kpi-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:12px!important}.rocasol-kpi{padding:15px!important;min-height:120px!important}.rocasol-kpi b{font-size:1.1em!important}.rocasol-equation{gap:10px!important}.rocasol-equation .eq-card{min-height:130px!important;padding:16px!important}.projection-grid{grid-template-columns:minmax(0,1.08fr) minmax(300px,.82fr)!important;gap:18px!important}.projection-bars{height:min(40vh,320px)!important}.rocasol-decision{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important}.rocasol-decision .card{min-height:200px!important}.big-verdict{font-size:clamp(23px,2.2vw,34px)!important}
+.study-slide{align-content:start!important}.study-layout{grid-template-columns:minmax(0,1fr) minmax(360px,.82fr)!important;gap:18px!important}.study-workflow{gap:14px!important}.study-step-card{padding:14px!important}.study-results-card{padding:16px!important}.study-main-results,.environmental-comparison,.epc-payments,.credit-options{grid-template-columns:repeat(2,minmax(0,1fr))!important}.dimension-output-head{grid-template-columns:minmax(0,1fr) auto!important}.invoice-review-grid,.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.alliance-photo{min-height:min(48vh,430px)!important}.footerline{bottom:44px!important}
+@media(max-height:760px) and (min-width:851px){
+  :root{--slide-top:62px;--slide-bottom:80px;--slide-x:clamp(22px,5vw,84px)}h2{font-size:clamp(30px,3.7vw,54px)!important;margin-bottom:14px!important}.display{font-size:clamp(38px,5.4vw,76px)!important}.lead{font-size:clamp(17px,1.5vw,24px)!important}.card{padding:14px!important}.callout{font-size:clamp(20px,2vw,31px)!important}.photo{min-height:245px!important}.grid{gap:11px!important}.kicker{font-size:.66em!important;margin-bottom:8px!important}.timeline{gap:6px!important}.chart{height:210px!important}.simeco-main-metric{min-height:300px!important}.simeco-mini-card{min-height:118px!important}.simeco-mini-card strong{font-size:clamp(25px,2.4vw,38px)!important}.finance-path-card p{font-size:.82em!important}.zero-pill{padding:10px!important}.zero-focus{grid-template-columns:minmax(0,1fr) minmax(280px,.78fr)!important}.zero-benefits-card img{max-height:250px!important}.rocasol-kpi{min-height:104px!important}.rocasol-kpi span{font-size:.75em!important}.rocasol-equation .eq-card{min-height:108px!important}.projection-bars{height:250px!important}.comparison th{font-size:.6em!important}.comparison td{padding:7px 8px!important}.small{font-size:.66em!important}.study-step-card{padding:12px!important}.study-results-card.locked{min-height:260px!important}
+}
+@media(max-width:1180px){
+  :root{--slide-x:clamp(20px,4vw,62px)}h2{font-size:clamp(30px,4.1vw,54px)!important}.display{font-size:clamp(38px,6vw,78px)!important}.grid.two,.visual-split,.simeco-dashboard,.projection-grid,.zero-focus,.study-layout{grid-template-columns:1fr!important}.grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.climate-story-gallery{grid-template-columns:1fr!important}.climate-story-gallery .climate-landscape{min-height:380px!important}.simeco-side-metrics{grid-template-columns:repeat(2,minmax(0,1fr))!important}.rocasol-kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}.rocasol-decision{grid-template-columns:1fr!important}.finance-paths{grid-template-columns:1fr 1fr!important}.opening-video-only iframe,.climate-reel-only iframe{height:520px!important}.alliance-photo{min-height:350px!important}
+}
+@media(max-width:850px){
+  :root{--slide-top:70px;--slide-bottom:92px;--slide-x:20px}html,body{overflow:hidden!important}.deck{height:100vh!important}.slide{align-content:start!important;padding:var(--slide-top) var(--slide-x) var(--slide-bottom)!important}.brand{font-size:12px!important;left:16px!important;top:14px!important}.timer{font-size:12px!important;top:14px!important;right:14px!important}.embed-badge{display:none!important}.controls{bottom:10px!important}.round{width:40px!important;height:40px!important}h2{font-size:clamp(28px,9vw,42px)!important;line-height:1.02!important}.display{font-size:clamp(36px,11vw,58px)!important}.lead{font-size:18px!important}.callout{font-size:24px!important}.grid,.grid.two,.form-grid,.result-grid,.result-grid.four,.poll,.visual-split,.ring-layout,.simeco-dashboard,.simeco-side-metrics,.finance-paths,.zero-focus,.projection-grid,.rocasol-decision,.study-layout,.invoice-review-grid,.contact-grid,.study-main-results,.environmental-comparison,.epc-payments,.credit-options{grid-template-columns:1fr!important}.timeline{grid-template-columns:1fr 1fr!important}.climate-media-pair{grid-template-columns:1fr!important}.climate-story-gallery .climate-text .grid{grid-template-columns:1fr!important}.climate-story-gallery .climate-landscape{min-height:300px!important}.opening-video-only iframe,.climate-reel-only iframe{height:470px!important}.zero-pill-grid{grid-template-columns:1fr 1fr!important}.zero-benefits-card img{max-height:none!important}.rocasol-kpi-grid{grid-template-columns:1fr 1fr!important}.rocasol-equation{grid-template-columns:1fr!important}.eq-symbol{transform:rotate(90deg);font-size:1.5em!important}.projection-bars{height:300px!important}.comparison{font-size:.78em!important;display:block;overflow-x:auto;white-space:nowrap}.road{grid-template-columns:1fr!important}.step{display:grid!important;grid-template-columns:44px minmax(0,1fr)!important}.step:after{display:none!important}.footerline{position:static!important;margin-top:24px!important}.alliance-photo{min-height:260px!important}
+}
+@media(max-width:560px){
+  :root{--slide-x:16px;--slide-top:66px;--slide-bottom:86px}.brand span{display:none}.timer{right:10px!important}.controls{gap:6px!important}.counter{min-width:48px!important}.round{width:38px!important;height:38px!important}.meta{gap:7px!important}.pill{padding:7px 10px!important}.zero-pill-grid,.rocasol-kpi-grid,.timeline{grid-template-columns:1fr!important}.projection-bars{grid-template-columns:repeat(3,1fr)!important;height:auto!important;min-height:280px}.projection-bar span{font-size:.7em!important}.carbon-gallery-shell{grid-template-columns:1fr!important;grid-template-areas:"head" "stage" "thumbs"!important;height:96vh!important}.gallery-thumbs{grid-template-columns:repeat(4,1fr)!important;grid-auto-flow:column;overflow-x:auto}.gallery-thumb{min-height:90px!important}.study-main-results,.environmental-comparison,.epc-payments,.credit-options{grid-template-columns:1fr!important}
+}
+
+
+@media(max-width:1100px){.climate-data-grid{grid-template-columns:1fr}.climate-data-card img{height:auto;max-height:unset}}
+
+    .climate-data-media-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(250px,.52fr);
+      gap:16px;
+      align-items:stretch;
+      margin-top:12px;
+    }
+    .climate-data-media-grid .climate-data-card{
+      min-width:0;
+      height:100%;
+    }
+    .climate-data-media-grid .climate-data-card img{
+      height:min(43vh,390px);
+      object-fit:contain;
+      background:#f5f9ff;
+    }
+    .climate-video-card{
+      padding:14px;
+      display:grid;
+      gap:10px;
+      align-content:start;
+      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.04));
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:var(--radius);
+      box-shadow:0 14px 40px #0003;
+    }
+    .climate-video-card iframe{
+      width:100%;
+      height:min(50vh,460px);
+      border-radius:18px;
+      background:#00182b;
+    }
+    .climate-video-card figcaption{
+      font-size:.88em;
+      line-height:1.35;
+      color:var(--muted);
+    }
+    @media(max-width:1200px){
+      .climate-data-media-grid{grid-template-columns:1fr 1fr}
+      .climate-video-card{grid-column:1 / -1}
+      .climate-video-card iframe{height:min(46vh,420px)}
+    }
+    @media(max-width:760px){
+      .climate-data-media-grid{grid-template-columns:1fr}
+      .climate-data-media-grid .climate-data-card img{height:auto;max-height:none}
+      .climate-video-card iframe{height:470px}
+    }
+
+
+
+    /* === Diapositiva 2 · video + dos fotos === */
+    .opening-climate-grid{
+      width:min(1260px,100%);
+      display:grid;
+      grid-template-columns:minmax(0,1.25fr) minmax(280px,.68fr);
+      gap:22px;
+      align-items:center;
+      justify-content:center;
+      margin-top:8px;
+    }
+    .opening-photo-column{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+      align-items:stretch;
+    }
+    .opening-photo-card,
+    .opening-video-card{
+      padding:14px!important;
+      margin:0!important;
+      border-radius:24px!important;
+      background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.03))!important;
+      border:1px solid rgba(255,255,255,.12)!important;
+      box-shadow:var(--shadow)!important;
+      min-height:0!important;
+    }
+    .opening-photo-card img{
+      display:block;
+      width:100%;
+      height:min(46vh,360px);
+      object-fit:cover;
+      border-radius:18px;
+      background:#f4f7fb;
+    }
+    .opening-photo-card figcaption,
+    .opening-video-card figcaption{
+      margin-top:10px;
+      color:#dbe9f3;
+      font-size:.62em;
+      line-height:1.35;
+    }
+    .opening-photo-card figcaption strong,
+    .opening-video-card figcaption strong{color:var(--lime)}
+    .opening-video-card{
+      width:min(360px,100%)!important;
+      justify-self:center;
+      display:grid!important;
+      place-items:center!important;
+      gap:12px;
+    }
+    .opening-video-card .facebook-reel-frame{
+      width:min(100%,300px)!important;
+      aspect-ratio:267/476!important;
+    }
+    .opening-video-card .tap-hint{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.16);
+      color:#eff8ff;
+      font-size:.58em;
+      font-weight:700;
+      letter-spacing:.03em;
+      text-transform:uppercase;
+    }
+    @media(max-width:1180px){
+      .opening-climate-grid{grid-template-columns:1fr;max-width:920px}
+      .opening-video-card{width:min(420px,100%)!important}
+    }
+    @media(max-width:760px){
+      .opening-photo-column{grid-template-columns:1fr}
+      .opening-photo-card img{height:min(34vh,260px)}
+      .opening-video-card .facebook-reel-frame{width:min(100%,280px)!important}
+    }
+
+
+
+    /* ===== Ajustes solicitados: limpieza visual y mejor slide 2 ===== */
+    .orbit-hint{display:none!important;}
+    .finance-criteria{display:none!important;}
+    .climate-opener-slide{
+      align-content:center!important;
+      justify-items:center!important;
+      text-align:center!important;
+      padding-top:clamp(34px,5.2vh,62px)!important;
+      padding-bottom:clamp(34px,5.2vh,62px)!important;
+    }
+    .climate-opener-shell{
+      width:min(1120px,100%);
+      margin:0 auto;
+      display:grid;
+      gap:18px;
+      justify-items:center;
+      align-content:center;
+    }
+    .climate-opener-head{
+      display:grid;
+      gap:10px;
+      justify-items:center;
+      text-align:center;
+      max-width:min(900px,94vw);
+    }
+    .centered-kicker{
+      justify-self:center!important;
+      text-align:center!important;
+      margin-bottom:0!important;
+    }
+    .centered-title{
+      justify-self:center!important;
+      text-align:center!important;
+      margin:0!important;
+      max-width:min(900px,94vw);
+      font-size:clamp(42px,5.4vw,78px)!important;
+      line-height:0.98!important;
+      letter-spacing:-0.03em;
+    }
+    .centered-subtitle{
+      max-width:min(760px,92vw);
+      color:var(--muted);
+      margin:0 auto!important;
+      font-size:clamp(18px,2vw,25px);
+      line-height:1.35;
+    }
+    .climate-opener-hero{
+      position:relative;
+      width:min(700px,94vw)!important;
+      padding:22px 22px 18px!important;
+      border-radius:34px!important;
+      border:1px solid rgba(255,255,255,.12)!important;
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03))!important;
+      box-shadow:0 24px 56px rgba(0,0,0,.30)!important;
+      overflow:hidden;
+    }
+    .climate-opener-hero::before{
+      content:"";
+      position:absolute;
+      inset:auto -10% -55% auto;
+      width:320px;
+      height:320px;
+      background:radial-gradient(circle, rgba(123,255,187,.18), transparent 68%);
+      pointer-events:none;
+      filter:blur(8px);
+    }
+    .climate-video-chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+      margin-bottom:14px;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:clamp(12px,1.2vw,14px);
+      font-weight:700;
+      letter-spacing:.02em;
+      border:1px solid rgba(255,255,255,.1);
+    }
+    .chip-primary{
+      background:rgba(111,238,181,.16);
+      color:var(--accent);
+    }
+    .chip-soft{
+      background:rgba(255,255,255,.05);
+      color:var(--text);
+    }
+    .climate-opener-card .facebook-reel-frame{
+      width:min(100%,356px)!important;
+      margin:0 auto!important;
+      border-radius:28px!important;
+      overflow:hidden!important;
+      box-shadow:0 16px 36px rgba(0,0,0,.24)!important;
+      border:1px solid rgba(255,255,255,.12)!important;
+      background:#061e35!important;
+    }
+    .climate-opener-card iframe{
+      width:min(100%,356px)!important;
+      height:min(58vh,560px)!important;
+      display:block;
+      margin:0 auto;
+      border-radius:24px!important;
+    }
+    .climate-opener-tap{
+      margin-top:14px!important;
+      display:inline-flex!important;
+      align-items:center;
+      justify-content:center;
+      min-height:auto!important;
+      padding:10px 18px!important;
+      border-radius:999px!important;
+      background:rgba(255,255,255,.06)!important;
+      border:1px solid rgba(255,255,255,.12)!important;
+      color:var(--text)!important;
+      font-weight:700!important;
+      font-size:clamp(13px,1.3vw,15px)!important;
+      box-shadow:none!important;
+    }
+    .climate-opener-card figcaption{display:none!important;}
+    @media (max-width: 900px){
+      .centered-title{font-size:clamp(36px,8vw,60px)!important;}
+      .climate-opener-hero{width:min(92vw,520px)!important;padding:18px!important;}
+      .climate-opener-card iframe{height:min(56vh,520px)!important;}
+    }
+    @media (max-width: 640px){
+      .climate-opener-slide{padding-top:30px!important;padding-bottom:30px!important;}
+      .climate-opener-shell{gap:14px;}
+      .centered-subtitle{font-size:16px;}
+      .climate-video-chips{gap:8px;}
+      .chip{font-size:12px;padding:7px 11px;}
+      .climate-opener-card .facebook-reel-frame{width:min(100%,300px)!important;}
+      .climate-opener-card iframe{width:min(100%,300px)!important;height:min(50vh,440px)!important;}
+      .climate-opener-tap{font-size:12px!important;padding:9px 14px!important;}
+    }
+
+
+    .simeco-slide-button{
+      font-size:clamp(20px,2.4vw,34px);
+      padding:16px 34px;
+      border-radius:999px;
+      text-decoration:none;
+      box-shadow:0 14px 34px rgba(0,0,0,.26);
+    }
+
+
+
+    /* =========================================================
+       GOOGLE SITES · PAQUETE RESPONSIVE FINAL
+       Todas las imágenes usadas están incrustadas como Base64.
+       ========================================================= */
+    img{max-width:100%;height:auto}
+    iframe{max-width:100%}
+    @supports (height:100dvh){
+      html,body,.deck{height:100dvh!important;min-height:100dvh!important;}
+    }
+    body.embedded{
+      width:100%!important;
+      min-width:0!important;
+      overflow:hidden!important;
+      background:var(--bg)!important;
+    }
+    body.embedded .deck{
+      width:100%!important;
+      height:100vh!important;
+      height:100dvh!important;
+      min-height:620px;
+      overflow:hidden!important;
+    }
+    body.embedded .slide{
+      width:100%!important;
+      min-width:0!important;
+      padding:clamp(66px,7vh,92px) clamp(20px,5vw,82px) clamp(76px,7vh,96px)!important;
+      overflow-y:auto!important;
+      overscroll-behavior:contain!important;
+      scrollbar-gutter:stable;
+    }
+    body.embedded .slide > *{max-width:100%;}
+    body.embedded .brand{top:18px!important;left:22px!important;font-size:clamp(12px,1.3vw,16px)!important;}
+    body.embedded .timer{top:16px!important;right:18px!important;font-size:clamp(12px,1.2vw,15px)!important;}
+    body.embedded .controls{bottom:14px!important;left:50%!important;transform:translateX(-50%)!important;}
+    body.embedded h1.display{font-size:clamp(42px,6.2vw,92px)!important;line-height:.94!important;}
+    body.embedded h2{font-size:clamp(34px,4.8vw,70px)!important;line-height:1!important;}
+    body.embedded .lead{font-size:clamp(18px,2vw,30px)!important;}
+    body.embedded .card{min-width:0;}
+    body.embedded .grid,
+    body.embedded .grid.two,
+    body.embedded .visual-split,
+    body.embedded .simeco-dashboard,
+    body.embedded .projection-grid,
+    body.embedded .zero-focus,
+    body.embedded .study-layout,
+    body.embedded .invoice-review-grid,
+    body.embedded .contact-grid,
+    body.embedded .environmental-comparison,
+    body.embedded .epc-payments,
+    body.embedded .credit-options{
+      max-width:100%;
+    }
+    body.embedded .climate-opener-slide{
+      align-content:center!important;
+      overflow-y:auto!important;
+    }
+    body.embedded .climate-opener-shell{width:min(900px,100%)!important;gap:14px!important;}
+    body.embedded .centered-title{font-size:clamp(38px,5.2vw,68px)!important;}
+    body.embedded .centered-subtitle{font-size:clamp(16px,1.8vw,22px)!important;}
+    body.embedded .climate-opener-hero{width:min(560px,92vw)!important;padding:18px!important;}
+    body.embedded .climate-opener-card iframe{height:min(54vh,520px)!important;}
+    body.embedded .opening-climate-grid{width:min(1120px,100%)!important;grid-template-columns:minmax(0,1fr) minmax(260px,.58fr)!important;gap:18px!important;}
+    body.embedded .opening-photo-card img{height:min(38vh,310px)!important;object-fit:cover!important;}
+    body.embedded .opening-video-card .facebook-reel-frame{width:min(100%,280px)!important;}
+    body.embedded .opening-video-card iframe{height:min(56vh,460px)!important;}
+    body.embedded .single-image-card img{max-height:62vh!important;object-fit:contain!important;}
+    body.embedded .zero-benefits-card img{max-height:58vh!important;object-fit:contain!important;}
+    body.embedded .carbon-gallery-shell{width:min(96vw,1380px)!important;height:min(94vh,860px)!important;}
+    @media (max-width: 1100px){
+      body.embedded .opening-climate-grid{grid-template-columns:1fr!important;}
+      body.embedded .opening-photo-column{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+      body.embedded .opening-video-card{width:min(420px,100%)!important;}
+      body.embedded .finance-paths{grid-template-columns:1fr 1fr!important;}
+      body.embedded .zero-focus{grid-template-columns:1fr!important;}
+    }
+    @media (max-width: 760px){
+      body.embedded .deck{min-height:560px;}
+      body.embedded .slide{padding:64px 18px 84px!important;align-content:start!important;}
+      body.embedded h1.display{font-size:clamp(36px,10vw,58px)!important;}
+      body.embedded h2{font-size:clamp(30px,9vw,46px)!important;}
+      body.embedded .grid,
+      body.embedded .grid.two,
+      body.embedded .finance-paths,
+      body.embedded .opening-photo-column,
+      body.embedded .opening-climate-grid,
+      body.embedded .visual-split,
+      body.embedded .simeco-dashboard,
+      body.embedded .projection-grid,
+      body.embedded .study-layout{grid-template-columns:1fr!important;}
+      body.embedded .opening-photo-card img{height:min(32vh,245px)!important;}
+      body.embedded .climate-opener-card iframe{height:min(48vh,430px)!important;}
+      body.embedded .opening-video-card iframe{height:min(48vh,430px)!important;}
+      body.embedded .brand{left:14px!important;top:12px!important;}
+      body.embedded .timer{right:12px!important;top:12px!important;}
+    }
+
+
+    /* ===== Diapositiva 2: título + video optimizado para Google Sites ===== */
+    .climate-opener-slide{
+      align-content:center!important;
+      justify-items:center!important;
+      overflow:hidden!important;
+      padding-top:clamp(42px,6vh,74px)!important;
+      padding-bottom:clamp(54px,7vh,86px)!important;
+    }
+    .climate-opener-grid{
+      width:min(1120px,100%);
+      display:grid;
+      grid-template-columns:minmax(0,.95fr) minmax(300px,430px);
+      gap:clamp(28px,5vw,76px);
+      align-items:center;
+      justify-content:center;
+      margin:0 auto;
+    }
+    .climate-opener-titleblock{
+      display:grid;
+      gap:16px;
+      align-content:center;
+      justify-items:start;
+      text-align:left;
+      min-width:0;
+    }
+    .climate-opener-titleblock .centered-kicker{
+      justify-self:start!important;
+      text-align:left!important;
+      margin:0!important;
+    }
+    .climate-opener-titleblock .centered-title{
+      margin:0!important;
+      max-width:620px;
+      text-align:left!important;
+      justify-self:start!important;
+      font-size:clamp(54px,7.2vw,104px)!important;
+      line-height:.92!important;
+      letter-spacing:-.055em;
+    }
+    .climate-opener-accent{
+      width:min(320px,75%);
+      height:10px;
+      border-radius:999px;
+      background:linear-gradient(90deg,var(--lime),var(--aqua),transparent);
+      box-shadow:0 0 36px rgba(118,247,176,.24);
+    }
+    .climate-opener-hero{
+      width:min(430px,100%)!important;
+      padding:18px!important;
+      border-radius:34px!important;
+      border:1px solid rgba(255,255,255,.16)!important;
+      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035))!important;
+      box-shadow:0 24px 58px rgba(0,0,0,.28)!important;
+      overflow:hidden!important;
+    }
+    .climate-opener-hero .facebook-reel-frame{
+      width:min(100%,326px)!important;
+      margin:0 auto!important;
+      border-radius:26px!important;
+      overflow:hidden!important;
+      background:#031827!important;
+      box-shadow:0 16px 40px rgba(0,0,0,.34)!important;
+    }
+    .climate-opener-hero iframe{
+      display:block!important;
+      width:100%!important;
+      height:min(57vh,548px)!important;
+      border-radius:24px!important;
+    }
+    .climate-video-chips{
+      display:flex;
+      justify-content:center;
+      margin-bottom:12px;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.03em;
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .chip-primary{
+      background:rgba(118,247,176,.16);
+      color:#dffff2;
+    }
+    .climate-opener-tap{
+      margin-top:12px!important;
+      display:inline-flex!important;
+      align-items:center;
+      justify-content:center;
+      padding:9px 16px!important;
+      border-radius:999px!important;
+      background:rgba(255,255,255,.07)!important;
+      border:1px solid rgba(255,255,255,.14)!important;
+      color:#eff8ff!important;
+      font-weight:800!important;
+      font-size:13px!important;
+    }
+    .centered-subtitle{display:none!important;}
+    @media(max-width:980px){
+      .climate-opener-slide{overflow:auto!important;}
+      .climate-opener-grid{grid-template-columns:1fr;gap:20px;max-width:640px;}
+      .climate-opener-titleblock{justify-items:center;text-align:center;}
+      .climate-opener-titleblock .centered-kicker,
+      .climate-opener-titleblock .centered-title{text-align:center!important;justify-self:center!important;}
+      .climate-opener-titleblock .centered-title{font-size:clamp(42px,10vw,72px)!important;}
+      .climate-opener-accent{width:min(260px,70%);}
+      .climate-opener-hero{width:min(440px,94vw)!important;}
+    }
+    @media(max-width:620px){
+      .climate-opener-slide{padding-top:32px!important;padding-bottom:42px!important;}
+      .climate-opener-hero{padding:14px!important;border-radius:26px!important;}
+      .climate-opener-hero .facebook-reel-frame{width:min(100%,280px)!important;}
+      .climate-opener-hero iframe{height:min(52vh,440px)!important;}
+      .chip{font-size:12px;padding:7px 12px;}
+      .climate-opener-tap{font-size:12px!important;padding:8px 14px!important;}
+    }
+
+
+
+    /* ==========================================================
+       FIX GOOGLE SITES / IFRAME: una sola diapositiva visible
+       ========================================================== */
+    html,body{
+      width:100%!important;
+      height:100%!important;
+      min-height:100%!important;
+      overflow:hidden!important;
+      overscroll-behavior:none!important;
+    }
+    .deck{
+      width:100vw!important;
+      height:100vh!important;
+      min-height:560px!important;
+      overflow:hidden!important;
+      isolation:isolate!important;
+    }
+    .slide{
+      position:absolute!important;
+      inset:0!important;
+      display:none!important;
+      opacity:0!important;
+      visibility:hidden!important;
+      pointer-events:none!important;
+      transform:none!important;
+      z-index:0!important;
+      overflow:hidden!important;
+    }
+    .slide.active{
+      display:grid!important;
+      opacity:1!important;
+      visibility:visible!important;
+      pointer-events:auto!important;
+      z-index:10!important;
+      overflow:auto!important;
+      overscroll-behavior:contain!important;
+      -webkit-overflow-scrolling:touch!important;
+    }
+    #studySlide,
+    .study-slide-removed{
+      display:none!important;
+      visibility:hidden!important;
+      opacity:0!important;
+      pointer-events:none!important;
+      position:fixed!important;
+      width:1px!important;
+      height:1px!important;
+      min-width:0!important;
+      min-height:0!important;
+      max-width:1px!important;
+      max-height:1px!important;
+      left:-100000px!important;
+      top:-100000px!important;
+      overflow:hidden!important;
+      clip:rect(0 0 0 0)!important;
+      clip-path:inset(50%)!important;
+    }
+    body.embedded .brand,
+    body.embedded .timer,
+    body.embedded .controls,
+    body.embedded .hint,
+    body.embedded .progress{
+      position:fixed!important;
+    }
+
+    /* Portada organizada para Google Sites */
+    .slide[data-title="Portada"]{
+      grid-template-columns:minmax(0,1fr) minmax(240px,380px)!important;
+      grid-template-rows:auto auto auto auto!important;
+      gap:clamp(10px,2vh,20px) clamp(22px,4vw,62px)!important;
+      align-content:center!important;
+      align-items:center!important;
+      padding-top:clamp(74px,9vh,96px)!important;
+      padding-bottom:clamp(76px,8vh,94px)!important;
+      padding-left:clamp(26px,5vw,86px)!important;
+      padding-right:clamp(26px,5vw,86px)!important;
+    }
+    .slide[data-title="Portada"]>.kicker,
+    .slide[data-title="Portada"]>.display,
+    .slide[data-title="Portada"]>.lead,
+    .slide[data-title="Portada"]>.meta{
+      grid-column:1!important;
+      min-width:0!important;
+      max-width:100%!important;
+      position:relative!important;
+      z-index:2!important;
+    }
+    .slide[data-title="Portada"]>.leaf-orbit{
+      grid-column:2!important;
+      grid-row:1 / span 4!important;
+      position:relative!important;
+      right:auto!important;
+      top:auto!important;
+      justify-self:center!important;
+      align-self:center!important;
+      width:min(31vw,360px)!important;
+      max-width:360px!important;
+      min-width:230px!important;
+      opacity:.98!important;
+      z-index:1!important;
+    }
+    .slide[data-title="Portada"] .display{
+      font-size:clamp(44px,5.7vw,86px)!important;
+      line-height:.94!important;
+      letter-spacing:-.055em!important;
+      margin:0!important;
+    }
+    .slide[data-title="Portada"] .lead{
+      font-size:clamp(19px,2vw,30px)!important;
+      line-height:1.28!important;
+      margin:0!important;
+    }
+    .slide[data-title="Portada"] .meta{
+      margin-top:4px!important;
+    }
+
+    /* Diapositiva 2 limpia: título + video, sin texto encima */
+    .climate-opener-slide{
+      align-content:center!important;
+      justify-items:center!important;
+      overflow:auto!important;
+      padding-top:clamp(66px,8vh,90px)!important;
+      padding-bottom:clamp(74px,8vh,96px)!important;
+    }
+    .climate-opener-grid{
+      width:min(1050px,100%)!important;
+      display:grid!important;
+      grid-template-columns:minmax(0,.95fr) minmax(280px,410px)!important;
+      gap:clamp(24px,5vw,68px)!important;
+      align-items:center!important;
+      justify-content:center!important;
+      margin:0 auto!important;
+    }
+    .climate-opener-titleblock{
+      display:grid!important;
+      gap:16px!important;
+      align-content:center!important;
+      justify-items:start!important;
+      text-align:left!important;
+      min-width:0!important;
+    }
+    .climate-opener-titleblock .centered-title{
+      margin:0!important;
+      max-width:620px!important;
+      text-align:left!important;
+      justify-self:start!important;
+      font-size:clamp(52px,7vw,96px)!important;
+      line-height:.92!important;
+      letter-spacing:-.055em!important;
+    }
+    .climate-opener-titleblock .centered-kicker{
+      text-align:left!important;
+      justify-self:start!important;
+      margin:0!important;
+    }
+    .centered-subtitle{display:none!important;}
+    .climate-opener-accent{
+      width:min(320px,75%)!important;
+      height:10px!important;
+      border-radius:999px!important;
+      background:linear-gradient(90deg,var(--lime),var(--aqua),transparent)!important;
+      box-shadow:0 0 36px rgba(118,247,176,.22)!important;
+    }
+    .climate-opener-hero{
+      width:min(410px,100%)!important;
+      padding:18px!important;
+      border-radius:32px!important;
+      border:1px solid rgba(255,255,255,.16)!important;
+      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035))!important;
+      box-shadow:0 24px 58px rgba(0,0,0,.28)!important;
+      overflow:hidden!important;
+    }
+    .climate-opener-hero .facebook-reel-frame{
+      width:min(100%,312px)!important;
+      margin:0 auto!important;
+      border-radius:26px!important;
+      overflow:hidden!important;
+      background:#031827!important;
+      box-shadow:0 16px 40px rgba(0,0,0,.34)!important;
+    }
+    .climate-opener-hero iframe{
+      display:block!important;
+      width:100%!important;
+      height:min(54vh,520px)!important;
+      border-radius:24px!important;
+    }
+
+    /* Ajustes generales para evitar recortes dentro del iframe de Google Sites */
+    body.embedded .slide{
+      padding-left:clamp(22px,4.5vw,76px)!important;
+      padding-right:clamp(22px,4.5vw,76px)!important;
+    }
+    body.embedded h2{
+      font-size:clamp(30px,4.5vw,62px)!important;
+      line-height:1.02!important;
+    }
+    body.embedded .lead{
+      font-size:clamp(18px,2vw,28px)!important;
+    }
+    body.embedded .card{
+      min-width:0!important;
+    }
+    body.embedded img{
+      max-width:100%!important;
+    }
+    body.embedded .controls{
+      bottom:14px!important;
+      z-index:35!important;
+    }
+    body.embedded .hint{
+      bottom:18px!important;
+      max-width:calc(100vw - 300px)!important;
+      overflow:hidden!important;
+      text-overflow:ellipsis!important;
+      white-space:nowrap!important;
+    }
+
+    @media(max-width:980px){
+      .slide[data-title="Portada"]{
+        grid-template-columns:1fr!important;
+        padding-top:70px!important;
+        text-align:left!important;
+      }
+      .slide[data-title="Portada"]>.leaf-orbit{
+        position:absolute!important;
+        grid-column:auto!important;
+        grid-row:auto!important;
+        right:-12vw!important;
+        top:16vh!important;
+        width:min(64vw,360px)!important;
+        min-width:260px!important;
+        opacity:.22!important;
+      }
+      .slide[data-title="Portada"] .display{
+        font-size:clamp(38px,9vw,68px)!important;
+      }
+      .climate-opener-grid{
+        grid-template-columns:1fr!important;
+        max-width:640px!important;
+        gap:20px!important;
+      }
+      .climate-opener-titleblock{
+        justify-items:center!important;
+        text-align:center!important;
+      }
+      .climate-opener-titleblock .centered-kicker,
+      .climate-opener-titleblock .centered-title{
+        text-align:center!important;
+        justify-self:center!important;
+      }
+      .climate-opener-titleblock .centered-title{
+        font-size:clamp(40px,10vw,68px)!important;
+      }
+      .climate-opener-accent{
+        width:min(260px,70%)!important;
+      }
+      .climate-opener-hero{
+        width:min(430px,94vw)!important;
+      }
+    }
+    @media(max-width:640px){
+      .deck{min-height:520px!important;}
+      .slide.active{padding-top:66px!important;padding-bottom:72px!important;}
+      .slide[data-title="Portada"] .display{font-size:clamp(34px,10vw,54px)!important;}
+      .slide[data-title="Portada"] .lead{font-size:17px!important;}
+      .climate-opener-hero{padding:14px!important;border-radius:26px!important;}
+      .climate-opener-hero .facebook-reel-frame{width:min(100%,280px)!important;}
+      .climate-opener-hero iframe{height:min(50vh,440px)!important;}
+      .hint{display:none!important;}
+    }
+
+
+    /* ============================================================
+       FIX DEFINITIVO GOOGLE SITES + GITHUB PAGES
+       - Solo una diapositiva visible.
+       - No hay formulario oculto que pueda superponerse.
+       - Portada y slides se ajustan al alto del iframe.
+       ============================================================ */
+    html,body{
+      width:100%!important;
+      height:100%!important;
+      min-height:100%!important;
+      overflow:hidden!important;
+    }
+    body{
+      position:relative!important;
+      margin:0!important;
+    }
+    .deck{
+      width:100%!important;
+      height:100svh!important;
+      min-height:560px!important;
+      max-height:100svh!important;
+      overflow:hidden!important;
+      isolation:isolate!important;
+    }
+    .deck > .slide{
+      display:none!important;
+      opacity:0!important;
+      visibility:hidden!important;
+      pointer-events:none!important;
+      transform:none!important;
+      inset:0!important;
+      width:100%!important;
+      height:100%!important;
+      max-width:100%!important;
+      overflow:hidden!important;
+      z-index:0!important;
+    }
+    .deck > .slide.active{
+      display:grid!important;
+      opacity:1!important;
+      visibility:visible!important;
+      pointer-events:auto!important;
+      z-index:5!important;
+      overflow:auto!important;
+      overscroll-behavior:contain!important;
+      -webkit-overflow-scrolling:touch!important;
+    }
+    #studySlide,.study-slide,.study-slide-removed{
+      display:none!important;
+      visibility:hidden!important;
+      opacity:0!important;
+      pointer-events:none!important;
+      position:absolute!important;
+      left:-999999px!important;
+      top:-999999px!important;
+      width:0!important;
+      height:0!important;
+      overflow:hidden!important;
+    }
+
+    /* Portada limpia para Google Sites */
+    .slide[data-title="Portada"]{
+      grid-template-columns:minmax(0,1fr) minmax(220px,360px)!important;
+      grid-template-rows:auto auto auto auto!important;
+      align-items:center!important;
+      align-content:center!important;
+      column-gap:clamp(22px,4vw,60px)!important;
+      row-gap:clamp(10px,1.8vh,18px)!important;
+      padding:clamp(74px,8vh,92px) clamp(28px,5vw,74px) clamp(78px,8vh,94px)!important;
+    }
+    .slide[data-title="Portada"] > .leaf-orbit{
+      grid-column:2!important;
+      grid-row:1 / span 4!important;
+      position:relative!important;
+      right:auto!important;
+      top:auto!important;
+      justify-self:center!important;
+      align-self:center!important;
+      width:min(31vw,340px)!important;
+      min-width:220px!important;
+      max-width:340px!important;
+      opacity:.92!important;
+    }
+    .slide[data-title="Portada"] > .kicker,
+    .slide[data-title="Portada"] > .display,
+    .slide[data-title="Portada"] > .lead,
+    .slide[data-title="Portada"] > .meta{
+      grid-column:1!important;
+      position:relative!important;
+      z-index:2!important;
+      max-width:100%!important;
+      min-width:0!important;
+    }
+    .slide[data-title="Portada"] > .display{
+      font-size:clamp(42px,5.15vw,78px)!important;
+      line-height:.94!important;
+      letter-spacing:-.055em!important;
+      margin:0!important;
+    }
+    .slide[data-title="Portada"] > .lead{
+      font-size:clamp(19px,2vw,27px)!important;
+      line-height:1.25!important;
+      margin:0!important;
+      max-width:980px!important;
+    }
+    .slide[data-title="Portada"] > .meta{
+      margin-top:clamp(14px,2.2vh,24px)!important;
+    }
+    .orbit-hint{display:none!important;}
+
+    /* Controles y marca seguros en iframes */
+    .brand{
+      left:clamp(16px,2.4vw,28px)!important;
+      top:clamp(14px,2.2vh,22px)!important;
+      font-size:clamp(12px,1.2vw,16px)!important;
+      z-index:30!important;
+    }
+    .timer{
+      top:clamp(14px,2.2vh,22px)!important;
+      right:clamp(14px,2.3vw,22px)!important;
+      z-index:30!important;
+    }
+    .controls{
+      z-index:40!important;
+      bottom:clamp(10px,2.5vh,22px)!important;
+    }
+    .progress{z-index:45!important;}
+
+    @media(max-width:980px){
+      .deck{min-height:600px!important;}
+      .slide[data-title="Portada"]{
+        grid-template-columns:1fr!important;
+        align-content:center!important;
+        text-align:left!important;
+        padding-top:80px!important;
+      }
+      .slide[data-title="Portada"] > .leaf-orbit{
+        position:absolute!important;
+        right:-7vw!important;
+        top:18vh!important;
+        width:min(58vw,340px)!important;
+        min-width:240px!important;
+        opacity:.22!important;
+        z-index:1!important;
+      }
+      .slide[data-title="Portada"] > .display{
+        font-size:clamp(39px,10vw,66px)!important;
+        max-width:780px!important;
+      }
+      .slide[data-title="Portada"] > .lead{
+        font-size:clamp(18px,4.4vw,24px)!important;
+      }
+    }
+    @media(max-width:640px){
+      .deck{min-height:620px!important;}
+      .slide{
+        padding-left:20px!important;
+        padding-right:20px!important;
+      }
+      .slide[data-title="Portada"]{
+        padding-top:78px!important;
+        padding-bottom:84px!important;
+      }
+      .slide[data-title="Portada"] > .display{
+        font-size:clamp(36px,12vw,58px)!important;
+      }
+      .meta{gap:8px!important;}
+      .pill{font-size:12px!important;padding:8px 10px!important;}
+    }
+
+
+    /* Ajuste diapositiva 16: simulación a 6 años + año 7 de salto */
+    .projection-grid{gap:clamp(14px,2.4vw,26px)!important;align-items:stretch!important;}
+    .projection-bars{display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;gap:8px!important;align-items:end!important;min-height:260px!important;}
+    .projection-bar{min-width:0!important;text-align:center!important;}
+    .projection-bar b{font-size:clamp(13px,1.35vw,20px)!important;line-height:1.05!important;word-break:normal!important;}
+    .projection-bar span{font-size:clamp(10px,.95vw,14px)!important;white-space:nowrap!important;}
+    .comparison th,.comparison td{padding:clamp(7px,.8vw,11px) clamp(7px,.9vw,12px)!important;}
+    @media(max-width:980px){.projection-grid{grid-template-columns:1fr!important}.projection-bars{min-height:220px!important}.comparison{font-size:.9em!important}}
+    @media(max-width:640px){.projection-bars{gap:5px!important}.projection-bar b{font-size:11px!important}.projection-bar span{font-size:9px!important}.comparison{font-size:.78em!important}}
+
+
+    /* ===== QR en portada y cierre ===== */
+    .qr-access-card{
+      position:absolute;
+      right:clamp(26px,4.2vw,72px);
+      bottom:clamp(78px,8vh,110px);
+      width:clamp(118px,11vw,172px);
+      padding:10px;
+      border-radius:24px;
+      background:#ffffff;
+      border:1px solid rgba(255,255,255,.65);
+      box-shadow:0 18px 46px rgba(0,0,0,.26);
+      z-index:12;
+      display:grid;
+      gap:7px;
+      justify-items:center;
+    }
+    .qr-access-card img{
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius:12px;
+      image-rendering:auto;
+    }
+    .qr-access-card span{
+      color:#07314f;
+      font-size:clamp(10px,.88vw,13px);
+      line-height:1.12;
+      font-weight:900;
+      text-align:center;
+      letter-spacing:.02em;
+    }
+    .slide[data-title="Portada"] .qr-access-card{
+      right:clamp(24px,4vw,62px);
+      bottom:clamp(78px,8vh,106px);
+    }
+    @media(max-width:980px){
+      .qr-access-card{
+        width:clamp(104px,18vw,140px);
+        right:22px;
+        bottom:76px;
+      }
+      .slide[data-title="Portada"] .qr-access-card{
+        opacity:.96;
+      }
+    }
+    @media(max-width:640px){
+      .qr-access-card{
+        width:102px;
+        right:18px;
+        bottom:74px;
+        padding:7px;
+        border-radius:18px;
+      }
+      .qr-access-card span{font-size:9px;}
+    }
+
+
+    /* ===== Organización narrativa final ===== */
+    .final-cta-slide{
+      grid-template-columns:minmax(0,1fr) minmax(150px,230px)!important;
+      gap:clamp(22px,5vw,82px)!important;
+      align-items:center!important;
+      align-content:center!important;
+    }
+    .final-cta-content{
+      display:grid;
+      gap:clamp(16px,2.2vh,24px);
+      max-width:980px;
+    }
+    .final-cta-slide h2{
+      font-size:clamp(42px,5.4vw,86px)!important;
+      line-height:.96!important;
+      margin:0!important;
+      max-width:1000px!important;
+    }
+    .final-cta-slide .lead{
+      margin:0!important;
+      max-width:850px!important;
+    }
+    .final-cta-steps{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+      max-width:820px;
+    }
+    .final-cta-steps .card{
+      padding:18px 20px!important;
+      display:grid;
+      gap:8px;
+      align-content:center;
+      min-height:110px;
+    }
+    .final-cta-steps strong{
+      width:38px;
+      height:38px;
+      border-radius:50%;
+      background:var(--lime);
+      color:#07314f;
+      display:grid;
+      place-items:center;
+      font-size:20px;
+      font-weight:900;
+    }
+    .final-cta-steps span{
+      font-size:clamp(17px,1.6vw,24px);
+      font-weight:800;
+      line-height:1.1;
+    }
+    .final-actions .btn{
+      font-size:clamp(18px,2vw,28px)!important;
+      padding:16px 28px!important;
+      border-radius:999px!important;
+      text-decoration:none!important;
+    }
+    .final-cta-slide .qr-access-card{
+      position:relative!important;
+      right:auto!important;
+      bottom:auto!important;
+      justify-self:center!important;
+      align-self:center!important;
+      width:clamp(150px,16vw,230px)!important;
+      z-index:12!important;
+    }
+    .final-cta-slide .footerline{
+      grid-column:1 / -1;
+    }
+    @media(max-width:900px){
+      .final-cta-slide{
+        grid-template-columns:1fr!important;
+        gap:18px!important;
+      }
+      .final-cta-steps{
+        grid-template-columns:1fr!important;
+      }
+      .final-cta-slide .qr-access-card{
+        width:clamp(130px,35vw,190px)!important;
+      }
+    }
+
+
+    /* ===== Portada oficial del evento + galería reparada ===== */
+    .event-cover-slide{
+      align-content:center!important;
+      justify-items:center!important;
+      padding:clamp(64px,7vh,86px) clamp(22px,4vw,62px) clamp(74px,8vh,96px)!important;
+      overflow:auto!important;
+    }
+    .event-cover-card{
+      width:min(1240px,94vw);
+      margin:0 auto;
+      padding:clamp(10px,1.4vw,18px);
+      border-radius:32px;
+      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035));
+      border:1px solid rgba(255,255,255,.15);
+      box-shadow:0 28px 72px rgba(0,0,0,.34);
+    }
+    .event-cover-card img{
+      display:block;
+      width:100%;
+      max-height:calc(100svh - 190px);
+      object-fit:contain;
+      border-radius:24px;
+      background:#07395d;
+    }
+    .event-cover-slide .qr-access-card{
+      right:clamp(22px,3.8vw,58px)!important;
+      bottom:clamp(72px,8vh,96px)!important;
+      width:clamp(108px,10vw,154px)!important;
+    }
+    .carbon-gallery{
+      position:fixed!important;
+      inset:0!important;
+      z-index:9999!important;
+    }
+    .carbon-gallery.open{
+      display:grid!important;
+      opacity:1!important;
+      visibility:visible!important;
+      pointer-events:auto!important;
+    }
+    .carbon-gallery[aria-hidden="true"]{
+      display:none!important;
+    }
+    #carbonGalleryInlineTrigger{
+      cursor:zoom-in!important;
+    }
+    @media(max-width:760px){
+      .event-cover-slide{
+        padding-left:14px!important;
+        padding-right:14px!important;
+      }
+      .event-cover-card{
+        width:96vw;
+        padding:8px;
+        border-radius:22px;
+      }
+      .event-cover-card img{
+        max-height:calc(100svh - 170px);
+        border-radius:16px;
+      }
+      .event-cover-slide .qr-access-card{
+        width:96px!important;
+        right:16px!important;
+        bottom:70px!important;
+      }
+    }
+
+
+    /* ===== Ajustes finales: QR fuera de diapositiva 2 + galería desde /img ===== */
+    .slide:nth-of-type(2) .qr-access-card{display:none!important;}
+    #carbonGallery{position:fixed!important;inset:0!important;z-index:99999!important;}
+    #carbonGallery[aria-hidden="true"]{display:none!important;}
+    #carbonGallery.open{display:grid!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;}
+    #carbonGalleryInlineTrigger{cursor:zoom-in!important;}
+    #carbonGalleryInlineTrigger img{object-fit:contain!important;background:#061827!important;}
+    .gallery-thumb img{object-fit:cover!important;}
+    body.gallery-open{overflow:hidden!important;}
+    .temperature-key{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0 0;color:#ddecf2;font-size:clamp(14px,1.2vw,18px);line-height:1.35}
+    .temperature-key strong{color:var(--lime);font-size:1.08em}
+    .temperature-key .divider{color:#6e94a7}
+    section[data-title="6 · Beneficios CERO-Inversión"] .single-image-layout{display:none!important}
+    .contract-checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 28px;margin-top:12px}
+    .contract-item{display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;align-items:start;padding:10px 0;border-bottom:1px solid var(--line)}
+    .contract-item i{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#b9f43b18;border:1px solid #b9f43b66;color:var(--lime);font-style:normal;font-weight:900}
+    .contract-item b{display:block;color:#eefbf6;font-size:.92em;margin-bottom:3px}
+    .contract-item span{display:block;color:var(--muted);font-size:.72em;line-height:1.3}
+    .contract-disclaimer{margin-top:14px;color:#ddecf2;font-size:.72em;line-height:1.35}
+    @media(max-width:850px){.contract-checklist{grid-template-columns:1fr}.contract-item{padding:8px 0}}
+
+    /* ===== Ficha técnica del caso: datos conocidos vs. pendientes ===== */
+    .technical-case-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:22px;margin-top:18px;align-items:stretch}
+    .technical-known,.technical-pending{padding:22px 24px;border-radius:24px;background:rgba(255,255,255,.055);border:1px solid var(--line)}
+    .technical-known h3,.technical-pending h3{margin:0 0 14px;color:#eefbf6}
+    .technical-known-list{display:grid;gap:10px}
+    .technical-known-list div{display:flex;justify-content:space-between;gap:18px;padding:10px 0;border-bottom:1px solid var(--line)}
+    .technical-known-list span{color:var(--muted)}
+    .technical-known-list b{color:var(--lime);text-align:right}
+    .technical-pending-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
+    .technical-pending-list div{padding:10px 12px;border-radius:14px;background:rgba(5,28,35,.48);border:1px solid rgba(185,244,59,.18)}
+    .technical-pending-list b{display:block;color:#eefbf6;margin-bottom:4px;font-size:.88em}
+    .technical-pending-list span{display:block;color:var(--muted);font-size:.7em;line-height:1.3}
+    .technical-formula{margin-top:18px;padding:15px 18px;border-radius:18px;background:#b9f43b12;border:1px solid #b9f43b55;color:#eaf8f2;font-size:.78em;line-height:1.4}
+    @media(max-width:900px){.technical-case-grid{grid-template-columns:1fr}.technical-pending-list{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<main class="deck" id="deck">
+
+  <section class="slide active event-cover-slide" data-title="Portada · Evento" data-notes="Abra mostrando la pieza oficial del evento: huella de carbono educativa, energía solar y registro. Invite a escanear el QR.">
+    <figure class="event-cover-card" aria-label="Imagen oficial del evento Climate Week Medellín 2026">
+      <img src="img/evento-climate-week.webp" alt="Imagen del evento Huella de Carbono Educativa y Energía Solar, Climate Week Medellín Biodiversity 2026">
+    </figure>
+    <figure class="qr-access-card" aria-label="Código QR de acceso">
+      <img src="img/qr-evento.png" alt="Código QR para acceder al recurso digital">
+      <span>Escanea e inscríbete</span>
+    </figure>
+  </section>
+
+  <section class="slide" data-title="Portada · Título" data-notes="Abra con la pregunta central. Aclare desde el inicio que +1,5 °C es el aumento de la temperatura global respecto al período preindustrial 1850–1900; no es la temperatura media absoluta del planeta. La cifra aproximada de 15,1 °C mostrada más adelante corresponde a una estimación absoluta usada en la gráfica y no se compara directamente con +1,5 °C.">
+    <div class="leaf-orbit"><div class="school-marker" aria-label="Colegio en órbita"><span>🏫</span></div><div class="sun-core"><span class="sun-label">SOL</span><span class="sun-dollar" style="--ang:0deg;--dist:88px;--delay:0s">$</span><span class="sun-dollar" style="--ang:45deg;--dist:88px;--delay:.2s">$</span><span class="sun-dollar" style="--ang:90deg;--dist:88px;--delay:.4s">$</span><span class="sun-dollar" style="--ang:135deg;--dist:88px;--delay:.6s">$</span><span class="sun-dollar" style="--ang:180deg;--dist:88px;--delay:.8s">$</span><span class="sun-dollar" style="--ang:225deg;--dist:88px;--delay:1s">$</span><span class="sun-dollar" style="--ang:270deg;--dist:88px;--delay:1.2s">$</span><span class="sun-dollar" style="--ang:315deg;--dist:88px;--delay:1.4s">$</span></div></div>
+    <div class="kicker">Charla híbrida · 9 de octubre de 2026</div>
+    <h1 class="display"><em>1,5 °C</em>: El reto climático y la oportunidad solar con cero inversión</h1>
+    <p class="lead">Cómo reducir emisiones y evaluar una alternativa solar que proteja la estabilidad financiera de colegios, I.E. y universidades.</p>
+    <div class="temperature-key" aria-label="Aclaración sobre la cifra de uno coma cinco grados Celsius"><strong>+1,5 °C</strong><span>= aumento frente al período preindustrial (1850–1900)</span><span class="divider">·</span><span>No es la temperatura media absoluta del planeta.</span></div>
+    <div class="meta"><span class="pill accent">9:00–11:00 a. m.</span><span class="pill">MOVA · EMA 1 y 2</span><span class="pill">Meet + YouTube</span></div>
+</section>
+
+  <section class="slide media-only-slide video-only-slide climate-opener-slide" data-title="1 · Reto climático" data-notes="Use esta diapositiva como apertura del bloque climático. Reproduzca el video para introducir visualmente el problema antes de pasar a las evidencias territoriales.">
+    <div class="climate-opener-grid">
+      <div class="climate-opener-titleblock">
+        <div class="kicker">1 · Reto climático · apertura audiovisual</div>
+        <h2 class="centered-title">Cambio climático</h2>
+        <div class="climate-opener-accent" aria-hidden="true"></div>
+      </div>
+      <figure class="card opening-video-only climate-opener-card climate-opener-hero" aria-label="Video de apertura sobre cambio climático">
+        <div class="climate-video-chips" aria-hidden="true">
+          <span class="chip chip-primary">▶ Video de apertura</span>
+        </div>
+        <div class="facebook-reel-frame">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1716148373021428%2F&amp;show_text=false&amp;width=267&amp;t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen title="Video de apertura sobre cambio climático" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="tap-hint climate-opener-tap">▶ Reproduce el video</div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="slide media-only-slide" data-title="1 · Evidencias territoriales" data-notes="Aquí se muestran dos fotos de campo junto con el video territorial. Use esta diapositiva para relacionar el cambio climático con la observación directa del territorio y la gestión del agua.">
+    <div class="kicker">1 · Reto climático · evidencias territoriales</div>
+    <h2>Fotos y video del territorio</h2>
+    <div class="opening-climate-grid">
+      <div class="opening-photo-column">
+        <figure class="card opening-photo-card" aria-label="Foto territorial 1 sobre cambio climático">
+          <img src="img/territorio-laguna.webp" alt="Persona frente a una laguna con bajo nivel de agua, usada como evidencia visual del cambio climático y la variabilidad hídrica" loading="eager">
+          <figcaption><strong>Foto 1.</strong> Evidencia territorial para abrir la conversación sobre agua, clima y territorio.</figcaption>
+        </figure>
+        <figure class="card opening-photo-card" aria-label="Foto territorial 2 sobre cambio climático">
+          <img src="img/territorio-humedal.webp" alt="Persona en paisaje natural con humedal o zona encharcada, usada como evidencia visual del cambio climático y la observación del territorio" loading="eager">
+          <figcaption><strong>Foto 2.</strong> Recorrido de campo para conectar el fenómeno climático con el entorno local.</figcaption>
+        </figure>
+      </div>
+      <figure class="card opening-video-card" aria-label="Video territorial de apoyo sobre cambio climático">
+        <div class="facebook-reel-frame">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2061754325217363%2F&amp;show_text=false&amp;width=267&amp;t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen title="Video de Facebook sobre cambio climático y territorio" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="tap-hint">▶ Reproduce el video</div>
+        <figcaption><strong>Video territorial.</strong> Complemento audiovisual para explicar la relación entre agua, territorio y cambio climático.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="slide" data-title="1 · Huella de carbono" data-notes="Conecte el efecto invernadero, la intensificación por actividades humanas y la huella de carbono. Use la galería para ampliar las imágenes de apoyo. Al llegar a las gráficas de temperatura, recuerde: +1,5 °C es calentamiento relativo frente a 1850–1900; ≈15,1 °C es una estimación de temperatura media absoluta usada en la gráfica. No deben sumarse ni compararse directamente.">
+    <div class="climate-story-layout climate-story-gallery">
+      <div class="climate-text">
+        <div class="kicker">1 · Reto climático · de GEI a huella</div>
+        <h2>Del efecto invernadero a la huella de carbono</h2>
+        <div class="grid">
+          <article class="card"><h3>Efecto invernadero</h3><p>Fenómeno natural que retiene parte del calor.</p></article>
+          <article class="card"><h3>Más GEI</h3><p>Las actividades humanas intensifican la retención de calor.</p></article>
+          <article class="card"><h3>Huella</h3><p>Las emisiones se expresan en CO₂ equivalente.</p></article>
+        </div>
+        <div class="callout" style="margin-top:18px">La industrialización aceleró las emisiones; la tecnología también puede ayudar a cambiar su trayectoria.</div>
+      </div>
+      <figure class="photo climate-landscape" id="carbonGalleryInlineTrigger" tabindex="0" role="button" aria-label="Ampliar galería sobre cambio climático y huella de carbono" title="Haz clic para ampliar las 6 imágenes de la galería">
+        <img src="img/galeria-01.webp" alt="Galería de cambio climático y huella de carbono" loading="lazy">
+        <span class="gallery-zoom-hint" aria-hidden="true">⛶ Ampliar · 6 imágenes</span>
+        <div class="gallery-click-banner" aria-hidden="true"><span class="icon">👆</span><span>Haz clic en la imagen para ver la galería completa</span></div>
+        <figcaption><strong>Tecnología y emisiones.</strong> Evolución histórica ilustrada por Schneider Electric.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="slide" data-title="1 · Metas climáticas" data-notes="Conecte las metas nacionales con decisiones institucionales sobre energía, agua, movilidad, compras y residuos. La meta no debe sentirse abstracta.">
+    <div class="kicker">1 · Reto climático · metas de Colombia</div><h2>De 100 a cero: la dirección del cambio</h2>
+    <div class="grid two"><article class="card"><svg class="svg-chart" viewBox="0 0 600 290" role="img" aria-label="Trayectoria ilustrativa desde una referencia de 100 hasta 49 en 2030 y cero neto en 2050"><line class="chart-grid" x1="55" y1="230" x2="560" y2="230"/><line class="chart-grid" x1="55" y1="55" x2="55" y2="230"/><polyline class="chart-line" points="70,65 330,145 545,225"/><circle cx="70" cy="65" r="8" fill="#b9f43b"/><circle cx="330" cy="145" r="8" fill="#b9f43b"/><circle cx="545" cy="225" r="8" fill="#b9f43b"/><text class="chart-value" x="70" y="45" text-anchor="middle">100</text><text class="chart-value" x="330" y="125" text-anchor="middle">49</text><text class="chart-value" x="545" y="205" text-anchor="middle">Cero neto</text><text class="chart-label" x="70" y="257" text-anchor="middle">Referencia</text><text class="chart-label" x="330" y="257" text-anchor="middle">2030 · −51%</text><text class="chart-label" x="545" y="257" text-anchor="middle">2050</text></svg><p class="small">Trayectoria conceptual para explicar las metas; no representa una proyección anual.</p></article><article class="card"><strong class="metric">−51%</strong><p>Meta de reducción de emisiones para 2030 frente al escenario de referencia.</p><hr style="border:0;border-top:1px solid var(--line);margin:22px 0"><strong class="metric">2050</strong><p>Carbono-neutralidad como dirección de largo plazo.</p></article></div>
+  </section>
+
+  <section class="slide simeco-evidence-slide" data-title="2 · Medir con SiMeCO₂" data-notes="Datos actualizados del tablero de SiMeCO₂: 17 períodos con facturas procesadas, 568 sedes educativas identificadas y 18.800.429,36 kWh de energía acumulada. La huella se recalculó con el factor oficial de 0,220 kg CO₂e/kWh para inventarios de GEI del SIN 2024, adoptado por la UPME mediante la Resolución 0085 del 23 de febrero de 2026: 4.136,09 t CO₂e y 188.005 árboles como equivalencia pedagógica de captura anual. Aclare que las 568 sedes corresponden a sedes identificadas en las facturas cargadas, no necesariamente a sedes con información completa en todos los períodos. [Sources] UPME, Resolución 0085 de 2026: https://docs.upme.gov.co/Normatividad/085_2026.pdf">
+    <div class="kicker">2 · Medir · SiMeCO₂</div>
+    <h2>La huella de carbono educativa de Medellín ya cuenta una historia</h2>
+
+    <div class="simeco-dashboard">
+      <article class="card simeco-main-metric">
+        <span class="simeco-label">Huella de Carbono Educativa de Medellín</span>
+        <strong class="simeco-co2">4.136,09 <small>t CO₂e</small></strong>
+        <p>Emisiones indirectas estimadas con el factor UPME 2024 para inventarios de GEI: 0,220 kg CO₂e/kWh.</p>
+
+        <div class="simeco-energy-band">
+          <span>Energía acumulada</span>
+          <b>18.800.429,36 kWh</b>
+          <small>≈ 18,8 GWh de electricidad registrada</small>
+        </div>
+      </article>
+
+      <div class="simeco-side-metrics">
+        <article class="card simeco-mini-card">
+          <span class="simeco-mini-icon">01</span>
+          <div>
+            <span class="simeco-label">Períodos</span>
+            <strong>17</strong>
+            <p>Meses/períodos con facturas procesadas y disponibles para el análisis histórico.</p>
+          </div>
+        </article>
+
+        <article class="card simeco-mini-card">
+          <span class="simeco-mini-icon">02</span>
+          <div>
+            <span class="simeco-label">Sedes</span>
+            <strong>568</strong>
+            <p>Sedes educativas identificadas en las facturas cargadas al sistema.</p>
+          </div>
+        </article>
+
+        <article class="card simeco-mini-card simeco-tree-card">
+          <span class="simeco-mini-icon">🌳</span>
+          <div>
+            <span class="simeco-label">Árboles requeridos</span>
+            <strong>188.005</strong>
+            <p>Equivalencia pedagógica de árboles necesarios para capturar anualmente el CO₂e estimado.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="simeco-flow">
+      <span><b>Facturas</b><small>Fuente del dato</small></span>
+      <i>→</i>
+      <span><b>kWh</b><small>Consumo eléctrico</small></span>
+      <i>→</i>
+      <span><b>CO₂e</b><small>Huella estimada</small></span>
+      <i>→</i>
+      <span><b>Decisiones</b><small>Ahorro · mitigación · solar</small></span>
+    </div>
+  
+    <div class="actions" style="margin-top:18px">
+      <a class="btn primary simeco-slide-button" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-huella-de-carbono-educativa-de-medellin" target="_blank" rel="noopener">SiMeCO₂</a>
+    </div>
+  </section>
+
+  <section class="slide" data-title="2 · Factura a decisión" data-notes="Modifique el consumo y el factor en vivo. El valor precargado de 0,220 kg CO₂e/kWh corresponde al factor oficial para inventarios de GEI del SIN 2024, adoptado por la UPME mediante la Resolución 0085 del 23 de febrero de 2026. Aclare que el factor debe ajustarse si la institución adopta justificadamente otra fuente, período o metodología. [Sources] UPME, Resolución 0085 de 2026: https://docs.upme.gov.co/Normatividad/085_2026.pdf">
+    <div class="kicker">2 · Medir · de factura a decisión</div><h2>De la factura a una decisión climática</h2>
+    <div class="grid two"><div class="card"><div class="form-grid"><div><label for="sKwh">Consumo mensual (kWh)</label><input id="sKwh" type="number" value="45000" min="0"></div><div><label for="sTariff">Tarifa (COP/kWh)</label><input id="sTariff" type="number" value="850" min="0"></div><div><label for="sFactor">Factor (kg CO₂e/kWh)</label><input id="sFactor" type="number" value="0.220" min="0" step="0.001"></div></div><div class="result-grid four"><div class="result"><b id="sCost">—</b><span>Costo mensual</span></div><div class="result"><b id="sCo2">—</b><span>Emisiones mensuales</span></div><div class="result"><b id="sAnnual">—</b><span>Emisiones anuales</span></div><div class="result"><b id="sTrees">—</b><span>Árboles necesarios/año</span></div></div><p class="small">Factor oficial precargado: 0,220 kg CO₂e/kWh para inventarios de GEI del SIN 2024 (UPME, Resolución 0085 de 2026). Equivalencia pedagógica SiMeCO₂: 1 árbol = 22 kg CO₂e/año (≈45,45 árboles por tonelada anual).</p></div><div class="card"><h3>Una sola trazabilidad</h3><p>Facturas → kWh → CO₂e → árboles equivalentes → historial → prioridades → plan de ahorro → reporte.</p><div class="actions"><span class="pill accent">Medible</span><span class="pill">Auditable</span><span class="pill">Accionable</span></div></div></div>
+  </section>
+
+  <section class="slide" data-title="3 · Planes ambientales" data-notes="Explique que medir no es el resultado final: los datos alimentan planes con línea base, metas, acciones, responsables, indicadores y seguimiento.">
+    <div class="kicker">3 · Actuar · planes de GEI y agua</div><h2>Los datos se convierten en planes de acción</h2>
+    <div class="grid two"><article class="card"><div class="icon">CO₂</div><h3>Plan de Gestión Energética y Reducción de GEI</h3><p>Línea base, consumos prioritarios, metas, medidas de eficiencia, responsables, indicadores y seguimiento.</p></article><article class="card"><div class="icon">💧</div><h3>Plan de Ahorro y Uso Eficiente del Agua</h3><p>Diagnóstico, oportunidades de ahorro, hábitos, mantenimiento, metas e indicadores de consumo.</p></article></div>
+    <div class="callout">Cada sede participante podrá recibir recomendaciones y entregables personalizados a partir de sus facturas.</div>
+    <div class="actions" style="margin-top:18px"><a class="btn primary zero-cta" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-1-sube-tu-factura" target="_blank" rel="noopener">Convierte la factura en planes ambientales y una ruta solar</a></div>
+  </section>
+
+  <section class="slide" data-title="4 · Oportunidad solar" data-notes="Presente la eficiencia y la generación solar como complementarias: primero evitar desperdicios y luego sustituir parte de la energía comprada por generación limpia en la sede.">
+    <div class="visual-split"><div><div class="kicker">4 · Solar · convertir gasto en inversión</div><h2>Energía solar: convertir el gasto en una inversión sostenible</h2><div class="grid"><article class="card"><h3>Reducir</h3><p>Eficiencia antes de dimensionar.</p></article><article class="card"><h3>Generar</h3><p>Energía limpia donde se consume.</p></article><article class="card"><h3>Verificar</h3><p>Ahorros y emisiones evitadas.</p></article></div><p class="small">Proyecto técnico + financiero + pedagógico.</p></div><figure class="photo school-solar-photo">
+      <img src="img/colegio-solar.webp" alt="Colegio con sistema solar fotovoltaico instalado sobre la cubierta" loading="lazy">
+      <figcaption><strong>Energía solar como infraestructura y herramienta pedagógica.</strong> Imagen ilustrativa de una sede educativa con sistema solar fotovoltaico.</figcaption>
+    </figure></div>
+  </section>
+
+  <section class="slide" data-title="5 · Alternativas financieras" data-notes="Explique que hay cuatro caminos para financiar el mismo proyecto solar. La decisión depende de caja, costo del capital, propiedad deseada, plazo, mantenimiento y apetito de riesgo. Esta diapositiva busca ordenar la conversación antes de entrar al caso Rocasol.">
+    <div class="kicker">5 · Financiar · alternativas</div><h2>Financiar sin desestabilizar la operación</h2>
+    <p class="lead">El mismo sistema solar puede estructurarse de maneras distintas. La clave es escoger la fórmula que mejor se adapte a la realidad financiera de la institución.</p>
+    <div class="grid two finance-paths">
+      <article class="card finance-path-card"><h3>Compra directa</h3><p><strong>Ideal si:</strong> la institución cuenta con caja disponible.</p><p><strong>Ventaja:</strong> la propiedad y el mayor ahorro quedan desde el inicio en la institución.</p><p><strong>Clave:</strong> exige la mayor inversión inicial y asumir operación y mantenimiento.</p></article>
+      <article class="card finance-path-card"><h3>Crédito verde</h3><p><strong>Ideal si:</strong> se quiere repartir el CAPEX en el tiempo.</p><p><strong>Ventaja:</strong> permite financiar el sistema y conservar la propiedad.</p><p><strong>Clave:</strong> la cuota debe compararse con el ahorro esperado para cuidar el flujo.</p></article>
+      <article class="card finance-path-card"><h3>PPA</h3><p><strong>Ideal si:</strong> se prioriza baja inversión inicial.</p><p><strong>Ventaja:</strong> se paga por la energía generada según el contrato.</p><p><strong>Clave:</strong> deben revisarse precio, plazo, indexación, garantías y responsabilidades.</p></article>
+      <article class="card finance-path-card"><h3>Inversión Cero · Rocasol</h3><p><strong>Ideal si:</strong> se busca empezar sin desembolso inicial.</p><p><strong>Ventaja:</strong> el ahorro del sistema ayuda a pagar la solución.</p><p><strong>Clave:</strong> el pago inicia cuando el sistema entra en operación y el mantenimiento viene incluido durante el periodo de pago.</p></article>
+    </div>
+  </section>
+
+  <section class="slide" data-title="6 · Oferta CERO-Inversión" data-notes="Use esta lámina para explicar la lógica financiera del modelo. Durante el período contractual conviven la nueva factura y el pago a Rocasol. El escenario posterior solo aplica si el contrato establece la terminación efectiva de los pagos y define la transferencia de la propiedad o de los beneficios económicos del sistema. La reducción de la factura y la cobertura energética dependen del estudio técnico, el consumo y la generación real.">
+    <div class="kicker">6 · CERO-Inversión · modelo visual</div>
+    <h2>Así funciona la oferta CERO-Inversión de Rocasol</h2>
+    <div class="single-image-layout">
+      <figure class="single-image-card">
+        <img src="img/modelo-cero-inversion.webp" alt="Esquema de la oferta CERO-Inversión de Rocasol: antes del sistema solar, durante la inversión y después de la inversión.">
+      </figure>
+      <p class="single-image-note">La lámina ilustra un escenario condicionado: durante el contrato conviven la factura de red y el pago a Rocasol. Una vez cumplidas todas las obligaciones, el ahorro posterior y la propiedad del sistema dependerán de lo pactado, de la generación real y de la tarifa eléctrica.</p>
+    </div>
+  </section>
+
+  <section class="slide" data-title="6 · Cómo opera CERO-Inversión" data-notes="Explique las condiciones como elementos sujetos a la oferta y al contrato. Cero inversión significa ausencia de desembolso inicial, no ausencia de pagos. La cuota está indexada al IPC, por lo que no es un precio fijo. El inicio de pagos, el alcance del mantenimiento, el tratamiento contable, las garantías y cualquier transferencia deben quedar definidos por escrito.">
+    <div class="kicker">6 · CERO-Inversión · condiciones clave</div><h2>Rocasol CERO-Inversión: el ahorro paga la solución</h2>
+    <div class="zero-pill-grid" aria-label="Resumen del modelo de inversión cero">
+      <div class="zero-pill"><b>$0 inicial</b><span>Sin desembolso inicial, según oferta y contrato.</span></div>
+      <div class="zero-pill"><b>72 meses</b><span>Plazo referencial del caso presentado.</span></div>
+      <div class="zero-pill"><b>Pago al operar</b><span>Inicio sujeto al acta y condiciones de puesta en servicio.</span></div>
+      <div class="zero-pill"><b>Mantenimiento</b><span>Alcance, exclusiones y plazo definidos contractualmente.</span></div>
+    </div>
+    <div class="zero-explain" style="margin-top:18px">
+      <div class="callout"><strong>“CERO-Inversión” describe $0 de desembolso inicial; no significa cero costo ni cero pagos.</strong> Parte del ahorro solar puede atender la cuota. Su tratamiento como deuda y su efecto sobre el endeudamiento dependen de la estructura jurídica, contable y contractual.</div>
+      <div class="card zero-note-card" style="margin-top:18px">
+        <p>La solución puede financiarse con <strong>una parte de los ahorros solares estimados</strong>, siempre que la generación, la tarifa y las condiciones de pago confirmen un flujo positivo.</p>
+        <p>La cuota está indexada al IPC; por tanto, <strong>no es un precio fijo</strong>. El inicio de pagos y el mantenimiento aplican según el alcance, las exclusiones y los niveles de servicio pactados.</p>
+        <p>La clasificación contable, la propiedad, las garantías y el impacto sobre el endeudamiento requieren validación jurídica, financiera y contractual.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="6 · Beneficios CERO-Inversión" data-notes="Esta diapositiva reemplaza las afirmaciones absolutas de la pieza comercial por diez condiciones que deben verificarse. Recalque que no se puede prometer cobertura total, cero deuda, precio estable, ventajas fiscales o transferencia automática sin revisar el estudio técnico, el régimen tributario, la estructura contable y el contrato definitivo.">
+    <div class="kicker">6 · CERO-Inversión · beneficios</div>
+    <h2>10 condiciones que deben quedar claras en el contrato</h2>
+    <div class="contract-checklist" aria-label="Condiciones contractuales del modelo CERO-Inversión">
+      <div class="contract-item"><i>1</i><div><b>Desembolso inicial</b><span>Confirmar qué conceptos están incluidos y cuáles asume el cliente.</span></div></div>
+      <div class="contract-item"><i>2</i><div><b>Fuente de pago</b><span>Validar que el ahorro solar estimado cubra la cuota bajo escenarios realistas.</span></div></div>
+      <div class="contract-item"><i>3</i><div><b>Inicio de pagos</b><span>Definir el hito de puesta en servicio y aceptación del sistema.</span></div></div>
+      <div class="contract-item"><i>4</i><div><b>Cobertura energética</b><span>Depende del diseño, radiación, consumo, disponibilidad y generación real.</span></div></div>
+      <div class="contract-item"><i>5</i><div><b>Cuota e IPC</b><span>Especificar fórmula, periodicidad, topes y fecha de indexación.</span></div></div>
+      <div class="contract-item"><i>6</i><div><b>Mantenimiento</b><span>Precisar alcance, exclusiones, repuestos y niveles de servicio.</span></div></div>
+      <div class="contract-item"><i>7</i><div><b>Tratamiento contable</b><span>Determinar si genera pasivo o afecta la capacidad de endeudamiento.</span></div></div>
+      <div class="contract-item"><i>8</i><div><b>Beneficios tributarios</b><span>Aplican según régimen, titularidad, requisitos y normativa vigente.</span></div></div>
+      <div class="contract-item"><i>9</i><div><b>Propiedad y transferencia</b><span>Establecer titular, momento, condiciones y costo de la transferencia.</span></div></div>
+      <div class="contract-item"><i>10</i><div><b>Garantías y terminación</b><span>Definir desempeño, seguros, incumplimientos, salida y solución de controversias.</span></div></div>
+    </div>
+    <p class="contract-disclaimer">Los beneficios dependen del estudio técnico y de la estructura jurídica, contable, tributaria y contractual de cada institución.</p>
+  </section>
+
+  <section class="slide" data-title="7 · Caso real" data-notes="Explique que este bloque nace del caso real suministrado y usa valores constantes únicamente con fines pedagógicos. Haga visible la diferencia entre el valor referencial del sistema, $71.130.000, y los pagos acumulados de 72 mensualidades, $154.124.568 sin IPC. El segundo valor puede incorporar financiación, mantenimiento, garantías, seguros y transferencia de riesgos, por lo que el contrato debe desglosar sus componentes. No presente el ejercicio como una proyección conservadora ni contractual.">
+    <div class="kicker">7 · Caso real · inversión cero</div><h2>El caso Rocasol: convertir la factura en proyecto solar</h2>
+    <p class="lead">La clave no es pedirle a la institución que compre el sistema de contado. La clave es usar el ahorro que genera la energía solar para pagar la solución.</p>
+    <div class="rocasol-kpi-grid">
+      <div class="rocasol-kpi"><small>Inversión referencial</small><b>$71.130.000</b><span>Valor del sistema solar del caso.</span></div>
+      <div class="rocasol-kpi"><small>Desembolso inicial</small><b>$0</b><span>Modelo de inversión cero para proteger caja.</span></div>
+      <div class="rocasol-kpi"><small>Ahorro solar mensual</small><b>$2.456.928</b><span>Energía que deja de comprarse a la red.</span></div>
+      <div class="rocasol-kpi"><small>Pago mensual Rocasol</small><b>$2.140.619</b><span>Pago estimado por energía autogenerada.</span></div>
+      <div class="rocasol-kpi"><small>Pagos en 72 meses</small><b>$154.124.568</b><span>Total a valores constantes, sin IPC.</span></div>
+    </div>
+    <div class="callout" style="margin-top:22px"><strong>Simulación pedagógica a valores constantes:</strong> no incorpora IPC, degradación de los paneles ni variaciones de la tarifa eléctrica. Estos factores producen efectos distintos, por lo que este ejercicio no equivale a una proyección contractual.</div>
+  </section>
+
+  <section class="slide" data-title="7 · Base técnica" data-notes="Esta ficha evita presentar el caso financiero como si ya fuera un diseño solar validado. Los cuatro valores de la izquierda provienen del caso suministrado. La potencia instalada, los módulos, la generación, la tarifa base, la cobertura, la degradación, la vida útil y la propiedad final no aparecen sustentados en la fuente y deben completarse con la propuesta técnica, las facturas, las fichas de equipos y el contrato. Sin tarifa base y generación no puede auditarse el ahorro mensual de $2.456.928.">
+    <div class="kicker">7 · Caso real · base técnica</div>
+    <h2>La propuesta financiera debe apoyarse en una ficha técnica verificable</h2>
+    <p class="lead">El caso aporta cifras económicas, pero todavía no documenta los parámetros que permiten comprobar la generación, la cobertura y el ahorro.</p>
+    <div class="technical-case-grid">
+      <article class="technical-known">
+        <h3>Datos suministrados</h3>
+        <div class="technical-known-list">
+          <div><span>Valor referencial</span><b>$71.130.000</b></div>
+          <div><span>Ahorro solar mensual</span><b>$2.456.928</b></div>
+          <div><span>Pago mensual</span><b>$2.140.619</b></div>
+          <div><span>Plazo referencial</span><b>72 meses</b></div>
+        </div>
+      </article>
+      <article class="technical-pending">
+        <h3>Datos por validar antes de decidir</h3>
+        <div class="technical-pending-list">
+          <div><b>Potencia instalada</b><span>kWp DC y potencia AC del sistema.</span></div>
+          <div><b>Módulos</b><span>Cantidad, potencia unitaria y fabricante.</span></div>
+          <div><b>Generación</b><span>kWh/mes y kWh/año, con fuente de radiación.</span></div>
+          <div><b>Tarifa base</b><span>COP/kWh tomado de facturas y período analizado.</span></div>
+          <div><b>Cobertura</b><span>Porcentaje del consumo atendido y excedentes.</span></div>
+          <div><b>Degradación</b><span>Supuesto anual incorporado en la simulación.</span></div>
+          <div><b>Vida útil y garantías</b><span>Paneles, inversores, estructura y desempeño.</span></div>
+          <div><b>Propiedad final</b><span>Titular, fecha, condiciones y costo de transferencia.</span></div>
+        </div>
+      </article>
+    </div>
+    <div class="technical-formula"><strong>Prueba mínima de consistencia:</strong> generación mensual (kWh) × tarifa evitada (COP/kWh) = ahorro solar mensual. Sin esos dos datos no puede auditarse el valor de <strong>$2.456.928</strong>.</div>
+  </section>
+
+  <section class="slide" data-title="7 · Flujo mensual" data-notes="Use esta diapositiva para explicar la operación básica con los valores iniciales del caso. Del ahorro solar mensual de $2.456.928, aproximadamente 87,1 % se destina al pago de Rocasol y 12,9 % permanece como ahorro del cliente. Aclare que es una fotografía pedagógica del flujo y no una proyección de los 72 meses.">
+    <div class="kicker">7 · Caso real · flujo mensual</div><h2>Cómo se paga: el ahorro financia la solución</h2>
+    <div class="rocasol-equation" aria-label="Fórmula financiera del caso Rocasol">
+      <div class="eq-card"><b>$2.456.928</b><span>Ahorro bruto mensual generado por el sistema</span></div>
+      <div class="eq-symbol">−</div>
+      <div class="eq-card"><b>$2.140.619</b><span>Pago mensual estimado a Rocasol</span></div>
+      <div class="eq-symbol">=</div>
+      <div class="eq-card"><b>$316.309</b><span>Ahorro neto mensual estimado</span></div>
+    </div>
+    <div class="grid two" style="margin-top:24px">
+      <article class="card"><h3>87,1 % paga la solución</h3><p><strong>$2.140.619</strong> del ahorro solar mensual se destinan al pago estimado de Rocasol.</p></article>
+      <article class="card"><h3>12,9 % queda en la institución</h3><p><strong>$316.309</strong> mensuales permanecen como ahorro neto inicial del cliente.</p></article>
+    </div>
+    <p class="small">Lectura del escenario inicial: si el ahorro solar mensual supera el pago mensual del modelo, la institución mejora caja. La evolución posterior depende de tarifa, generación, degradación e indexación contractual.</p>
+  </section>
+
+  <section class="slide" data-title="7 · Proyección 6 años" data-notes="Presente esta tabla como una simulación pedagógica a valores constantes, no como una proyección conservadora ni contractual. Mantiene sin cambios el ahorro bruto y el pago anual durante seis años. En la realidad, el IPC puede elevar el pago; la degradación puede reducir la generación; y el cambio de la tarifa eléctrica puede aumentar o disminuir el ahorro. El salto del año 7 también depende de que el pago termine efectivamente al mes 72 y se mantengan los beneficios económicos del sistema.">
+    <div class="kicker">7 · Caso real · proyección 6 años</div><h2>El salto ocurre después de los 6 años, cuando termina el pago del sistema</h2>
+    <div class="projection-grid">
+      <article class="card">
+        <h3>Simulación pedagógica a valores constantes</h3>
+        <table class="comparison"><tr><th>Año</th><th>Ahorro bruto</th><th>Pago Rocasol</th><th>Ahorro neto</th><th>Acumulado</th></tr>
+          <tr><td>1</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$3.795.708</td></tr>
+          <tr><td>2</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$7.591.416</td></tr>
+          <tr><td>3</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$11.387.124</td></tr>
+          <tr><td>4</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$15.182.832</td></tr>
+          <tr><td>5</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$18.978.540</td></tr>
+          <tr><td>6</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$22.774.248</td></tr>
+          <tr><td>7</td><td>$29.483.136</td><td>$0*</td><td class="good">$29.483.136</td><td class="good">$52.257.384</td></tr>
+        </table>
+        <p class="small">Durante los años 1–6: pagos acumulados a Rocasol de <strong>$154.124.568</strong> y ahorro acumulado del cliente de <strong>$22.774.248</strong>. Valores sin IPC. *El año 7 supone que el pago termina al mes 72.</p>
+      </article>
+      <article class="card">
+        <h3>Ahorro neto anual estimado</h3>
+        <div class="projection-bars" aria-label="Ahorro neto anual proyectado">
+          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 1</span></div>
+          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 2</span></div>
+          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 3</span></div>
+          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 4</span></div>
+          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 5</span></div>
+          <div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 6</span></div>
+          <div class="projection-bar" style="--h:100"><b>$29,5 M</b><span>Año 7</span></div>
+        </div>
+        <p class="small">El año 7 muestra el potencial cuando ya no existe pago mensual de la solución y permanece el ahorro energético.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="slide" data-title="7 · Lectura ejecutiva" data-notes="Cierre el caso con transparencia: compare el valor referencial del sistema con el total de pagos a 72 meses y el ahorro que conserva el cliente. Explique que los $154.124.568 no equivalen necesariamente al precio técnico de los equipos, porque el modelo puede incorporar financiación, mantenimiento, garantías, seguros y transferencia de riesgos; estos componentes deben quedar discriminados en la propuesta contractual.">
+    <div class="kicker">7 · Caso real · lectura ejecutiva</div>
+    <h2>La decisión exige mirar el costo total y el ahorro retenido</h2>
+    <div class="rocasol-decision">
+      <article class="card"><h3>1. Valor referencial</h3><p>El sistema del caso está valorado inicialmente en <strong>$71.130.000</strong>.</p></article>
+      <article class="card"><h3>2. Pagos durante 72 meses</h3><p><strong>$2.140.619 × 72 = $154.124.568</strong>, calculados a valores constantes y sin IPC.</p></article>
+      <article class="card"><h3>3. Ahorro del cliente</h3><p>La institución conserva <strong>$22.774.248</strong> durante los 72 meses de pago, según esta simulación.</p></article>
+    </div>
+    <div class="big-verdict">Durante el pago, <span class="accent-money">87,1 %</span> del ahorro solar mensual paga a Rocasol y <span class="accent-money">12,9 %</span> queda en la institución.</div>
+    <p class="small"><strong>Simulación pedagógica; no equivale a una proyección contractual.</strong> El total puede incluir financiación, mantenimiento, garantías, seguros y transferencia de riesgos; la propuesta debe discriminar cada componente y el IPC.</p>
+  </section>
+
+  <section class="slide" data-title="8 · Quiénes somos" data-notes="Presente brevemente la alianza antes del cierre: Los Yoguis, GSV Ingeniería, Colegios Verdes e I.E. Manuel J. Betancur articulan educación, energía y acción climática.">
+    <div class="visual-split"><div><div class="kicker">8 · Alianza · quiénes somos</div><h2>Una alianza para convertir la educación en acción climática</h2><div class="grid two"><article class="card"><h3>Los Yoguis · GSV Ingeniería</h3><p>Innovación educativa, gestión energética y estructuración de soluciones solares sostenibles.</p></article><article class="card"><h3>Colegios Verdes · I.E. Manuel J. Betancur</h3><p>Pedagogía ambiental, liderazgo juvenil y experiencia institucional para la acción climática.</p></article></div><div class="callout">Medir, financiar e implementar.</div></div><figure class="photo alliance-photo">
+      <img src="img/alianza-17.webp" alt="Alianza 17 Líderes Ambientales de Medellín con logos de Los Yoguis, GSV Ingeniería, I.E. Manuel J. Betancur y espacio para nuevos aliados" loading="eager">
+      <figcaption><strong>Alianza 17 · Líderes Ambientales de Medellín.</strong> Educación, innovación, energía y acción climática trabajando en red.</figcaption>
+    </figure></div>
+</section>
+
+  <section class="slide final-cta-slide" data-title="9 · Cierre y QR" data-notes="Cierre con una acción concreta: escanear el QR o abrir el enlace para convertir la factura de la institución en planes ambientales y una ruta solar.">
+    <div class="final-cta-content">
+      <div class="kicker">9 · Cierre · la transición empieza con una factura</div>
+      <h2>Tu factura puede convertirse en una decisión climática</h2>
+      <p class="lead">Conoce tu huella, identifica oportunidades de ahorro, dimensiona una ruta solar y evalúa CERO-Inversión para tu institución.</p>
+      <div class="final-cta-steps" aria-label="Ruta de acción">
+        <article class="card"><strong>1</strong><span>Sube la factura</span></article>
+        <article class="card"><strong>2</strong><span>Recibe diagnóstico</span></article>
+        <article class="card"><strong>3</strong><span>Evalúa ruta solar</span></article>
+      </div>
+      <div class="actions final-actions">
+        <a class="btn primary" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-1-sube-tu-factura" target="_blank" rel="noopener">Solicitar estudio personalizado ↗</a>
+      </div>
+    </div>
+    <figure class="qr-access-card" aria-label="Código QR de cierre">
+      <img src="img/qr_cierre.png" alt="Código QR de inscripción y acceso al estudio personalizado">
+      <span>Escanea y solicita tu estudio</span>
+    </figure>
+    <div class="footerline"><span>Los Yoguis · GSV Ingeniería | Colegios Verdes · I.E. Manuel J. Betancur</span><span>9 OCT 2026</span></div>
+  </section>
+
+<div class="progress"><i id="progress"></i></div>
+  <div class="brand"><span class="brand-mark">↗</span><span>EDUCACIÓN · ENERGÍA · CLIMA</span></div>
+  <button class="timer" id="timer" title="Iniciar/pausar cronómetro">00:00</button>
+  <div class="embed-badge">Optimizada para Google Sites</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="carbon-gallery" id="carbonGallery" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="carbonGalleryTitle">
+    <div class="carbon-gallery-shell">
+      <div class="carbon-gallery-head">
+        <div>
+          <span class="eyebrow">Galería · Cambio climático y huella de carbono</span>
+          <strong id="carbonGalleryTitle">Tecnología, temperatura, emisiones y acción climática</strong>
+        </div>
+        <button class="gallery-close" id="galleryClose" type="button" aria-label="Cerrar galería">×</button>
+      </div>
+      <div class="gallery-stage">
+        <button class="gallery-arrow" id="galleryPrev" type="button" aria-label="Imagen anterior">←</button>
+        <figure class="gallery-main">
+          <div class="gallery-image-wrap">
+            <img id="galleryImage" alt="">
+          </div>
+          <figcaption class="gallery-caption">
+            <span class="gallery-count" id="galleryCounter">1 / 6</span>
+            <div>
+              <strong id="galleryItemTitle"></strong>
+              <p id="galleryItemCaption"></p>
+            </div>
+          </figcaption>
+        </figure>
+        <button class="gallery-arrow" id="galleryNext" type="button" aria-label="Imagen siguiente">→</button>
+      </div>
+      <div class="gallery-thumbs" id="galleryThumbs" aria-label="Miniaturas de la galería"></div>
+    </div>
+  </div>
+
+  <aside class="drawer" id="drawer" aria-label="Índice"><h3>Contenido</h3><div id="menu"></div></aside><div class="scrim" id="scrim"></div>
+  <div class="overview" id="overview" aria-label="Vista general"></div>
+  <aside class="notes" id="notes"><h4>Notas del presentador</h4><p></p></aside>
+  <div class="hint">← → navegar · M menú · O vista general · N notas · F pantalla completa</div>
+  <nav class="controls"><button class="round" id="menuBtn" aria-label="Abrir menú">☰</button><button class="round" id="prev" aria-label="Anterior">←</button><span class="counter" id="counter">1 / 20</span><button class="round" id="next" aria-label="Siguiente">→</button><button class="round" id="full" aria-label="Pantalla completa">⛶</button></nav>
+</main>
+  <script>
+(()=>{
+  'use strict';
+  const $=(selector,context=document)=>context.querySelector(selector);
+  const $$=(selector,context=document)=>Array.from(context.querySelectorAll(selector));
+  const slides=$$('.slide');
+  const progress=$('#progress');
+  const counter=$('#counter');
+  const drawer=$('#drawer');
+  const scrim=$('#scrim');
+  const overview=$('#overview');
+  const notes=$('#notes');
+  let index=0;
+
+  try{if(window.self!==window.top)document.body.classList.add('embedded');}
+  catch(_){document.body.classList.add('embedded');}
+
+  $$('.photo img').forEach(img=>img.addEventListener('error',()=>{
+    img.style.display='none';
+    img.parentElement.style.background='linear-gradient(135deg,#173d34,#0a1d19)';
+    img.parentElement.dataset.imageStatus='La imagen no pudo cargarse';
+  }));
+
+  function closeLayers(){
+    drawer?.classList.remove('open');
+    scrim?.classList.remove('show');
+    overview?.classList.remove('open');
+  }
+
+  function show(nextIndex){
+    index=Math.max(0,Math.min(slides.length-1,nextIndex));
+    slides.forEach((slide,i)=>{
+      slide.classList.toggle('active',i===index);
+      slide.classList.toggle('before',i<index);
+      if(i===index)slide.scrollTop=0;
+    });
+    if(progress)progress.style.width=((index+1)/slides.length*100)+'%';
+    if(counter)counter.textContent=(index+1)+' / '+slides.length;
+    $$('#menu button').forEach((button,i)=>button.classList.toggle('current',i===index));
+    const noteText=$('#notes p');
+    if(noteText)noteText.textContent=slides[index]?.dataset.notes||'';
+    try{
+      if(!document.body.classList.contains('embedded'))history.replaceState(null,'','#'+(index+1));
+    }catch(_){}
+  }
+
+  const go=nextIndex=>{closeLayers();show(nextIndex);};
+  $('#prev')?.addEventListener('click',()=>go(index-1));
+  $('#next')?.addEventListener('click',()=>go(index+1));
+
+  slides.forEach((slide,i)=>{
+    const label=String(i+1).padStart(2,'0')+' · '+slide.dataset.title;
+    const menuButton=document.createElement('button');
+    menuButton.textContent=label;
+    menuButton.addEventListener('click',()=>go(i));
+    $('#menu')?.appendChild(menuButton);
+    const thumb=document.createElement('button');
+    thumb.className='thumb';
+    const number=document.createElement('b');
+    number.textContent=String(i+1).padStart(2,'0');
+    const title=document.createElement('span');
+    title.textContent=slide.dataset.title||'';
+    thumb.append(number,title);
+    thumb.addEventListener('click',()=>go(i));
+    overview?.appendChild(thumb);
+  });
+
+  function toggleDrawer(){
+    if(!drawer)return;
+    drawer.classList.toggle('open');
+    scrim?.classList.toggle('show',drawer.classList.contains('open'));
+  }
+
+  async function toggleFullscreen(){
+    if(document.body.classList.contains('embedded'))return;
+    try{
+      if(document.fullscreenElement)await document.exitFullscreen?.();
+      else await document.documentElement.requestFullscreen?.();
+    }catch(_){}
+  }
+
+  $('#menuBtn')?.addEventListener('click',toggleDrawer);
+  scrim?.addEventListener('click',closeLayers);
+  $('#full')?.addEventListener('click',toggleFullscreen);
+
+  const timerEl=$('#timer');
+  const timerKey='climateWeekTimerStart';
+  let timerStart=Date.now();
+  let timerPaused=false;
+  let pausedSeconds=0;
+  let timerTick=null;
+  try{
+    const stored=Number(sessionStorage.getItem(timerKey)||0);
+    if(Number.isFinite(stored)&&stored>0)timerStart=stored;
+    else sessionStorage.setItem(timerKey,String(timerStart));
+  }catch(_){}
+
+  const elapsedSeconds=()=>timerPaused?pausedSeconds:Math.max(0,Math.floor((Date.now()-timerStart)/1000));
+  function drawTimer(){
+    if(!timerEl)return;
+    const seconds=elapsedSeconds();
+    const hours=Math.floor(seconds/3600);
+    const minutes=Math.floor((seconds%3600)/60);
+    const remainder=seconds%60;
+    timerEl.textContent=hours>0
+      ? [hours,minutes,remainder].map(n=>String(n).padStart(2,'0')).join(':')
+      : [minutes,remainder].map(n=>String(n).padStart(2,'0')).join(':');
+  }
+  function startTimer(){
+    timerPaused=false;
+    timerStart=Date.now()-pausedSeconds*1000;
+    try{sessionStorage.setItem(timerKey,String(timerStart));}catch(_){}
+    if(!timerTick)timerTick=setInterval(drawTimer,1000);
+    timerEl?.classList.add('running');
+    drawTimer();
+  }
+  function pauseTimer(){
+    pausedSeconds=elapsedSeconds();
+    timerPaused=true;
+    if(timerTick){clearInterval(timerTick);timerTick=null;}
+    timerEl?.classList.remove('running');
+    drawTimer();
+  }
+  function resetTimer(){
+    if(timerTick){clearInterval(timerTick);timerTick=null;}
+    pausedSeconds=0;
+    timerStart=Date.now();
+    startTimer();
+  }
+  if(timerEl){
+    timerEl.title='Clic: pausar o reanudar. Doble clic: reiniciar.';
+    timerEl.setAttribute('aria-label','Cronómetro de presentación');
+    timerEl.addEventListener('click',()=>timerPaused?startTimer():pauseTimer());
+    timerEl.addEventListener('dblclick',event=>{event.preventDefault();resetTimer();});
+    startTimer();
+  }
+
+  const formatNumber=value=>new Intl.NumberFormat('es-CO',{maximumFractionDigits:1}).format(Number(value)||0);
+  const formatMoney=value=>'$ '+new Intl.NumberFormat('es-CO',{maximumFractionDigits:0}).format(Number(value)||0);
+  function updateSimeco2(){
+    const kwh=Number($('#sKwh')?.value)||0;
+    const tariff=Number($('#sTariff')?.value)||0;
+    const factor=Number($('#sFactor')?.value)||0;
+    const annualTonnes=kwh*factor*12/1000;
+    const trees=Math.ceil(annualTonnes*1000/22);
+    if($('#sCost'))$('#sCost').textContent=formatMoney(kwh*tariff);
+    if($('#sCo2'))$('#sCo2').textContent=formatNumber(kwh*factor/1000)+' t';
+    if($('#sAnnual'))$('#sAnnual').textContent=formatNumber(annualTonnes)+' t';
+    if($('#sTrees'))$('#sTrees').textContent=new Intl.NumberFormat('es-CO').format(trees)+' árboles';
+  }
+  $$('#sKwh,#sTariff,#sFactor').forEach(input=>input.addEventListener('input',updateSimeco2));
+  updateSimeco2();
+
+  const galleryItems=[
+    {src:'img/galeria-01.webp',title:'Tecnología, emisiones y acción climática',caption:'Schneider Electric relaciona la evolución histórica de las emisiones de CO₂ con las revoluciones industriales y la evolución de la electricidad.'},
+    {src:'img/galeria-02.webp',title:'Estamos en un momento crítico: aplanar la curva',caption:'Visual de apoyo para explicar que ya existen soluciones tecnológicas para desacoplar crecimiento económico y emisiones.'},
+    {src:'img/galeria-03.webp',title:'Temperatura media global: 1750–2100',caption:'Infografía de largo plazo con historia observada y proyecciones del calentamiento del planeta hacia 2100.'},
+    {src:'img/galeria-04.webp',title:'≈15,1 °C · temperatura absoluta',caption:'Estimación aproximada de la temperatura media global absoluta usada en esta gráfica. No se compara directamente con el umbral de +1,5 °C.'},
+    {src:'img/galeria-05.webp',title:'+1,5 °C · calentamiento relativo',caption:'Meta climática expresada como aumento frente al período preindustrial 1850–1900; no representa la temperatura media absoluta del planeta.'},
+    {src:'img/galeria-06.webp',title:'Acción climática en Colombia',caption:'Pieza sobre la meta de reducción de emisiones a 2030 y la dirección hacia la carbono-neutralidad en 2050. La imagen identifica como fuente a Minambiente.'}
+  ];
+  const gallery=$('#carbonGallery');
+  const galleryTrigger=$('#carbonGalleryInlineTrigger');
+  const galleryImage=$('#galleryImage');
+  const galleryCounter=$('#galleryCounter');
+  const galleryTitle=$('#galleryItemTitle');
+  const galleryCaption=$('#galleryItemCaption');
+  const galleryThumbs=$('#galleryThumbs');
+  const galleryClose=$('#galleryClose');
+  let galleryIndex=0;
+  let galleryLastFocus=null;
+  let galleryTouchX=0;
+
+  function renderGallery(nextIndex){
+    galleryIndex=(nextIndex+galleryItems.length)%galleryItems.length;
+    const item=galleryItems[galleryIndex];
+    if(galleryImage){galleryImage.src=item.src;galleryImage.alt=item.title;}
+    if(galleryCounter)galleryCounter.textContent=(galleryIndex+1)+' / '+galleryItems.length;
+    if(galleryTitle)galleryTitle.textContent=item.title;
+    if(galleryCaption)galleryCaption.textContent=item.caption;
+    $$('.gallery-thumb',galleryThumbs||document).forEach((button,i)=>button.setAttribute('aria-current',i===galleryIndex?'true':'false'));
+  }
+  function buildGalleryThumbs(){
+    if(!galleryThumbs||galleryThumbs.dataset.ready)return;
+    galleryItems.forEach((item,i)=>{
+      const button=document.createElement('button');
+      button.type='button';
+      button.className='gallery-thumb';
+      button.setAttribute('aria-label','Ver imagen '+(i+1)+': '+item.title);
+      const image=document.createElement('img');
+      image.src=item.src;
+      image.alt='';
+      image.loading='lazy';
+      const number=document.createElement('span');
+      number.textContent=String(i+1);
+      button.append(image,number);
+      button.addEventListener('click',()=>renderGallery(i));
+      galleryThumbs.appendChild(button);
+    });
+    galleryThumbs.dataset.ready='true';
+  }
+  function openGallery(nextIndex=0){
+    if(!gallery)return;
+    galleryLastFocus=document.activeElement;
+    buildGalleryThumbs();
+    gallery.classList.add('open');
+    gallery.setAttribute('aria-hidden','false');
+    document.body.classList.add('gallery-open');
+    renderGallery(nextIndex);
+    requestAnimationFrame(()=>galleryClose?.focus());
+  }
+  function closeGallery(){
+    gallery?.classList.remove('open');
+    gallery?.setAttribute('aria-hidden','true');
+    document.body.classList.remove('gallery-open');
+    galleryLastFocus?.focus?.();
+  }
+  galleryTrigger?.addEventListener('click',()=>openGallery(0));
+  galleryTrigger?.addEventListener('keydown',event=>{
+    if(event.key==='Enter'||event.key===' '){event.preventDefault();openGallery(0);}
+  });
+  galleryClose?.addEventListener('click',closeGallery);
+  $('#galleryPrev')?.addEventListener('click',()=>renderGallery(galleryIndex-1));
+  $('#galleryNext')?.addEventListener('click',()=>renderGallery(galleryIndex+1));
+  gallery?.addEventListener('click',event=>{if(event.target===gallery)closeGallery();});
+  gallery?.addEventListener('touchstart',event=>{galleryTouchX=event.changedTouches[0].clientX;},{passive:true});
+  gallery?.addEventListener('touchend',event=>{
+    const dx=event.changedTouches[0].clientX-galleryTouchX;
+    if(Math.abs(dx)>55)renderGallery(galleryIndex+(dx<0?1:-1));
+  },{passive:true});
+
+  document.addEventListener('keydown',event=>{
+    if(gallery?.classList.contains('open')){
+      if(event.key==='Escape'){event.preventDefault();closeGallery();}
+      else if(event.key==='ArrowLeft'){event.preventDefault();renderGallery(galleryIndex-1);}
+      else if(event.key==='ArrowRight'){event.preventDefault();renderGallery(galleryIndex+1);}
+      return;
+    }
+    if(/INPUT|TEXTAREA/.test(event.target.tagName))return;
+    if(['ArrowRight','PageDown',' '].includes(event.key)){event.preventDefault();go(index+1);}
+    else if(['ArrowLeft','PageUp'].includes(event.key)){event.preventDefault();go(index-1);}
+    else if(event.key==='Home')go(0);
+    else if(event.key==='End')go(slides.length-1);
+    else if(event.key.toLowerCase()==='f')toggleFullscreen();
+    else if(event.key.toLowerCase()==='m')toggleDrawer();
+    else if(event.key.toLowerCase()==='o'){closeLayers();overview?.classList.toggle('open');}
+    else if(event.key.toLowerCase()==='n')notes?.classList.toggle('open');
+    else if(event.key==='Escape')closeLayers();
+  });
+
+  let touchX=0;
+  document.addEventListener('touchstart',event=>{touchX=event.changedTouches[0].clientX;},{passive:true});
+  document.addEventListener('touchend',event=>{
+    if(gallery?.classList.contains('open'))return;
+    const dx=event.changedTouches[0].clientX-touchX;
+    if(Math.abs(dx)>70)go(index+(dx<0?1:-1));
+  },{passive:true});
+
+  let initial=0;
+  const hashIndex=Number.parseInt(location.hash.slice(1),10);
+  if(Number.isFinite(hashIndex))initial=Math.max(0,Math.min(slides.length-1,hashIndex-1));
+  show(initial);
+})();</script>
+</body>
+</html>
