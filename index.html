@@ -6,7 +6,7 @@
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <meta content="#002f56" name="theme-color"/>
 <meta content="Presentación interactiva: huella de carbono educativa, SiMeCO₂ y energía solar." name="description"/>
-<meta content="2026-09-06-GITHUB-PAGES-GOOGLE-SITES-RESPONSIVE-FAVICON" name="simeco-build"/>
+<meta content="2026-10-08-CLIMATE-WEEK-35-GSV-ALIANZA-SIN-FINANCIACION" name="simeco-build"/>
 <meta content="dark" name="color-scheme"/>
 <title>1,5 °C: El reto climático y la oportunidad solar con cero inversión</title>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
@@ -3391,7 +3391,58 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
       body.embedded .timeline{grid-template-columns:1fr!important;}
     }
 
-  </style>
+
+/* QR originales añadidos a las diapositivas 7 y 9 (sin convertir las diapositivas en imágenes). */
+.slide-qr-integrated{position:relative}
+.slide-qr-integrated .slide-qr-card{
+  position:absolute;right:2px;bottom:12px;width:clamp(150px,14vw,230px);
+  margin:0;padding:9px;background:#fff;border-radius:17px;
+  box-shadow:0 12px 30px #001a2c55;z-index:3;
+}
+.slide-qr-integrated .slide-qr-card img{width:100%;height:auto;aspect-ratio:1;display:block;object-fit:contain}
+.slide-qr-integrated .slide-qr-card figcaption{font-size:12px;line-height:1.25;text-align:center;color:#124630;font-weight:800;margin:4px 0 0}
+.slide-qr-integrated .qr-reserved-actions{padding-right:clamp(165px,16vw,260px)}
+@media(max-width:900px){
+ .slide-qr-integrated .slide-qr-card{position:relative;right:auto;bottom:auto;width:min(210px,58vw);margin:12px 0 0 auto}
+ .slide-qr-integrated .qr-reserved-actions{padding-right:0}
+}
+
+  
+/* Course module: 21/22, responsive and integrated */
+.course-neutral-slide{align-content:center!important}
+.course-neutral-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(14px,2.4vw,36px);align-items:center;width:100%}
+.course-neutral-copy h2{font-size:clamp(31px,3.4vw,57px)!important;line-height:1.07!important}
+.course-neutral-copy .lead{font-size:clamp(16px,1.35vw,23px)!important;margin:15px 0!important}
+.course-neutral-chips{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 24px}
+.course-neutral-chip{padding:10px 15px;border:1px solid #63cce080;border-radius:999px;background:#073e5f;color:#dffaff;font-size:clamp(13px,1vw,17px);font-weight:700}
+.course-neutral-shot{margin:0;min-width:0;padding:12px;border:1px solid #8ad9ed66;border-radius:24px;background:linear-gradient(145deg,#17546e,#074064);box-shadow:0 18px 45px #001d32aa}
+.course-neutral-shot img{display:block;width:100%;max-height:min(59vh,580px);object-fit:contain;border-radius:12px}
+.course-neutral-shot figcaption{font-size:clamp(12px,.82vw,15px);color:#cfebf6;margin-top:10px;text-align:center}
+.course-neutral-slide .actions{margin-top:18px!important;display:flex;gap:12px;flex-wrap:wrap}
+.course-neutral-slide .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:860px){.course-neutral-layout{grid-template-columns:1fr;gap:12px}.course-neutral-copy h2{font-size:clamp(26px,6vw,42px)!important}.course-neutral-shot img{max-height:25vh}.course-neutral-chips{margin:9px 0}.course-neutral-chip{padding:6px 10px}.course-neutral-shot{padding:7px}.course-neutral-shot figcaption{display:none}}
+@media(max-height:620px){.course-neutral-shot img{max-height:40vh}.course-neutral-copy .lead{margin:7px 0!important}.course-neutral-chips{margin:8px 0!important}}
+
+/* Módulo GSV Ingeniería: las 22 láminas originales completas, con fotografías y textos intactos */
+.gsv-insert-slide {padding:clamp(78px,9vh,100px) clamp(18px,3.2vw,58px) clamp(72px,8vh,94px)!important;align-content:center!important;grid-template-rows:auto minmax(0,1fr);gap:clamp(6px,1.2vh,14px);overflow:hidden!important}
+.gsv-topline {display:flex;align-items:center;justify-content:space-between;gap:18px;min-width:0}
+.gsv-topline .kicker {margin:0;color:var(--lime);font-size:clamp(10px,.85vw,15px)}
+.gsv-source {font-size:clamp(11px,.9vw,15px);color:#c0d5e4;white-space:nowrap}
+.gsv-visual {margin:0;min-height:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;border-radius:16px;overflow:hidden;background:rgba(255,255,255,.055);border:1px solid rgba(109,242,183,.38);box-shadow:0 12px 48px #00162860}
+.gsv-visual img {display:block;width:100%;height:100%;object-fit:contain;object-position:center;min-height:0}
+@media(max-width:850px){.gsv-insert-slide{padding:78px 14px 77px!important;grid-template-rows:auto minmax(0,1fr);overflow:hidden!important}.gsv-source{font-size:10px}.gsv-visual{border-radius:9px}}
+@media(max-height:550px){.gsv-insert-slide{padding-top:62px!important;padding-bottom:56px!important}.gsv-topline .kicker{font-size:10px}}
+
+
+/* Nueva diapositiva 2: apertura audiovisual de YouTube */
+.youtube-intro-slide{align-content:center;grid-template-rows:auto auto minmax(0,1fr);gap:clamp(12px,2vh,22px)}
+.youtube-intro-slide .youtube-head{max-width:1200px;margin-inline:auto;text-align:center}
+.youtube-intro-slide .youtube-head h2{font-size:clamp(29px,4.6vw,72px);line-height:1.04;margin:12px 0 7px;color:#f3f9ff}
+.youtube-intro-slide .youtube-head p{font-size:clamp(14px,1.2vw,21px);color:#bfd8e7;margin:0}
+.youtube-intro-slide .youtube-frame{width:min(100%,1120px);aspect-ratio:16/9;max-height:min(65vh,630px);margin:auto;border:1px solid rgba(111,242,184,.55);border-radius:20px;overflow:hidden;background:#001827;box-shadow:0 16px 48px #00142688}
+.youtube-intro-slide .youtube-frame iframe{display:block;width:100%;height:100%;border:0}
+@media(max-width:700px){.youtube-intro-slide{gap:12px}.youtube-intro-slide .youtube-frame{max-height:55vh;border-radius:10px}}
+</style>
 </head>
 <body>
 <main class="deck" id="deck">
@@ -3403,6 +3454,17 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
 <img alt="Código QR para acceder al recurso digital" src="img/qr-evento.png"/>
 <span>Escanea e inscríbete</span>
 </figure>
+</section>
+<section class="slide youtube-intro-slide" data-title="Video · YouTube" data-notes="Reproduzca el video de YouTube. Requiere conexión a internet; si el reproductor no carga, use el enlace alternativo al video.">
+  <div class="youtube-head">
+    <div class="kicker">EDUCACIÓN · ENERGÍA · CLIMA</div>
+    <h2>Video de apertura</h2>
+    <p>Una mirada audiovisual antes de explorar los retos climáticos y las soluciones sostenibles.</p>
+  </div>
+  <div class="youtube-frame">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jnfPNKI0A00?si=vfCuLMYuF2H9Q1wd" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe>
+  </div>
+  <p style="text-align:center;margin:0;color:#bdd4e4;font-size:clamp(12px,.9vw,16px)">¿No se reproduce? <a href="https://www.youtube.com/watch?v=jnfPNKI0A00" target="_blank" rel="noopener noreferrer" style="color:#70f5bd;text-decoration:underline">Abrir video directamente en YouTube ↗</a></p>
 </section>
 <section class="slide" data-notes="Abra con la pregunta central. Aclare desde el inicio que +1,5 °C es el aumento de la temperatura global respecto al período preindustrial 1850–1900; no es la temperatura media absoluta del planeta. La cifra aproximada de 15,1 °C mostrada más adelante corresponde a una estimación absoluta usada en la gráfica y no se compara directamente con +1,5 °C." data-title="Portada · Título">
 <div class="leaf-orbit"><div aria-label="Colegio en órbita" class="school-marker"><span>🏫</span></div><div class="sun-core"><span class="sun-label">SOL</span><span class="sun-dollar" style="--ang:0deg;--dist:88px;--delay:0s">$</span><span class="sun-dollar" style="--ang:45deg;--dist:88px;--delay:.2s">$</span><span class="sun-dollar" style="--ang:90deg;--dist:88px;--delay:.4s">$</span><span class="sun-dollar" style="--ang:135deg;--dist:88px;--delay:.6s">$</span><span class="sun-dollar" style="--ang:180deg;--dist:88px;--delay:.8s">$</span><span class="sun-dollar" style="--ang:225deg;--dist:88px;--delay:1s">$</span><span class="sun-dollar" style="--ang:270deg;--dist:88px;--delay:1.2s">$</span><span class="sun-dollar" style="--ang:315deg;--dist:88px;--delay:1.4s">$</span></div></div>
@@ -3477,7 +3539,7 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
 <div class="kicker">1 · Reto climático · metas de Colombia</div><h2>De 100 a cero: la dirección del cambio</h2>
 <div class="grid two"><article class="card"><svg aria-label="Trayectoria ilustrativa desde una referencia de 100 hasta 49 en 2030 y cero neto en 2050" class="svg-chart" role="img" viewbox="0 0 600 290"><line class="chart-grid" x1="55" x2="560" y1="230" y2="230"></line><line class="chart-grid" x1="55" x2="55" y1="55" y2="230"></line><polyline class="chart-line" points="70,65 330,145 545,225"></polyline><circle cx="70" cy="65" fill="#b9f43b" r="8"></circle><circle cx="330" cy="145" fill="#b9f43b" r="8"></circle><circle cx="545" cy="225" fill="#b9f43b" r="8"></circle><text class="chart-value" text-anchor="middle" x="70" y="45">100</text><text class="chart-value" text-anchor="middle" x="330" y="125">49</text><text class="chart-value" text-anchor="middle" x="545" y="205">Cero neto</text><text class="chart-label" text-anchor="middle" x="70" y="257">Referencia</text><text class="chart-label" text-anchor="middle" x="330" y="257">2030 · −51%</text><text class="chart-label" text-anchor="middle" x="545" y="257">2050</text></svg><p class="small">Trayectoria conceptual para explicar las metas; no representa una proyección anual.</p></article><article class="card"><strong class="metric">−51%</strong><p>Meta de reducción de emisiones para 2030 frente al escenario de referencia.</p><hr style="border:0;border-top:1px solid var(--line);margin:22px 0"/><strong class="metric">2050</strong><p>Carbono-neutralidad como dirección de largo plazo.</p></article></div>
 </section>
-<section class="slide simeco-evidence-slide" data-notes="Datos actualizados del tablero de SiMeCO₂: 17 períodos con facturas procesadas, 568 sedes educativas identificadas y 18.800.429,36 kWh de energía acumulada. La huella se recalculó con el factor oficial de 0,220 kg CO₂e/kWh para inventarios de GEI del SIN 2024, adoptado por la UPME mediante la Resolución 0085 del 23 de febrero de 2026: 4.136,09 t CO₂e y 188.005 árboles como equivalencia pedagógica de captura anual. Aclare que las 568 sedes corresponden a sedes identificadas en las facturas cargadas, no necesariamente a sedes con información completa en todos los períodos. [Sources] UPME, Resolución 0085 de 2026: https://docs.upme.gov.co/Normatividad/085_2026.pdf" data-title="2 · Medir con SiMeCO₂">
+<section class="slide simeco-evidence-slide slide-qr-integrated" data-notes="Datos actualizados del tablero de SiMeCO₂: 17 períodos con facturas procesadas, 568 sedes educativas identificadas y 18.800.429,36 kWh de energía acumulada. La huella se recalculó con el factor oficial de 0,220 kg CO₂e/kWh para inventarios de GEI del SIN 2024, adoptado por la UPME mediante la Resolución 0085 del 23 de febrero de 2026: 4.136,09 t CO₂e y 188.005 árboles como equivalencia pedagógica de captura anual. Aclare que las 568 sedes corresponden a sedes identificadas en las facturas cargadas, no necesariamente a sedes con información completa en todos los períodos. [Sources] UPME, Resolución 0085 de 2026: https://docs.upme.gov.co/Normatividad/085_2026.pdf" data-title="2 · Medir con SiMeCO₂">
 <div class="kicker">2 · Medir · SiMeCO₂</div>
 <h2>La huella de carbono educativa de Medellín ya cuenta una historia</h2>
 <div class="simeco-dashboard">
@@ -3527,7 +3589,8 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
 <i>→</i>
 <span><b>Decisiones</b><small>Ahorro · mitigación · solar</small></span>
 </div>
-<div class="actions" style="margin-top:18px">
+<figure class="slide-qr-card"><img src="img/qr-diapositiva-07.png" alt="Código QR de acceso a SiMeCO₂" loading="lazy"/><figcaption>Explora SiMeCO₂</figcaption></figure>
+<div class="actions qr-reserved-actions" style="margin-top:18px">
 <a class="btn primary simeco-slide-button" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-huella-de-carbono-educativa-de-medellin" rel="noopener noreferrer" target="_blank">SiMeCO₂</a>
 </div>
 </section>
@@ -3535,11 +3598,12 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
 <div class="kicker">2 · Medir · de factura a decisión</div><h2>De la factura a una decisión climática</h2>
 <div class="grid two"><div class="card"><div class="form-grid"><div><label for="sKwh">Consumo mensual (kWh)</label><input id="sKwh" min="0" type="number" value="45000"/></div><div><label for="sTariff">Tarifa (COP/kWh)</label><input id="sTariff" min="0" type="number" value="850"/></div><div><label for="sFactor">Factor (kg CO₂e/kWh)</label><input id="sFactor" min="0" step="0.001" type="number" value="0.220"/></div></div><div class="result-grid four"><div class="result"><b id="sCost">—</b><span>Costo mensual</span></div><div class="result"><b id="sCo2">—</b><span>Emisiones mensuales</span></div><div class="result"><b id="sAnnual">—</b><span>Emisiones anuales</span></div><div class="result"><b id="sTrees">—</b><span>Árboles necesarios/año</span></div></div><p class="small">Factor oficial precargado: 0,220 kg CO₂e/kWh para inventarios de GEI del SIN 2024 (UPME, Resolución 0085 de 2026). Equivalencia pedagógica SiMeCO₂: 1 árbol = 22 kg CO₂e/año (≈45,45 árboles por tonelada anual).</p></div><div class="card"><h3>Una sola trazabilidad</h3><p>Facturas → kWh → CO₂e → árboles equivalentes → historial → prioridades → plan de ahorro → reporte.</p><div class="actions"><span class="pill accent">Medible</span><span class="pill">Auditable</span><span class="pill">Accionable</span></div></div></div>
 </section>
-<section class="slide" data-notes="Explique que medir no es el resultado final: los datos alimentan planes con línea base, metas, acciones, responsables, indicadores y seguimiento." data-title="3 · Planes ambientales">
+<section class="slide slide-qr-integrated" data-notes="Explique que medir no es el resultado final: los datos alimentan planes con línea base, metas, acciones, responsables, indicadores y seguimiento." data-title="3 · Planes ambientales">
 <div class="kicker">3 · Actuar · planes de GEI y agua</div><h2>Los datos se convierten en planes de acción</h2>
 <div class="grid two"><article class="card"><div class="icon">CO₂</div><h3>Plan de Gestión Energética y Reducción de GEI</h3><p>Línea base, consumos prioritarios, metas, medidas de eficiencia, responsables, indicadores y seguimiento.</p></article><article class="card"><div class="icon">💧</div><h3>Plan de Ahorro y Uso Eficiente del Agua</h3><p>Diagnóstico, oportunidades de ahorro, hábitos, mantenimiento, metas e indicadores de consumo.</p></article></div>
 <div class="callout">Cada sede participante podrá recibir recomendaciones y entregables personalizados a partir de sus facturas.</div>
-<div class="actions" style="margin-top:18px"><a class="btn primary zero-cta" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-1-sube-tu-factura" rel="noopener noreferrer" target="_blank">Convierte la factura en planes ambientales y una ruta solar</a></div>
+<figure class="slide-qr-card"><img src="img/qr-diapositiva-09.png" alt="Código QR para convertir la factura en un plan de acción sostenible" loading="lazy"/><figcaption>Escanea y sube tu factura</figcaption></figure>
+<div class="actions qr-reserved-actions" style="margin-top:18px"><a class="btn primary zero-cta" href="https://sites.google.com/iemanueljbetancur.edu.co/lideres-ambientales/sistemas-de-informaci%C3%B3n/sistema-1-1-sube-tu-factura" rel="noopener noreferrer" target="_blank">Convierte la factura en planes ambientales y una ruta solar</a></div>
 </section>
 <section class="slide" data-notes="Presente la eficiencia y la generación solar como complementarias: primero evitar desperdicios y luego sustituir parte de la energía comprada por generación limpia en la sede." data-title="4 · Oportunidad solar">
 <div class="visual-split"><div><div class="kicker">4 · Solar · convertir gasto en inversión</div><h2>Energía solar: convertir el gasto en una inversión sostenible</h2><div class="grid"><article class="card"><h3>Reducir</h3><p>Eficiencia antes de dimensionar.</p></article><article class="card"><h3>Generar</h3><p>Energía limpia donde se consume.</p></article><article class="card"><h3>Verificar</h3><p>Ahorros y emisiones evitadas.</p></article></div><p class="small">Proyecto técnico + financiero + pedagógico.</p></div><figure class="photo school-solar-photo">
@@ -3547,164 +3611,122 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
 <figcaption><strong>Energía solar como infraestructura y herramienta pedagógica.</strong> Imagen ilustrativa de una sede educativa con sistema solar fotovoltaico.</figcaption>
 </figure></div>
 </section>
-<section class="slide" data-notes="Explique que hay cuatro caminos para financiar el mismo proyecto solar. La decisión depende de caja, costo del capital, propiedad deseada, plazo, mantenimiento y apetito de riesgo. Esta diapositiva busca ordenar la conversación antes de entrar al caso Rocasol." data-title="5 · Alternativas financieras">
-<div class="kicker">5 · Financiar · alternativas</div><h2>Financiar sin desestabilizar la operación</h2>
-<p class="lead">El mismo sistema solar puede estructurarse de maneras distintas. La clave es escoger la fórmula que mejor se adapte a la realidad financiera de la institución.</p>
-<div class="grid two finance-paths">
-<article class="card finance-path-card"><h3>Compra directa</h3><p><strong>Ideal si:</strong> la institución cuenta con caja disponible.</p><p><strong>Ventaja:</strong> la propiedad y el mayor ahorro quedan desde el inicio en la institución.</p><p><strong>Clave:</strong> exige la mayor inversión inicial y asumir operación y mantenimiento.</p></article>
-<article class="card finance-path-card"><h3>Crédito verde</h3><p><strong>Ideal si:</strong> se quiere repartir el CAPEX en el tiempo.</p><p><strong>Ventaja:</strong> permite financiar el sistema y conservar la propiedad.</p><p><strong>Clave:</strong> la cuota debe compararse con el ahorro esperado para cuidar el flujo.</p></article>
-<article class="card finance-path-card"><h3>PPA</h3><p><strong>Ideal si:</strong> se prioriza baja inversión inicial.</p><p><strong>Ventaja:</strong> se paga por la energía generada según el contrato.</p><p><strong>Clave:</strong> deben revisarse precio, plazo, indexación, garantías y responsabilidades.</p></article>
-<article class="card finance-path-card"><h3>Inversión Cero · Rocasol</h3><p><strong>Ideal si:</strong> se busca empezar sin desembolso inicial.</p><p><strong>Ventaja:</strong> el ahorro del sistema ayuda a pagar la solución.</p><p><strong>Clave:</strong> el pago inicia cuando el sistema entra en operación y el mantenimiento viene incluido durante el periodo de pago.</p></article>
-</div>
+<section class="slide gsv-insert-slide" data-title="GSV · 01 · Le apostamos al desarrollo sostenible, brindando soluciones  en l" data-notes="Diapositiva 1 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 01 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-01.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 1 de 22: Le apostamos al desarrollo sostenible, brindando soluciones  en l" loading="lazy" /></figure>
 </section>
-<section class="slide" data-notes="Use esta lámina para explicar la lógica financiera del modelo. Durante el período contractual conviven la nueva factura y el pago a Rocasol. El escenario posterior solo aplica si el contrato establece la terminación efectiva de los pagos y define la transferencia de la propiedad o de los beneficios económicos del sistema. La reducción de la factura y la cobertura energética dependen del estudio técnico, el consumo y la generación real." data-title="6 · Oferta CERO-Inversión">
-<div class="kicker">6 · CERO-Inversión · modelo visual</div>
-<h2>Así funciona la oferta CERO-Inversión de Rocasol</h2>
-<div class="single-image-layout">
-<figure class="single-image-card">
-<img alt="Esquema de la oferta CERO-Inversión de Rocasol: antes del sistema solar, durante la inversión y después de la inversión." src="img/modelo-cero-inversion.webp"/>
-</figure>
-<p class="single-image-note">La lámina ilustra un escenario condicionado: durante el contrato conviven la factura de red y el pago a Rocasol. Una vez cumplidas todas las obligaciones, el ahorro posterior y la propiedad del sistema dependerán de lo pactado, de la generación real y de la tarifa eléctrica.</p>
-</div>
+<section class="slide gsv-insert-slide" data-title="GSV · 02 · GSV Ingeniería · Lámina 02" data-notes="Diapositiva 2 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 02 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-02.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 2 de 22: GSV Ingeniería · Lámina 02" loading="lazy" /></figure>
 </section>
-<section class="slide" data-notes="Explique las condiciones como elementos sujetos a la oferta y al contrato. Cero inversión significa ausencia de desembolso inicial, no ausencia de pagos. La cuota está indexada al IPC, por lo que no es un precio fijo. El inicio de pagos, el alcance del mantenimiento, el tratamiento contable, las garantías y cualquier transferencia deben quedar definidos por escrito." data-title="6 · Cómo opera CERO-Inversión">
-<div class="kicker">6 · CERO-Inversión · condiciones clave</div><h2>Rocasol CERO-Inversión: el ahorro paga la solución</h2>
-<div aria-label="Resumen del modelo de inversión cero" class="zero-pill-grid">
-<div class="zero-pill"><b>$0 inicial</b><span>Sin desembolso inicial, según oferta y contrato.</span></div>
-<div class="zero-pill"><b>72 meses</b><span>Plazo referencial del caso presentado.</span></div>
-<div class="zero-pill"><b>Pago al operar</b><span>Inicio sujeto al acta y condiciones de puesta en servicio.</span></div>
-<div class="zero-pill"><b>Mantenimiento</b><span>Alcance, exclusiones y plazo definidos contractualmente.</span></div>
-</div>
-<div class="zero-explain" style="margin-top:18px">
-<div class="callout"><strong>“CERO-Inversión” describe $0 de desembolso inicial; no significa cero costo ni cero pagos.</strong> Parte del ahorro solar puede atender la cuota. Su tratamiento como deuda y su efecto sobre el endeudamiento dependen de la estructura jurídica, contable y contractual.</div>
-<div class="card zero-note-card" style="margin-top:18px">
-<p>La solución puede financiarse con <strong>una parte de los ahorros solares estimados</strong>, siempre que la generación, la tarifa y las condiciones de pago confirmen un flujo positivo.</p>
-<p>La cuota está indexada al IPC; por tanto, <strong>no es un precio fijo</strong>. El inicio de pagos y el mantenimiento aplican según el alcance, las exclusiones y los niveles de servicio pactados.</p>
-<p>La clasificación contable, la propiedad, las garantías y el impacto sobre el endeudamiento requieren validación jurídica, financiera y contractual.</p>
-</div>
-</div>
+<section class="slide gsv-insert-slide" data-title="GSV · 03 · GSV Ingeniería · Lámina 03" data-notes="Diapositiva 3 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 03 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-03.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 3 de 22: GSV Ingeniería · Lámina 03" loading="lazy" /></figure>
 </section>
-<section class="slide" data-notes="Esta diapositiva reemplaza las afirmaciones absolutas de la pieza comercial por diez condiciones que deben verificarse. Recalque que no se puede prometer cobertura total, cero deuda, precio estable, ventajas fiscales o transferencia automática sin revisar el estudio técnico, el régimen tributario, la estructura contable y el contrato definitivo." data-title="6 · Beneficios CERO-Inversión">
-<div class="kicker">6 · CERO-Inversión · beneficios</div>
-<h2>10 condiciones que deben quedar claras en el contrato</h2>
-<div aria-label="Condiciones contractuales del modelo CERO-Inversión" class="contract-checklist">
-<div class="contract-item"><i>1</i><div><b>Desembolso inicial</b><span>Confirmar qué conceptos están incluidos y cuáles asume el cliente.</span></div></div>
-<div class="contract-item"><i>2</i><div><b>Fuente de pago</b><span>Validar que el ahorro solar estimado cubra la cuota bajo escenarios realistas.</span></div></div>
-<div class="contract-item"><i>3</i><div><b>Inicio de pagos</b><span>Definir el hito de puesta en servicio y aceptación del sistema.</span></div></div>
-<div class="contract-item"><i>4</i><div><b>Cobertura energética</b><span>Depende del diseño, radiación, consumo, disponibilidad y generación real.</span></div></div>
-<div class="contract-item"><i>5</i><div><b>Cuota e IPC</b><span>Especificar fórmula, periodicidad, topes y fecha de indexación.</span></div></div>
-<div class="contract-item"><i>6</i><div><b>Mantenimiento</b><span>Precisar alcance, exclusiones, repuestos y niveles de servicio.</span></div></div>
-<div class="contract-item"><i>7</i><div><b>Tratamiento contable</b><span>Determinar si genera pasivo o afecta la capacidad de endeudamiento.</span></div></div>
-<div class="contract-item"><i>8</i><div><b>Beneficios tributarios</b><span>Aplican según régimen, titularidad, requisitos y normativa vigente.</span></div></div>
-<div class="contract-item"><i>9</i><div><b>Propiedad y transferencia</b><span>Establecer titular, momento, condiciones y costo de la transferencia.</span></div></div>
-<div class="contract-item"><i>10</i><div><b>Garantías y terminación</b><span>Definir desempeño, seguros, incumplimientos, salida y solución de controversias.</span></div></div>
-</div>
-<p class="contract-disclaimer">Los beneficios dependen del estudio técnico y de la estructura jurídica, contable, tributaria y contractual de cada institución.</p>
+<section class="slide gsv-insert-slide" data-title="GSV · 04 · Sistemas Solares Fotovoltaicos" data-notes="Diapositiva 4 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 04 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-04.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 4 de 22: Sistemas Solares Fotovoltaicos" loading="lazy" /></figure>
 </section>
-<section class="slide" data-notes="Explique que este bloque nace del caso real suministrado y usa valores constantes únicamente con fines pedagógicos. Haga visible la diferencia entre el valor referencial del sistema, $71.130.000, y los pagos acumulados de 72 mensualidades, $154.124.568 sin IPC. El segundo valor puede incorporar financiación, mantenimiento, garantías, seguros y transferencia de riesgos, por lo que el contrato debe desglosar sus componentes. No presente el ejercicio como una proyección conservadora ni contractual." data-title="7 · Caso real">
-<div class="kicker">7 · Caso real · inversión cero</div><h2>El caso Rocasol: convertir la factura en proyecto solar</h2>
-<p class="lead">La clave no es pedirle a la institución que compre el sistema de contado. La clave es usar el ahorro que genera la energía solar para pagar la solución.</p>
-<div class="rocasol-kpi-grid">
-<div class="rocasol-kpi"><small>Inversión referencial</small><b>$71.130.000</b><span>Valor del sistema solar del caso.</span></div>
-<div class="rocasol-kpi"><small>Desembolso inicial</small><b>$0</b><span>Modelo de inversión cero para proteger caja.</span></div>
-<div class="rocasol-kpi"><small>Ahorro solar mensual</small><b>$2.456.928</b><span>Energía que deja de comprarse a la red.</span></div>
-<div class="rocasol-kpi"><small>Pago mensual Rocasol</small><b>$2.140.619</b><span>Pago estimado por energía autogenerada.</span></div>
-<div class="rocasol-kpi"><small>Pagos en 72 meses</small><b>$154.124.568</b><span>Total a valores constantes, sin IPC.</span></div>
-</div>
-<div class="callout" style="margin-top:22px"><strong>Simulación pedagógica a valores constantes:</strong> no incorpora IPC, degradación de los paneles ni variaciones de la tarifa eléctrica. Estos factores producen efectos distintos, por lo que este ejercicio no equivale a una proyección contractual.</div>
+<section class="slide gsv-insert-slide" data-title="GSV · 05 · La irradiancia solar" data-notes="Diapositiva 5 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 05 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-05.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 5 de 22: La irradiancia solar" loading="lazy" /></figure>
 </section>
-<section class="slide" data-notes="Esta ficha evita presentar el caso financiero como si ya fuera un diseño solar validado. Los cuatro valores de la izquierda provienen del caso suministrado. La potencia instalada, los módulos, la generación, la tarifa base, la cobertura, la degradación, la vida útil y la propiedad final no aparecen sustentados en la fuente y deben completarse con la propuesta técnica, las facturas, las fichas de equipos y el contrato. Sin tarifa base y generación no puede auditarse el ahorro mensual de $2.456.928." data-title="7 · Base técnica">
-<div class="kicker">7 · Caso real · base técnica</div>
-<h2>La propuesta financiera debe apoyarse en una ficha técnica verificable</h2>
-<p class="lead">El caso aporta cifras económicas, pero todavía no documenta los parámetros que permiten comprobar la generación, la cobertura y el ahorro.</p>
-<div class="technical-case-grid">
-<article class="technical-known">
-<h3>Datos suministrados</h3>
-<div class="technical-known-list">
-<div><span>Valor referencial</span><b>$71.130.000</b></div>
-<div><span>Ahorro solar mensual</span><b>$2.456.928</b></div>
-<div><span>Pago mensual</span><b>$2.140.619</b></div>
-<div><span>Plazo referencial</span><b>72 meses</b></div>
-</div>
-</article>
-<article class="technical-pending">
-<h3>Datos por validar antes de decidir</h3>
-<div class="technical-pending-list">
-<div><b>Potencia instalada</b><span>kWp DC y potencia AC del sistema.</span></div>
-<div><b>Módulos</b><span>Cantidad, potencia unitaria y fabricante.</span></div>
-<div><b>Generación</b><span>kWh/mes y kWh/año, con fuente de radiación.</span></div>
-<div><b>Tarifa base</b><span>COP/kWh tomado de facturas y período analizado.</span></div>
-<div><b>Cobertura</b><span>Porcentaje del consumo atendido y excedentes.</span></div>
-<div><b>Degradación</b><span>Supuesto anual incorporado en la simulación.</span></div>
-<div><b>Vida útil y garantías</b><span>Paneles, inversores, estructura y desempeño.</span></div>
-<div><b>Propiedad final</b><span>Titular, fecha, condiciones y costo de transferencia.</span></div>
-</div>
-</article>
-</div>
-<div class="technical-formula"><strong>Prueba mínima de consistencia:</strong> generación mensual (kWh) × tarifa evitada (COP/kWh) = ahorro solar mensual. Sin esos dos datos no puede auditarse el valor de <strong>$2.456.928</strong>.</div>
+<section class="slide gsv-insert-slide" data-title="GSV · 06 · La irradiación solar" data-notes="Diapositiva 6 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 06 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-06.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 6 de 22: La irradiación solar" loading="lazy" /></figure>
 </section>
-<section class="slide" data-notes="Use esta diapositiva para explicar la operación básica con los valores iniciales del caso. Del ahorro solar mensual de $2.456.928, aproximadamente 87,1 % se destina al pago de Rocasol y 12,9 % permanece como ahorro del cliente. Aclare que es una fotografía pedagógica del flujo y no una proyección de los 72 meses." data-title="7 · Flujo mensual">
-<div class="kicker">7 · Caso real · flujo mensual</div><h2>Cómo se paga: el ahorro financia la solución</h2>
-<div aria-label="Fórmula financiera del caso Rocasol" class="rocasol-equation">
-<div class="eq-card"><b>$2.456.928</b><span>Ahorro bruto mensual generado por el sistema</span></div>
-<div class="eq-symbol">−</div>
-<div class="eq-card"><b>$2.140.619</b><span>Pago mensual estimado a Rocasol</span></div>
-<div class="eq-symbol">=</div>
-<div class="eq-card"><b>$316.309</b><span>Ahorro neto mensual estimado</span></div>
-</div>
-<div class="grid two" style="margin-top:24px">
-<article class="card"><h3>87,1 % paga la solución</h3><p><strong>$2.140.619</strong> del ahorro solar mensual se destinan al pago estimado de Rocasol.</p></article>
-<article class="card"><h3>12,9 % queda en la institución</h3><p><strong>$316.309</strong> mensuales permanecen como ahorro neto inicial del cliente.</p></article>
-</div>
-<p class="small">Lectura del escenario inicial: si el ahorro solar mensual supera el pago mensual del modelo, la institución mejora caja. La evolución posterior depende de tarifa, generación, degradación e indexación contractual.</p>
+<section class="slide gsv-insert-slide" data-title="GSV · 07 · Es cuando un sistema es completamente independiente y gracias a q" data-notes="Diapositiva 7 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 07 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-07.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 7 de 22: Es cuando un sistema es completamente independiente y gracias a q" loading="lazy" /></figure>
 </section>
-<section class="slide" data-notes="Presente esta tabla como una simulación pedagógica a valores constantes, no como una proyección conservadora ni contractual. Mantiene sin cambios el ahorro bruto y el pago anual durante seis años. En la realidad, el IPC puede elevar el pago; la degradación puede reducir la generación; y el cambio de la tarifa eléctrica puede aumentar o disminuir el ahorro. El salto del año 7 también depende de que el pago termine efectivamente al mes 72 y se mantengan los beneficios económicos del sistema." data-title="7 · Proyección 6 años">
-<div class="kicker">7 · Caso real · proyección 6 años</div><h2>El salto ocurre después de los 6 años, cuando termina el pago del sistema</h2>
-<div class="projection-grid">
-<article class="card">
-<h3>Simulación pedagógica a valores constantes</h3>
-<table class="comparison"><tr><th>Año</th><th>Ahorro bruto</th><th>Pago Rocasol</th><th>Ahorro neto</th><th>Acumulado</th></tr>
-<tr><td>1</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$3.795.708</td></tr>
-<tr><td>2</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$7.591.416</td></tr>
-<tr><td>3</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$11.387.124</td></tr>
-<tr><td>4</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$15.182.832</td></tr>
-<tr><td>5</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$18.978.540</td></tr>
-<tr><td>6</td><td>$29.483.136</td><td>$25.687.428</td><td class="good">$3.795.708</td><td>$22.774.248</td></tr>
-<tr><td>7</td><td>$29.483.136</td><td>$0*</td><td class="good">$29.483.136</td><td class="good">$52.257.384</td></tr>
-</table>
-<p class="small">Durante los años 1–6: pagos acumulados a Rocasol de <strong>$154.124.568</strong> y ahorro acumulado del cliente de <strong>$22.774.248</strong>. Valores sin IPC. *El año 7 supone que el pago termina al mes 72.</p>
-</article>
-<article class="card">
-<h3>Ahorro neto anual estimado</h3>
-<div aria-label="Ahorro neto anual proyectado" class="projection-bars">
-<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 1</span></div>
-<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 2</span></div>
-<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 3</span></div>
-<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 4</span></div>
-<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 5</span></div>
-<div class="projection-bar" style="--h:13"><b>$3,8 M</b><span>Año 6</span></div>
-<div class="projection-bar" style="--h:100"><b>$29,5 M</b><span>Año 7</span></div>
-</div>
-<p class="small">El año 7 muestra el potencial cuando ya no existe pago mensual de la solución y permanece el ahorro energético.</p>
-</article>
-</div>
+<section class="slide gsv-insert-slide" data-title="GSV · 08 · Los sistemas On-Grid están pensados para operar en conjunto con l" data-notes="Diapositiva 8 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 08 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-08.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 8 de 22: Los sistemas On-Grid están pensados para operar en conjunto con l" loading="lazy" /></figure>
 </section>
-<section class="slide" data-notes="Cierre el caso con transparencia: compare el valor referencial del sistema con el total de pagos a 72 meses y el ahorro que conserva el cliente. Explique que los $154.124.568 no equivalen necesariamente al precio técnico de los equipos, porque el modelo puede incorporar financiación, mantenimiento, garantías, seguros y transferencia de riesgos; estos componentes deben quedar discriminados en la propuesta contractual." data-title="7 · Lectura ejecutiva">
-<div class="kicker">7 · Caso real · lectura ejecutiva</div>
-<h2>La decisión exige mirar el costo total y el ahorro retenido</h2>
-<div class="rocasol-decision">
-<article class="card"><h3>1. Valor referencial</h3><p>El sistema del caso está valorado inicialmente en <strong>$71.130.000</strong>.</p></article>
-<article class="card"><h3>2. Pagos durante 72 meses</h3><p><strong>$2.140.619 × 72 = $154.124.568</strong>, calculados a valores constantes y sin IPC.</p></article>
-<article class="card"><h3>3. Ahorro del cliente</h3><p>La institución conserva <strong>$22.774.248</strong> durante los 72 meses de pago, según esta simulación.</p></article>
-</div>
-<div class="big-verdict">Durante el pago, <span class="accent-money">87,1 %</span> del ahorro solar mensual paga a Rocasol y <span class="accent-money">12,9 %</span> queda en la institución.</div>
-<p class="small"><strong>Simulación pedagógica; no equivale a una proyección contractual.</strong> El total puede incluir financiación, mantenimiento, garantías, seguros y transferencia de riesgos; la propuesta debe discriminar cada componente y el IPC.</p>
+<section class="slide gsv-insert-slide" data-title="GSV · 09 · EJEMPLO: Dimensionamiento" data-notes="Diapositiva 9 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 09 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-09.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 9 de 22: EJEMPLO: Dimensionamiento" loading="lazy" /></figure>
 </section>
+<section class="slide gsv-insert-slide" data-title="GSV · 10 · GSV Ingeniería · Lámina 10" data-notes="Diapositiva 10 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 10 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-10.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 10 de 22: GSV Ingeniería · Lámina 10" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 11 · LEY 1715 -2014 DE ENERGIAS RENOVABLES" data-notes="Diapositiva 11 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 11 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-11.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 11 de 22: LEY 1715 -2014 DE ENERGIAS RENOVABLES" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 12 · Actualmente la Escuela cuenta con un consumo de alrededor de 2000" data-notes="Diapositiva 12 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 12 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-12.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 12 de 22: Actualmente la Escuela cuenta con un consumo de alrededor de 2000" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 13 · Con el fin de suplir alrededor del 100% de la energía eléctrica n" data-notes="Diapositiva 13 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 13 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-13.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 13 de 22: Con el fin de suplir alrededor del 100% de la energía eléctrica n" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 14 · GSV Ingeniería · Lámina 14" data-notes="Diapositiva 14 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 14 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-14.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 14 de 22: GSV Ingeniería · Lámina 14" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 15 · GSV Ingeniería · Lámina 15" data-notes="Diapositiva 15 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 15 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-15.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 15 de 22: GSV Ingeniería · Lámina 15" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 16 · GSV Ingeniería · Lámina 16" data-notes="Diapositiva 16 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 16 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-16.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 16 de 22: GSV Ingeniería · Lámina 16" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 17 · Formas de implementar tu sistema solar" data-notes="Diapositiva 17 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 17 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-17.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 17 de 22: Formas de implementar tu sistema solar" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 18 · GSV Ingeniería · Lámina 18" data-notes="Diapositiva 18 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 18 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-18.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 18 de 22: GSV Ingeniería · Lámina 18" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 19 · GSV Ingeniería · Lámina 19" data-notes="Diapositiva 19 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 19 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-19.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 19 de 22: GSV Ingeniería · Lámina 19" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 20 · GSV Ingeniería · Lámina 20" data-notes="Diapositiva 20 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 20 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-20.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 20 de 22: GSV Ingeniería · Lámina 20" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 21 · GSV Ingeniería · Lámina 21" data-notes="Diapositiva 21 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 21 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-21.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 21 de 22: GSV Ingeniería · Lámina 21" loading="lazy" /></figure>
+</section>
+<section class="slide gsv-insert-slide" data-title="GSV · 22 · CONTACTOS:  			ING. ESTEBAN VARGAS ÁNGEL			Gerente 			Mail: gere" data-notes="Diapositiva 22 de 22 del material original GSV Ingeniería. El contenido, fotografías, cuadros y cifras se conservan tal como fueron proporcionados. Las cifras técnicas y financieras son ejemplos de la fuente y necesitan validación para aplicaciones reales.">
+<div class="gsv-topline"><span class="kicker">4 · SOLAR · GSV INGENIERÍA</span><span class="gsv-source">Material original · 22 / 22</span></div>
+<figure class="gsv-visual"><img src="img/gsv-original-22.jpg" alt="Diapositiva original de GSV Ingeniería, lámina 22 de 22: CONTACTOS:  			ING. ESTEBAN VARGAS ÁNGEL			Gerente 			Mail: gere" loading="lazy" /></figure>
+</section>
+
 <section class="slide" data-notes="Presente brevemente la alianza antes del cierre: Los Yoguis, GSV Ingeniería, Colegios Verdes e I.E. Manuel J. Betancur articulan educación, energía y acción climática." data-title="8 · Quiénes somos">
 <div class="visual-split"><div><div class="kicker">8 · Alianza · quiénes somos</div><h2>Una alianza para convertir la educación en acción climática</h2><div class="grid two"><article class="card"><h3>Los Yoguis · GSV Ingeniería</h3><p>Innovación educativa, gestión energética y estructuración de soluciones solares sostenibles.</p></article><article class="card"><h3>Colegios Verdes · I.E. Manuel J. Betancur</h3><p>Pedagogía ambiental, liderazgo juvenil y experiencia institucional para la acción climática.</p></article></div><div class="callout">Medir, financiar e implementar.</div></div><figure class="photo alliance-photo">
 <img alt="Alianza 17 Líderes Ambientales de Medellín con logos de Los Yoguis, GSV Ingeniería, I.E. Manuel J. Betancur y espacio para nuevos aliados" loading="eager" src="img/alianza-17.webp"/>
 <figcaption><strong>Alianza 17 · Líderes Ambientales de Medellín.</strong> Educación, innovación, energía y acción climática trabajando en red.</figcaption>
 </figure></div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="slide course-neutral-slide" data-notes="Comparta el recurso externo y voluntario de ConnectAmericas: Cómo lograr que mi empresa sea Carbono Neutral. Guía para PYMES. Dura 4 semanas, no exige conocimientos previos y orienta paso a paso hacia la verificación de carbono neutralidad. El portal requiere iniciar sesión o crear una cuenta para inscribirse. Abra el enlace desde el botón; no se imparte el curso dentro de esta presentación." data-title="8 · Curso de carbono neutralidad">
+<div class="kicker">8 · Formación complementaria · ConnectAmericas</div>
+<div class="course-neutral-layout">
+  <div class="course-neutral-copy">
+    <h2>Aprende cómo lograr que tu empresa sea carbono neutral</h2>
+    <p class="lead">Un curso de <strong>ConnectAmericas</strong> que guía a las PYMES, paso a paso, hacia la carbono-neutralidad y su verificación.</p>
+    <div class="course-neutral-chips"><span class="course-neutral-chip">Duración: 4 semanas</span><span class="course-neutral-chip">Sin conocimientos previos</span><span class="course-neutral-chip">Formación en línea</span></div>
+    <div class="actions"><a class="btn primary" href="https://academy.connectamericas.com/enrol/index.php?id=103" target="_blank" rel="noopener noreferrer" aria-label="Abrir curso Cómo lograr que mi empresa sea Carbono Neutral en ConnectAmericas">Conoce el curso e inscríbete ↗</a></div>
+    <p class="small">Recurso externo. Para inscribirte debes iniciar sesión o crear una cuenta en ConnectAmericas.</p>
+  </div>
+  <figure class="course-neutral-shot"><img src="img/curso-connectamericas.webp" loading="lazy" alt="Captura de la página del curso Cómo lograr que mi empresa sea Carbono Neutral. Guía para PYMES de ConnectAmericas"/><figcaption>Cómo lograr que mi empresa sea Carbono Neutral · Guía para PYMES</figcaption></figure>
+</div>
 </section>
 <section class="slide final-cta-slide" data-notes="Cierre con una acción concreta: escanear el QR o abrir el enlace para convertir la factura de la institución en planes ambientales y una ruta solar." data-title="9 · Cierre y QR">
 <div class="final-cta-content">
@@ -3762,7 +3784,7 @@ h2{font-size:clamp(34px,4.25vw,64px)!important;line-height:.98!important;margin-
 <div aria-label="Vista general" class="overview" id="overview"></div>
 <aside class="notes" id="notes"><h4>Notas del presentador</h4><p></p></aside>
 <div class="hint">← → navegar · M menú · O vista general · N notas · F pantalla completa</div>
-<nav class="controls"><button aria-label="Abrir menú" class="round" id="menuBtn">☰</button><button aria-label="Anterior" class="round" id="prev">←</button><span class="counter" id="counter">1 / 21</span><button aria-label="Siguiente" class="round" id="next">→</button><button aria-label="Pantalla completa" class="round" id="full">⛶</button></nav>
+<nav class="controls"><button aria-label="Abrir menú" class="round" id="menuBtn">☰</button><button aria-label="Anterior" class="round" id="prev">←</button><span class="counter" id="counter">1 / 35</span><button aria-label="Siguiente" class="round" id="next">→</button><button aria-label="Pantalla completa" class="round" id="full">⛶</button></nav>
 </main>
 <script>
 (()=>{
